@@ -16,11 +16,34 @@ padding: 20px 0;
 .logo {
 	float: left; 
 	top: 20px;
+	display: block;
 }
 
-.store {
+.logo-med {
+	display:none;
+	float: left; 
+	top: 20px;
+}
+
+.logo-large {
+	display:none;
+	float: left; 
+	top: 20px;
+}
+
+.store-button {
 	@include button-style($color-dark, $primary-color-2);
 	float: right;
+	display: inline-block;
+}
+
+.store-zip {
+	display: none;
+}
+
+
+nav {
+	background-color: $color-dark;
 }
 
 .menu {
@@ -34,10 +57,10 @@ padding: 20px 0;
 
 nav li {
 	@include nav-link-style($color-light, $primary-color-1);
-	padding: 20px;
-	background-color: $color-dark;
 	display: none;
 }
+
+
 
 /*
   ========================================
@@ -45,8 +68,14 @@ nav li {
   ========================================
 */
 
+.mural-large {
+	display:none;
+} 
+
 .h1-wrapper {
 	background-color: $primary-color-1;
+	border: 3px solid $color-dark;
+
 	margin: 0 10%;
 	max-width: 500px;
 	padding: 10px 18px;
@@ -54,10 +83,18 @@ nav li {
 	top: -50px;
 }
 
-.intro {
+.intro{
+top: -25px;
 margin: 0 auto;
 padding-bottom: 50px;
 background-color: $primary-color-2;
+border: 3px solid $color-dark;
+border-radius: 10px;
+max-width: 550px;
+}
+
+.intro p {
+	font-weight: 400;
 }
 
 /*
@@ -111,13 +148,9 @@ footer {
 	margin-bottom: 40px;
 }
 
-input {
-	outline: none;
+.newsletter input {
+	@include input-style(200px, 40px);
 	margin: 10px 0;
-	border-radius: 5px;
-	width: 200px;
-	height: 40px;
-	@include p-font (#999999);
 }
 
 @import 'media-queries';

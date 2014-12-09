@@ -87,7 +87,7 @@ h2 {
 h3 {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   line-height: 1.6;
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF; }
@@ -119,10 +119,10 @@ li {
   list-style-type: none; }
 
 nav li {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  font-size: 2.2em;
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  font-size: 2.5em;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #FFFFFF;
   text-decoration: none;
@@ -150,9 +150,20 @@ header {
 
 .logo {
   float: left;
+  top: 20px;
+  display: block; }
+
+.logo-med {
+  display: none;
+  float: left;
   top: 20px; }
 
-.store {
+.logo-large {
+  display: none;
+  float: left;
+  top: 20px; }
+
+.store-button {
   font-family: "freight-micro-pro" "rockwell" "serif";
   padding: 10px;
   font-size: 1.7em;
@@ -166,10 +177,17 @@ header {
   outline: none;
   text-decoration: none;
   text-align: center;
-  float: right; }
-  .store:hover {
+  float: right;
+  display: inline-block; }
+  .store-button:hover {
     text-decoration: underline;
     text-decoration-color: #462D23; }
+
+.store-zip {
+  display: none; }
+
+nav {
+  background-color: #462D23; }
 
 .menu {
   font-family: "freight-micro-pro" "rockwell" "serif";
@@ -195,16 +213,14 @@ header {
     text-decoration-color: #FFFFFF; }
 
 nav li {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  font-size: 2.2em;
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  font-size: 2.5em;
   line-height: 1;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   color: #FFFFFF;
   text-decoration: none;
   display: block;
-  padding: 20px;
-  background-color: #462D23;
   display: none; }
   nav li:hover {
     color: #D70B43;
@@ -215,8 +231,12 @@ nav li {
   GLOBAL Intro
   ========================================
 */
+.mural-large {
+  display: none; }
+
 .h1-wrapper {
   background-color: #D70B43;
+  border: 3px solid #462D23;
   margin: 0 10%;
   max-width: 500px;
   padding: 10px 18px;
@@ -224,9 +244,16 @@ nav li {
   top: -50px; }
 
 .intro {
+  top: -25px;
   margin: 0 auto;
   padding-bottom: 50px;
-  background-color: #F8D61A; }
+  background-color: #F8D61A;
+  border: 3px solid #462D23;
+  border-radius: 10px;
+  max-width: 550px; }
+
+.intro p {
+  font-weight: 400; }
 
 /*
   ========================================
@@ -284,9 +311,8 @@ footer {
   margin-top: 40px;
   margin-bottom: 40px; }
 
-input {
+.newsletter input {
   outline: none;
-  margin: 10px 0;
   border-radius: 5px;
   width: 200px;
   height: 40px;
@@ -296,6 +322,126 @@ input {
   font-weight: 300;
   font-style: normal;
   max-width: 500px;
-  color: #999999; }
+  color: #999999;
+  margin: 10px 0; }
+
+@media screen and (min-width: 40em) {
+  /*
+    ========================================
+    40em Header / Nav
+    ========================================
+  */
+  .logo {
+    display: none; }
+
+  .logo-med {
+    display: block; }
+
+  .store {
+    float: right; }
+    .store input {
+      outline: none;
+      border-radius: 5px;
+      width: 150px;
+      height: 40px;
+      font-family: "freight-micro-pro" "rockwell" "serif";
+      line-height: 1.6;
+      font-size: 2em;
+      font-weight: 300;
+      font-style: normal;
+      max-width: 500px;
+      color: #999999; }
+
+  .store-zip {
+    display: inline-block;
+    margin-right: 20px; }
+
+  .menu {
+    display: none; }
+
+  nav ul {
+    margin: 0 auto;
+    max-width: 450px; }
+
+  nav li {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 40px; }
+
+  nav li:first-of-type {
+    margin-left: 0; }
+
+  /*
+    ========================================
+    40em Intro
+    ========================================
+  */
+  .mural-small {
+    display: none; }
+
+  .mural-large {
+    display: block;
+    max-width: 850px;
+    margin: 0 auto;
+    border-radius: 10px; }
+
+  /*
+    ========================================
+    40em Index-Boxes
+    ========================================
+  */
+  .box-wrapper {
+    width: 48%;
+    float: left;
+    margin-left: 4%; }
+
+  .box-wrapper:nth-of-type(odd) {
+    margin-left: 0; }
+
+  /*
+    ========================================
+    40em Footer
+    ========================================
+  */
+  .footer-copy {
+    width: 48%;
+    float: left;
+    margin-left: 4%; }
+
+  .footer-copy:nth-of-type(odd) {
+    margin-left: 0; } }
+@media screen and (min-width: 64em) {
+  /*
+    ========================================
+    64em Index-Boxes
+    ========================================
+  */
+  .box-wrapper {
+    width: 32%;
+    float: left;
+    margin-left: 2%; }
+
+  .box-wrapper:nth-of-type(odd) {
+    margin-left: 2%; }
+
+  .box-wrapper:nth-of-type(3n+1) {
+    margin-left: 0; }
+
+  /*
+    ========================================
+    64em Footer
+    ========================================
+  */
+  .footer-copy {
+    width: 23.5%;
+    float: left;
+    margin-left: 2%; }
+
+  .footer-copy:nth-of-type(odd) {
+    margin-left: 2%; }
+
+  .footer-copy:nth-of-type(1) {
+    margin-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

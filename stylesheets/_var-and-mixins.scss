@@ -34,7 +34,7 @@ $color-light: #FFFFFF;
 @mixin h3-font($color){
 	font-family: "hooligan" "arial-black" "arial" "sans-serif";
 	line-height: 1.6;
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: 400;
 	font-style: normal;
 	color: $color;
@@ -63,17 +63,18 @@ $color-light: #FFFFFF;
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
 	font-size: 1.8em;
-	font-weight:300;
+	font-weight: 300;
 	font-style: normal;
 	color: $color;
 	list-style-type: none;
 }
 
 @mixin nav-link-style ($color, $color-hover){
-	font-family: "freight-micro-pro" "rockwell" "serif";
-	font-size: 2.2em;
+	font-family: "hooligan" "arial-black" "arial" "sans-serif";
+	font-size: 2.5em;
+	
 	line-height: 1;
-	font-weight: 400;
+	font-weight: 300;
 	font-style: normal;
 	color: $color;
 	text-decoration: none; 
@@ -113,4 +114,12 @@ $color-light: #FFFFFF;
     text-decoration: underline;
     text-decoration-color: $color;
     }
+}
+
+@mixin input-style ($width, $height){
+	outline: none;
+	border-radius: 5px;
+	width: $width;
+	height: $height;
+	@include p-font (#999999);
 }

@@ -1,3 +1,138 @@
-@media screen and (min-width: 37em) {
+@media screen and (min-width: 40em) {
+
+/*
+  ========================================
+  40em Header / Nav
+  ========================================
+*/
+	.logo {
+		display: none;
+	}
+
+	.logo-med {
+		display: block;
+	}
 	
+	.store {
+	float: right;
+
+		input {
+		@include input-style (150px, 40px);
+		}
+	}
+	.store-zip {
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	.menu {
+		display: none; 
+	}
+
+	nav ul {
+		margin: 0 auto;
+		max-width: 450px;
+	}
+
+	nav li {
+		display: inline-block;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-left: 40px;
+	}
+
+	nav li:first-of-type {
+		margin-left: 0;
+	}
+
+/*
+  ========================================
+  40em Intro
+  ========================================
+*/
+
+	.mural-small {
+		display: none;
+	}
+
+	.mural-large {
+		display: block;
+		max-width: 850px;
+		margin: 0 auto;
+		border-radius: 10px;
+	}
+
+/*
+  ========================================
+  40em Index-Boxes
+  ========================================
+*/
+
+.box-wrapper {
+	width: 48%;
+	float: left;
+	margin-left: 4%;
+}
+
+.box-wrapper:nth-of-type(odd) {
+	margin-left: 0;
+}
+
+/*
+  ========================================
+  40em Footer
+  ========================================
+*/
+
+.footer-copy {
+	width: 48%;
+	float: left;
+	margin-left: 4%;
+}
+
+.footer-copy:nth-of-type(odd) {
+	margin-left: 0;
+}
+
+}
+
+@media screen and (min-width: 64em) {
+
+/*
+  ========================================
+  64em Index-Boxes
+  ========================================
+*/
+
+.box-wrapper {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+}
+
+.box-wrapper:nth-of-type(odd) {
+	margin-left: 2%;
+}
+.box-wrapper:nth-of-type(3n+1){
+	margin-left: 0;
+}
+/*
+  ========================================
+  64em Footer
+  ========================================
+*/
+
+.footer-copy {
+	width: 23.5%;
+	float: left;
+	margin-left: 2%;
+}
+
+.footer-copy:nth-of-type(odd) {
+	margin-left: 2%;
+}
+
+.footer-copy:nth-of-type(1) {
+	margin-left:0;
+}
 }
