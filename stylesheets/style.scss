@@ -14,21 +14,24 @@ padding: 20px 0;
 }
 
 .logo {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	float: left; 
-	top: 20px;
 	display: block;
 }
 
 .logo-med {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display:none;
 	float: left; 
-	top: 20px;
 }
 
 .logo-large {
+	margin-top: 20px;
+	margin-bottom: 20px;
 	display:none;
 	float: left; 
-	top: 20px;
 }
 
 .store-button {
@@ -72,29 +75,17 @@ nav li {
 	display:none;
 } 
 
-.h1-wrapper {
+
+.intro {
 	background-color: $primary-color-1;
-	border: 3px solid $color-dark;
+	padding: 40px 10px;
+	margin: 0 auto;
 
-	margin: 0 10%;
-	max-width: 500px;
-	padding: 10px 18px;
-	border-radius: 10px;
-	top: -50px;
-}
-
-.intro{
-top: -25px;
-margin: 0 auto;
-padding-bottom: 50px;
-background-color: $primary-color-2;
-border: 3px solid $color-dark;
-border-radius: 10px;
-max-width: 550px;
-}
-
-.intro p {
+p {		
+	margin-top: 50px;
 	font-weight: 400;
+	max-width: 550px;
+	}
 }
 
 /*
@@ -114,16 +105,17 @@ max-width: 550px;
 }
 
 .index-box {
-	width: 300px;
+	width: 270px;
 	height: 300px;
 	background-color: $color-dark;
 	margin: 0 auto;
 	display: block;
 }
 
-.index-box:first-of-type {
-	margin-top: 50px;
-} 
+.box-wrapper {
+
+}
+
 
 /*
   ========================================
@@ -148,9 +140,18 @@ footer {
 	margin-bottom: 40px;
 }
 
-.newsletter input {
+.newsletter input.email {
 	@include input-style(200px, 40px);
-	margin: 10px 0;
+	margin-top: 20px;
 }
 
+.newsletter input.zip {
+	@include input-style(100px, 40px);
+	margin-top: 20px; 
+	margin-right: 20px; 
+}
+
+.newsletter button {
+	display: inline-block;
+}
 @import 'media-queries';

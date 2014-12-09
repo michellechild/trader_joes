@@ -1,3 +1,6 @@
+/*40ems*/
+
+
 @media screen and (min-width: 40em) {
 
 /*
@@ -29,15 +32,10 @@
 		display: none; 
 	}
 
-	nav ul {
-		margin: 0 auto;
-		max-width: 450px;
-	}
-
 	nav li {
 		display: inline-block;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		margin-left: 40px;
 	}
 
@@ -51,16 +49,25 @@
   ========================================
 */
 
+	.intro {
+	top: -100px;
+	border-radius: 10px;
+	max-width: 570px;
+	}
+
 	.mural-small {
 		display: none;
 	}
 
 	.mural-large {
 		display: block;
-		max-width: 850px;
 		margin: 0 auto;
-		border-radius: 10px;
 	}
+	
+	.mural {
+	@include div-bg($primary-color-3);	
+	}
+
 
 /*
   ========================================
@@ -93,17 +100,49 @@
 .footer-copy:nth-of-type(odd) {
 	margin-left: 0;
 }
+}
+
+
+/*50ems*/
+
+@media screen and (min-width: 50em) {
+
+	.logo {
+		display: none;
+	}
+
+	.logo-med {
+		display: none;
+	}
+
+	.logo-large {
+		display: block;
+	}
+	
+
+.intro {
+	top: -150px;
+}
+
+nav li {
+	margin-left: 60px;
+}
 
 }
 
-@media screen and (min-width: 64em) {
+
+/*60ems*/
+
+@media screen and (min-width: 60em) {
+	.intro {
+	top: -200px;
+}
 
 /*
   ========================================
-  64em Index-Boxes
+  60em Index-Boxes
   ========================================
 */
-
 .box-wrapper {
 	width: 32%;
 	float: left;
@@ -118,7 +157,7 @@
 }
 /*
   ========================================
-  64em Footer
+  60em Footer
   ========================================
 */
 
@@ -136,3 +175,4 @@
 	margin-left:0;
 }
 }
+

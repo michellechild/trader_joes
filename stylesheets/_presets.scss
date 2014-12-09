@@ -39,14 +39,14 @@ h4 {
 }
 
 p {
-	@include p-font($color-dark);
+	@include p-font($color-light);
 }
 
 li {
 	@include li-font($color-light);
 }
 
-nav li {
+nav li a {
 	@include nav-link-style($color-light, $primary-color-3);
 }
 

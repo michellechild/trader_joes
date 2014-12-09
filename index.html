@@ -11,8 +11,15 @@
 <body>
 	<header>
 		<div class="container">
-			<div class="logo"><img src="assets/tj_logo_white.png" alt="Logo"></div>
-			<div class="logo-med"><img src="assets/tj_logo_white_med.png" alt="Logo"></div>
+			<div class="logo">
+			<img src="assets/tj_logo_white.png" alt="Logo">			
+			</div>
+			<div class="logo-med">
+			<img src="assets/tj_logo_white_med.png" alt="Logo">
+			</div>
+			<div class="logo-large">
+			<img src="assets/tj_logo_white_large.png" alt="Logo">
+			</div>
 			<form class="store" action="/store-locator" method="post">
     			<div class="store-zip">
         			<input type="zip-code" id="zip-code" value=" zip code" />
@@ -20,27 +27,29 @@
 				<button href="store.html" class="store-button">Find a Store</button>
 			</form>
 		</div>
-		</header>
-		<nav>
-			<button class="menu">menu</button>
-			<div class="container">
-				<ul>
-					<li><a href="ourstory.html">Our Story</a></li>
-					<li><a href="ourculture.html">Our Culture</a></li>
-					<li><a href="ourfood.html">Our Food</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-		</nav>
-		<div><img class="mural-small" src="assets/mural_small.jpg" alt="Lower Greenville Store"><img class="mural-large" src="assets/mural_large.jpg" alt="Lower Greenville Store"></div>
-		<section class="intro">
-			<div class="h1-wrapper">
-			<h1>Welcome to Trader Joe’s</h1>
+	</header>
+	<nav>
+		<button class="menu">menu</button>
+		<div class="container">
+			<ul>
+				<li><a href="ourstory.html">Our Story</a></li>
+				<li><a href="ourculture.html">Our Culture</a></li>
+				<li><a href="ourfood.html">Our Food</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
 		</div>
-		<div  class="container">
-		<p>Trader Joe’s is a neighborhood grocery store with amazing food and drink from around the globe and around the corner. We give you great quality at great prices. Because you deserve it.</p>
-<!-- 	<img class="flourish" src="assets/flower.png" alt="flower">
- <--></div>	
+	</nav>
+	<div class="mural">
+		<img class="mural-small" src="assets/mural_small.jpg" alt="Lower Greenville Store">
+		<img class="mural-large" src="assets/mural_large.jpg" alt="Lower Greenville Store">
+	</div>
+	<section class="intro">
+	<h1>Welcome to Trader Joe’s</h1>
+	<div  class="container">
+			<p>Trader Joe’s is a neighborhood grocery store with amazing food and drink from around the globe and around the corner. We give you great quality at great prices. That's what we call value.</p>
+			<!--<img class="flourish" src="assets/flower.png" alt="flower">
+			 <-->
+	</div>	
 	</section>
 	<section class="container">
 		<div class="box-wrapper">
@@ -124,14 +133,10 @@
 				<h3>Fearless Flyer E-Newsletter</h3>
 				<form class="newsletter" action="/fearless-flyer-database" method="post">
     				<div>
-        				<input type="email" id="mail" value=" email address" />
+        				<input class="email" type="email" id="mail" value=" email address" />
     				</div>
-    				<div>
-        				<input type="zip-code" id="zip"  value=" zip code" />
-	 	   			</div>
-					<div class="button">
-        				<button type="submit">Sign Up!</button>
-    				</div>
+        				<input class="zip" type="zip-code" id="zip"  value=" zip code" />
+        			<button type="submit">Sign Up!</button>
     			</form>
 			</div>
 		</div>
