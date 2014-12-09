@@ -1,0 +1,55 @@
+div, header, nav, section, article, aside, footer, figure, button, img, hr, a, li{
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+  max-width: 1000px;
+  width:85%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+img {
+	width: 100%;
+}
+
+h1 {
+	@include h1-font ($color-light);
+}
+
+h2 {
+	@include h2-font($color-light);
+}
+
+h3 {
+	@include h3-font($color-light);
+}
+
+h4 {
+	@include h4-font($color-dark);
+}
+
+p {
+	@include p-font($color-dark);
+}
+
+li {
+	@include li-font($color-light);
+}
+
+nav li {
+	@include nav-link-style($color-light, $primary-color-3);
+}
+
+a {
+	@include link-style($color-light, $primary-color-3);
+}

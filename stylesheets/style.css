@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, button, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+div, header, nav, section, article, aside, footer, figure, button, img, hr, a, li {
+  position: relative; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto;
+  overflow: hidden; }
+
+img {
+  width: 100%; }
+
+h1 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.3;
+  font-size: 5em;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  text-align: center;
+  display: block; }
+
+h2 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  letter-spacing: 2;
+  font-size: 4em;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  text-align: center; }
+
+h3 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF; }
+
+h4 {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 2em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23; }
+
+p {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 500px;
+  color: #462D23; }
+
+li {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-style: normal;
+  color: #FFFFFF;
+  list-style-type: none; }
+
+nav li {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-size: 2.2em;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block; }
+  nav li:hover {
+    color: #00D4E6;
+    text-decoration: none; }
+
+a {
+  color: #FFFFFF;
+  text-decoration: underline; }
+  a:hover {
+    text-decoration: none;
+    text-decoration-color: #00D4E6; }
+
+/*
+  ========================================
+  GLOBAL Header / Nav
+  ========================================
+*/
+header {
+  background-color: #D70B43;
+  width: 100%;
+  padding: 20px 0; }
+
+.logo {
+  float: left;
+  top: 20px; }
+
+.store {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  padding: 10px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #462D23;
+  border-radius: 5px;
+  background-color: #F8D61A;
+  display: block;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  float: right; }
+  .store:hover {
+    text-decoration: underline;
+    text-decoration-color: #462D23; }
+
+.menu {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  padding: 10px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  border-radius: 5px;
+  background-color: #462D23;
+  display: block;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 0;
+  font-size: 2em; }
+  .menu:hover {
+    text-decoration: underline;
+    text-decoration-color: #FFFFFF; }
+
+nav li {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-size: 2.2em;
+  line-height: 1;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  background-color: #462D23;
+  display: none; }
+  nav li:hover {
+    color: #D70B43;
+    text-decoration: none; }
+
+/*
+  ========================================
+  GLOBAL Intro
+  ========================================
+*/
+.h1-wrapper {
+  background-color: #D70B43;
+  margin: 0 10%;
+  max-width: 500px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  top: -50px; }
+
+.intro {
+  margin: 0 auto;
+  padding-bottom: 50px;
+  background-color: #F8D61A; }
+
+/*
+  ========================================
+  GLOBAL Box
+  ========================================
+*/
+.h2-wrapper {
+  background-color: #D70B43;
+  padding: 5px 0;
+  border-radius: 10px;
+  top: -50px;
+  margin: 0 auto;
+  max-width: 250px; }
+
+.index-box {
+  width: 300px;
+  height: 300px;
+  background-color: #462D23;
+  margin: 0 auto;
+  display: block; }
+
+.index-box:first-of-type {
+  margin-top: 50px; }
+
+/*
+  ========================================
+  GLOBAL Footer
+  ========================================
+*/
+footer {
+  background-color: #462D23;
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  footer button {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    padding: 10px;
+    font-size: 1.7em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    color: #462D23;
+    border-radius: 5px;
+    background-color: #F8D61A;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px; }
+    footer button:hover {
+      text-decoration: underline;
+      text-decoration-color: #462D23; }
+
+.footer-copy {
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+input {
+  outline: none;
+  margin: 10px 0;
+  border-radius: 5px;
+  width: 200px;
+  height: 40px;
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 2em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 500px;
+  color: #999999; }
+
+/*# sourceMappingURL=style.css.map */
