@@ -20,27 +20,11 @@ padding: 20px 0;
 	display: block;
 }
 
-.logo-med {
-	margin-top: 20px;
-	margin-bottom: 20px;
+.logo-med, .logo-large {
 	display:none;
-	float: left; 
 }
 
-.logo-large {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	display:none;
-	float: left; 
-}
-
-.store-button {
-	@include button-style($color-dark, $primary-color-2);
-	float: right;
-	display: inline-block;
-}
-
-.store-zip {
+.store-button-2, .store-zip { 
 	display: none;
 }
 
@@ -55,7 +39,16 @@ nav {
 	text-align: left;
 	padding: 20px;
 	border-radius: 0;
-	font-size: 2em;
+	font-size: 2.5em;
+}
+
+.store-button-1 {
+	@include button-style($color-dark, $primary-color-2);
+	width: 100%;
+	text-align: left;
+	padding: 20px;
+	border-radius: 0;
+	font-size: 2.5em;
 }
 
 nav li {
@@ -63,6 +56,12 @@ nav li {
 	display: none;
 }
 
+.mural {
+background-image:url(../assets/mural_small.jpg);
+background-size: cover;
+width: 100%;
+min-height: 375px;
+}
 
 
 /*
@@ -71,19 +70,15 @@ nav li {
   ========================================
 */
 
-.mural-large {
-	display:none;
-} 
-
 
 .intro {
-	background-color: $primary-color-1;
-	padding: 40px 10px;
+	background-color: darken($primary-color-1, 12%);
+	padding: 50px 20px;
 	margin: 0 auto;
 
 p {		
 	margin-top: 50px;
-	font-weight: 400;
+	font-weight: 300;
 	max-width: 550px;
 	}
 }
@@ -94,26 +89,34 @@ p {
   ========================================
 */
 
+h4 {
+	margin: 0 auto 70px auto;
+	max-width: 400px;
+}
+
 .h2-wrapper {
 	background-color: $primary-color-1;
 	padding: 5px 0;
 	border-radius: 10px;
 	top: -50px;
 	margin: 0 auto;
-	max-width: 250px;
+	max-width: 230px;
 
 }
 
 .index-box {
-	width: 270px;
 	height: 300px;
 	background-color: $color-dark;
 	margin: 0 auto;
 	display: block;
+	max-width: 300px;
+}
+.box-wrapper {
+	width: 100%;
 }
 
-.box-wrapper {
-
+.box-wrapper:first-of-type {
+	margin-top: 50px;
 }
 
 

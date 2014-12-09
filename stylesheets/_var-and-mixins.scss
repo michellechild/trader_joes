@@ -41,9 +41,9 @@ $color-light: #FFFFFF;
 }
 
 @mixin h4-font($color){
-	font-family: "freight-micro-pro" "rockwell" "serif";
+	font-family: "hooligan" "arial-black" "arial" "sans-serif";	
 	line-height: 1.6;
-	font-size: 2em;
+	font-size: 4.5em;
 	font-weight: 600;
 	font-style: normal;
 	color: $color;
@@ -52,7 +52,7 @@ $color-light: #FFFFFF;
 @mixin p-font($color){
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
-	font-size: 2em;
+	font-size: 2.3em;
 	font-weight:300;
 	font-style: normal;
 	max-width: 500px;

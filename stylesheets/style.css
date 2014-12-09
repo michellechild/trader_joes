@@ -93,9 +93,9 @@ h3 {
   color: #FFFFFF; }
 
 h4 {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
   line-height: 1.6;
-  font-size: 2em;
+  font-size: 4.5em;
   font-weight: 600;
   font-style: normal;
   color: #462D23; }
@@ -103,7 +103,7 @@ h4 {
 p {
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: 300;
   font-style: normal;
   max-width: 500px;
@@ -154,39 +154,10 @@ header {
   float: left;
   display: block; }
 
-.logo-med {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: none;
-  float: left; }
+.logo-med, .logo-large {
+  display: none; }
 
-.logo-large {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: none;
-  float: left; }
-
-.store-button {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
-  font-weight: 400;
-  font-style: normal;
-  color: #462D23;
-  border-radius: 5px;
-  background-color: #F8D61A;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center;
-  float: right;
-  display: inline-block; }
-  .store-button:hover {
-    text-decoration: underline;
-    text-decoration-color: #462D23; }
-
-.store-zip {
+.store-button-2, .store-zip {
   display: none; }
 
 nav {
@@ -210,10 +181,33 @@ nav {
   text-align: left;
   padding: 20px;
   border-radius: 0;
-  font-size: 2em; }
+  font-size: 2.5em; }
   .menu:hover {
     text-decoration: underline;
     text-decoration-color: #FFFFFF; }
+
+.store-button-1 {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  padding: 10px;
+  font-size: 1.7em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  color: #462D23;
+  border-radius: 5px;
+  background-color: #F8D61A;
+  display: block;
+  outline: none;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  border-radius: 0;
+  font-size: 2.5em; }
+  .store-button-1:hover {
+    text-decoration: underline;
+    text-decoration-color: #462D23; }
 
 nav li {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
@@ -229,21 +223,24 @@ nav li {
     color: #D70B43;
     text-decoration: none; }
 
+.mural {
+  background-image: url(../assets/mural_small.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 375px; }
+
 /*
   ========================================
   GLOBAL Intro
   ========================================
 */
-.mural-large {
-  display: none; }
-
 .intro {
-  background-color: #D70B43;
-  padding: 40px 10px;
+  background-color: #9d0831;
+  padding: 50px 20px;
   margin: 0 auto; }
   .intro p {
     margin-top: 50px;
-    font-weight: 400;
+    font-weight: 300;
     max-width: 550px; }
 
 /*
@@ -251,20 +248,30 @@ nav li {
   GLOBAL Box
   ========================================
 */
+h4 {
+  margin: 0 auto 70px auto;
+  max-width: 400px; }
+
 .h2-wrapper {
   background-color: #D70B43;
   padding: 5px 0;
   border-radius: 10px;
   top: -50px;
   margin: 0 auto;
-  max-width: 250px; }
+  max-width: 230px; }
 
 .index-box {
-  width: 270px;
   height: 300px;
   background-color: #462D23;
   margin: 0 auto;
-  display: block; }
+  display: block;
+  max-width: 300px; }
+
+.box-wrapper {
+  width: 100%; }
+
+.box-wrapper:first-of-type {
+  margin-top: 50px; }
 
 /*
   ========================================
@@ -306,7 +313,7 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: 300;
   font-style: normal;
   max-width: 500px;
@@ -320,7 +327,7 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 2em;
+  font-size: 2.3em;
   font-weight: 300;
   font-style: normal;
   max-width: 500px;
@@ -332,17 +339,20 @@ footer {
   display: inline-block; }
 
 /*40ems*/
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 38em) {
   /*
     ========================================
-    40em Header / Nav
+    38em Header / Nav
     ========================================
   */
-  .logo {
+  .logo-small {
     display: none; }
 
   .logo-med {
     display: block; }
+
+  .store-button-1, .menu {
+    display: none; }
 
   .store {
     float: right; }
@@ -353,18 +363,31 @@ footer {
       height: 40px;
       font-family: "freight-micro-pro" "rockwell" "serif";
       line-height: 1.6;
-      font-size: 2em;
+      font-size: 2.3em;
       font-weight: 300;
       font-style: normal;
       max-width: 500px;
       color: #999999; }
 
-  .store-zip {
-    display: inline-block;
-    margin-right: 20px; }
-
-  .menu {
-    display: none; }
+  .store-button-2 {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    padding: 10px;
+    font-size: 1.7em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    color: #462D23;
+    border-radius: 5px;
+    background-color: #F8D61A;
+    display: block;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+    float: right;
+    display: inline-block; }
+    .store-button-2:hover {
+      text-decoration: underline;
+      text-decoration-color: #462D23; }
 
   nav li {
     display: inline-block;
@@ -377,7 +400,7 @@ footer {
 
   /*
     ========================================
-    40em Intro
+    38em Intro
     ========================================
   */
   .intro {
@@ -385,33 +408,29 @@ footer {
     border-radius: 10px;
     max-width: 570px; }
 
-  .mural-small {
-    display: none; }
-
-  .mural-large {
-    display: block;
-    margin: 0 auto; }
-
   .mural {
-    background-color: #00D4E6;
-    width: 100%; }
+    background-image: url(../assets/mural_large.jpg);
+    min-height: 500px; }
 
   /*
     ========================================
-    40em Index-Boxes
+    38em Index-Boxes
     ========================================
   */
   .box-wrapper {
-    width: 48%;
+    width: 46%;
     float: left;
-    margin-left: 4%; }
+    margin-left: 6%; }
+
+  .box-wrapper:first-of-type {
+    margin-top: 0; }
 
   .box-wrapper:nth-of-type(odd) {
     margin-left: 0; }
 
   /*
     ========================================
-    40em Footer
+    38em Footer
     ========================================
   */
   .footer-copy {
@@ -421,9 +440,9 @@ footer {
 
   .footer-copy:nth-of-type(odd) {
     margin-left: 0; } }
-/*50ems*/
-@media screen and (min-width: 50em) {
-  .logo {
+/*60ems*/
+@media screen and (min-width: 60em) {
+  .logo-small {
     display: none; }
 
   .logo-med {
@@ -432,15 +451,21 @@ footer {
   .logo-large {
     display: block; }
 
-  .intro {
-    top: -150px; }
+  .store-zip {
+    display: inline-block;
+    margin-right: 20px; }
 
   nav li {
-    margin-left: 60px; } }
-/*60ems*/
-@media screen and (min-width: 60em) {
+    margin-left: 60px; }
+
   .intro {
-    top: -200px; }
+    top: -150px;
+    border-radius: 10px;
+    max-width: 570px; }
+
+  .mural {
+    background-image: url(../assets/mural_large.jpg);
+    min-height: 600px; }
 
   /*
     ========================================
