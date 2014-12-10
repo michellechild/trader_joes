@@ -75,10 +75,10 @@ min-height: 300px;
 	padding: 50px 20px;
 	margin: 0 auto;
 
-p {		
+p {	
+	@include p-font($color-light);	
+	font-size: 23px;
 	margin-top: 50px;
-	font-weight: 300;
-	max-width: 550px;
 	}
 }
 
@@ -111,6 +111,7 @@ h4 {
 	display: block;
 	max-width: 300px;
 }
+
 .box-wrapper {
 	width: 100%;
 }
@@ -126,8 +127,25 @@ h4 {
   ========================================
 */
 
+.h1-wrapper {
+	background-color: darken($primary-color-1, 12%);
+	padding: 40px 20px;
+	margin: 0 auto;
+	overflow: hidden;
+}
 
+.story {
+	p, ul {
+	@include p-font($color-dark); 
+	margin: 50px auto;
+	}
 
+	li {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin-left: 30px;
+	}
+}
 /*
   ========================================
   GLOBAL Footer
@@ -149,6 +167,13 @@ footer {
 .footer-copy {
 	margin-top: 40px;
 	margin-bottom: 40px;
+	
+	li {
+	@include p-font ($color-light);
+	font-size: 1.8em;
+	list-style-type: none;
+	}
+
 }
 
 .newsletter input.email {
@@ -160,9 +185,11 @@ footer {
 	@include input-style(100px, 40px);
 	margin-top: 20px; 
 	margin-right: 20px; 
+	display: block;
 }
 
 .newsletter button {
 	display: inline-block;
 }
+
 @import 'media-queries';

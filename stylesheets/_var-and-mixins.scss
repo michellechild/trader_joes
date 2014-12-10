@@ -52,21 +52,11 @@ $color-light: #FFFFFF;
 @mixin p-font($color){
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
-	font-size: 2.3em;
+	font-size: 1.8em;
 	font-weight:300;
 	font-style: normal;
-	max-width: 500px;
+	max-width: 550px;
 	color: $color;
-}
-
-@mixin li-font($color){
-	font-family: "freight-micro-pro" "rockwell" "serif";
-	font-size: 1.8em;
-	line-height: 1.6;
-	font-weight: 300;
-	font-style: normal;
-	color: $color;
-	list-style-type: none;
 }
 
 @mixin nav-link-style ($color, $color-hover){

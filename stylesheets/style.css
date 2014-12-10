@@ -100,24 +100,6 @@ h4 {
   font-style: normal;
   color: #462D23; }
 
-p {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 2.3em;
-  font-weight: 300;
-  font-style: normal;
-  max-width: 500px;
-  color: #FFFFFF; }
-
-li {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  font-size: 1.8em;
-  line-height: 1.6;
-  font-weight: 300;
-  font-style: normal;
-  color: #FFFFFF;
-  list-style-type: none; }
-
 nav li a {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   font-size: 30px;
@@ -239,9 +221,15 @@ nav li {
   padding: 50px 20px;
   margin: 0 auto; }
   .intro p {
-    margin-top: 50px;
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    line-height: 1.6;
+    font-size: 1.8em;
     font-weight: 300;
-    max-width: 550px; }
+    font-style: normal;
+    max-width: 550px;
+    color: #FFFFFF;
+    font-size: 23px;
+    margin-top: 50px; }
 
 /*
   ========================================
@@ -278,6 +266,26 @@ h4 {
   GLOBAL Story
   ========================================
 */
+.h1-wrapper {
+  background-color: #9d0831;
+  padding: 40px 20px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.story p, .story ul {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.8em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 550px;
+  color: #462D23;
+  margin: 50px auto; }
+.story li {
+  list-style-type: disc;
+  list-style-position: outside;
+  margin-left: 30px; }
+
 /*
   ========================================
   GLOBAL Footer
@@ -310,6 +318,16 @@ footer {
 .footer-copy {
   margin-top: 40px;
   margin-bottom: 40px; }
+  .footer-copy li {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    line-height: 1.6;
+    font-size: 1.8em;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 550px;
+    color: #FFFFFF;
+    font-size: 1.8em;
+    list-style-type: none; }
 
 .newsletter input.email {
   outline: none;
@@ -318,10 +336,10 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 2.3em;
+  font-size: 1.8em;
   font-weight: 300;
   font-style: normal;
-  max-width: 500px;
+  max-width: 550px;
   color: #999999;
   margin-top: 20px; }
 
@@ -332,13 +350,14 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 2.3em;
+  font-size: 1.8em;
   font-weight: 300;
   font-style: normal;
-  max-width: 500px;
+  max-width: 550px;
   color: #999999;
   margin-top: 20px;
-  margin-right: 20px; }
+  margin-right: 20px;
+  display: block; }
 
 .newsletter button {
   display: inline-block; }
@@ -364,10 +383,10 @@ footer {
       height: 40px;
       font-family: "freight-micro-pro" "rockwell" "serif";
       line-height: 1.6;
-      font-size: 2.3em;
+      font-size: 1.8em;
       font-weight: 300;
       font-style: normal;
-      max-width: 500px;
+      max-width: 550px;
       color: #999999; }
 
   .store-button-2 {
@@ -429,6 +448,16 @@ footer {
   .box-wrapper:nth-of-type(odd) {
     margin-left: 0; }
 
+  /* 38em Story */
+  .h1-wrapper {
+    top: -50px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 200px; }
+
+  .story p:first-of-type {
+    margin: -50px auto 50px auto; }
+
   /* 38em Footer */
   .footer-copy {
     width: 48%;
@@ -436,7 +465,10 @@ footer {
     margin-left: 4%; }
 
   .footer-copy:nth-of-type(odd) {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  .newsletter input.zip {
+    display: inline-block; } }
 /*closing tag 38 ems*/
 @media screen and (min-width: 60em) {
   .logo-small, .logo-med {
