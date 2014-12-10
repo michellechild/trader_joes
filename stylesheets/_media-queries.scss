@@ -42,7 +42,15 @@
 	nav li:first-of-type {
 	margin-left: 0;
 	}
+
+	.mural {
+	background-image:url(../assets/mural_medium.jpg);
+	min-height: 440px;
+	}
 	
+	.story-photo {
+	min-height: 560px;
+}
 /*
   ========================================
   38em Intro
@@ -59,12 +67,6 @@
 	top: -100px;
 	border-radius: 10px;
 	max-width: 570px;
-	}
-
-
-	.mural {
-	background-image:url(../assets/mural_medium.jpg);
-	min-height: 440px;
 	}
 
 
@@ -86,15 +88,12 @@
 
 
 /* 38em Story */
-.h1-wrapper {
+.story {
 	top: -50px;
 	border-radius: 10px;
 	padding: 20px;
-	max-width: 200px;
-}
+	max-width: 550px;
 
-.story p:first-of-type {
-	margin: -50px auto 50px auto;
 }
 
 /* 38em Footer */
@@ -141,6 +140,7 @@
 	}
 
 	.mural {
+	background-image:url(../assets/mural_large.jpg);
 	min-height: 650px;
 	}
 

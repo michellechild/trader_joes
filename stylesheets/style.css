@@ -211,6 +211,12 @@ nav li {
   width: 100%;
   min-height: 300px; }
 
+.story-photo {
+  background-image: url(../assets/ourstory.jpg);
+  background-size: cover;
+  width: 100%;
+  min-height: 300px; }
+
 /*
   ========================================
   GLOBAL Intro
@@ -266,25 +272,24 @@ h4 {
   GLOBAL Story
   ========================================
 */
-.h1-wrapper {
+.story {
   background-color: #9d0831;
   padding: 40px 20px;
   margin: 0 auto;
   overflow: hidden; }
-
-.story p, .story ul {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 1.8em;
-  font-weight: 300;
-  font-style: normal;
-  max-width: 550px;
-  color: #462D23;
-  margin: 50px auto; }
-.story li {
-  list-style-type: disc;
-  list-style-position: outside;
-  margin-left: 30px; }
+  .story p, .story ul {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    line-height: 1.6;
+    font-size: 1.8em;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 550px;
+    color: #FFFFFF;
+    margin: 50px auto; }
+  .story li {
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 30px; }
 
 /*
   ========================================
@@ -418,6 +423,13 @@ footer {
   nav li:first-of-type {
     margin-left: 0; }
 
+  .mural {
+    background-image: url(../assets/mural_medium.jpg);
+    min-height: 440px; }
+
+  .story-photo {
+    min-height: 560px; }
+
   /*
     ========================================
     38em Intro
@@ -432,10 +444,6 @@ footer {
     border-radius: 10px;
     max-width: 570px; }
 
-  .mural {
-    background-image: url(../assets/mural_medium.jpg);
-    min-height: 440px; }
-
   /* 38em Index-Boxes */
   .box-wrapper {
     width: 46%;
@@ -449,14 +457,11 @@ footer {
     margin-left: 0; }
 
   /* 38em Story */
-  .h1-wrapper {
+  .story {
     top: -50px;
     border-radius: 10px;
     padding: 20px;
-    max-width: 200px; }
-
-  .story p:first-of-type {
-    margin: -50px auto 50px auto; }
+    max-width: 550px; }
 
   /* 38em Footer */
   .footer-copy {
@@ -489,6 +494,7 @@ footer {
     max-width: 570px; }
 
   .mural {
+    background-image: url(../assets/mural_large.jpg);
     min-height: 650px; }
 
   /* 60em Index-Boxes */

@@ -62,6 +62,14 @@ width: 100%;
 min-height: 300px;
 }
 
+.story-photo {
+background-image:url(../assets/ourstory.jpg);
+background-size: cover;
+width: 100%;
+min-height: 300px;
+}
+
+
 
 /*
   ========================================
@@ -128,15 +136,16 @@ h4 {
 */
 
 .h1-wrapper {
+}
+
+.story {
 	background-color: darken($primary-color-1, 12%);
 	padding: 40px 20px;
 	margin: 0 auto;
 	overflow: hidden;
-}
 
-.story {
 	p, ul {
-	@include p-font($color-dark); 
+	@include p-font($color-light); 
 	margin: 50px auto;
 	}
 
