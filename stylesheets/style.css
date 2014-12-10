@@ -128,7 +128,7 @@ a {
 header {
   background-color: #D70B43;
   width: 100%;
-  padding: 20px 0; }
+  padding: 10px 0; }
 
 .logo {
   margin-top: 20px;
@@ -136,7 +136,7 @@ header {
   float: left;
   display: block; }
 
-.logo-med, .logo-large {
+.logo-med {
   display: none; }
 
 .store-button-2, .store-zip {
@@ -158,9 +158,9 @@ header {
   text-align: center;
   width: 100%;
   text-align: left;
-  padding: 20px;
+  padding: 10px;
   border-radius: 0;
-  font-size: 2.5em; }
+  font-size: 2em; }
   .menu:hover {
     text-decoration: underline;
     text-decoration-color: #FFFFFF; }
@@ -181,9 +181,9 @@ header {
   text-align: center;
   width: 100%;
   text-align: left;
-  padding: 20px;
+  padding: 10px;
   border-radius: 0;
-  font-size: 2.5em; }
+  font-size: 2em; }
   .store-button-1:hover {
     text-decoration: underline;
     text-decoration-color: #462D23; }
@@ -205,23 +205,16 @@ nav li {
     color: #D70B43;
     text-decoration: none; }
 
-.mural {
-  background-image: url(../assets/mural_small.jpg);
-  background-size: cover;
-  width: 100%;
-  min-height: 300px; }
-
-.story-photo {
-  background-image: url(../assets/ourstory.jpg);
-  background-size: cover;
-  width: 100%;
-  min-height: 300px; }
-
 /*
   ========================================
   GLOBAL Intro
   ========================================
 */
+.mural {
+  background-image: url(../assets/mural_small.jpg);
+  background-size: 100%;
+  min-height: 280px; }
+
 .intro {
   background-color: #9d0831;
   padding: 50px 20px;
@@ -272,6 +265,16 @@ h4 {
   GLOBAL Story
   ========================================
 */
+.story-photo {
+  background-image: url(../assets/ourstory.jpg);
+  background-size: cover;
+  min-height: 300px;
+  max-width: 640px;
+  margin: 0 auto; }
+
+.story-photo-bg {
+  background-color: #A7784F; }
+
 .story {
   background-color: #9d0831;
   padding: 40px 20px;
@@ -285,11 +288,25 @@ h4 {
     font-style: normal;
     max-width: 550px;
     color: #FFFFFF;
-    margin: 50px auto; }
+    margin: 30px auto; }
   .story li {
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 30px; }
+  .story a {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    line-height: 1.6;
+    font-size: 1.8em;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 550px;
+    color: #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px; }
+    .story a:hover {
+      text-decoration: none;
+      color: #00D4E6; }
 
 /*
   ========================================
@@ -367,7 +384,6 @@ footer {
 .newsletter button {
   display: inline-block; }
 
-/*40ems*/
 @media screen and (min-width: 38em) {
   /* 38em Header/Nav */
   .logo-small {
@@ -408,6 +424,8 @@ footer {
     outline: none;
     text-decoration: none;
     text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
     float: right;
     display: inline-block; }
     .store-button-2:hover {
@@ -416,8 +434,8 @@ footer {
 
   nav li {
     display: inline-block;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-left: 40px; }
 
   nav li:first-of-type {
@@ -425,16 +443,12 @@ footer {
 
   .mural {
     background-image: url(../assets/mural_medium.jpg);
-    min-height: 440px; }
+    min-height: 450px; }
 
   .story-photo {
-    min-height: 560px; }
+    min-height: 500px; }
 
-  /*
-    ========================================
-    38em Intro
-    ========================================
-  */
+  /* 38em Intro */
   h4 {
     margin: 0 auto 70px auto;
     max-width: 400px; }
@@ -442,7 +456,8 @@ footer {
   .intro {
     top: -100px;
     border-radius: 10px;
-    max-width: 570px; }
+    max-width: 570px;
+    padding: 30px 10px 50px 10px; }
 
   /* 38em Index-Boxes */
   .box-wrapper {
@@ -476,26 +491,21 @@ footer {
     display: inline-block; } }
 /*closing tag 38 ems*/
 @media screen and (min-width: 60em) {
-  .logo-small, .logo-med {
+  .logo-small {
     display: none; }
-
-  .logo-large {
-    display: block; }
 
   .store-zip {
     display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
     margin-right: 20px; }
 
   nav li {
     margin-left: 60px; }
 
-  .intro {
-    border-radius: 10px;
-    max-width: 570px; }
-
   .mural {
     background-image: url(../assets/mural_large.jpg);
-    min-height: 650px; }
+    min-height: 550px; }
 
   /* 60em Index-Boxes */
   .box-wrapper {

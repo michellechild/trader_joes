@@ -1,5 +1,3 @@
-/*40ems*/
-
 
 @media screen and (min-width: 38em) {
 
@@ -19,7 +17,6 @@
 
 	.store {
 	float: right;
-
 		input {
 		@include input-style (150px, 40px);
 		}
@@ -27,6 +24,8 @@
 
 	.store-button-2 {
 	@include button-style($color-dark, $primary-color-2);
+	margin-top: 10px;
+	margin-bottom: 20px;
 	float: right;
 	display: inline-block;
 	}
@@ -34,8 +33,8 @@
 
 	nav li {
 		display: inline-block;
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 20px;
+		padding-bottom: 20px;
 		margin-left: 40px;
 	}
 	
@@ -45,28 +44,24 @@
 
 	.mural {
 	background-image:url(../assets/mural_medium.jpg);
-	min-height: 440px;
+	min-height: 450px;
 	}
 	
 	.story-photo {
-	min-height: 560px;
+	min-height: 500px;
 }
-/*
-  ========================================
-  38em Intro
-  ========================================
-*/
+/* 38em Intro */
 
 	h4 {
 		margin: 0 auto 70px auto;
 		max-width: 400px;
-
 	}
 
 	.intro {
 	top: -100px;
 	border-radius: 10px;
 	max-width: 570px;
+	padding: 30px 10px 50px 10px;
 	}
 
 
@@ -114,19 +109,19 @@
 
 } /*closing tag 38 ems*/
 
+
 @media screen and (min-width: 60em) {
 
 
-	.logo-small, .logo-med  {
+	.logo-small {
 		display: none;
 	}
 
-	.logo-large {
-		display: block;
-	}
 	
 	.store-zip {
 		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 20px;
 		margin-right: 20px;
 	}
 
@@ -134,14 +129,9 @@
 	margin-left: 60px;
 	}
 
-	.intro {
-	border-radius: 10px;
-	max-width: 570px;
-	}
-
 	.mural {
 	background-image:url(../assets/mural_large.jpg);
-	min-height: 650px;
+	min-height: 550px;
 	}
 
 /* 60em Index-Boxes */

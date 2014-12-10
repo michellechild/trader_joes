@@ -10,7 +10,7 @@
 
 header {
 @include div-bg($primary-color-1);
-padding: 20px 0;
+padding: 10px 0;
 }
 
 .logo {
@@ -20,7 +20,7 @@ padding: 20px 0;
 	display: block;
 }
 
-.logo-med, .logo-large {
+.logo-med {
 	display:none;
 }
 
@@ -32,18 +32,18 @@ padding: 20px 0;
 	@include button-style($color-light, $color-dark);
 	width: 100%;
 	text-align: left;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 0;
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 .store-button-1 {
 	@include button-style($color-dark, $primary-color-2);
 	width: 100%;
 	text-align: left;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 0;
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 nav {
@@ -55,27 +55,16 @@ nav li {
 	display: none;
 }
 
-.mural {
-background-image:url(../assets/mural_small.jpg);
-background-size: cover;
-width: 100%;
-min-height: 300px;
-}
-
-.story-photo {
-background-image:url(../assets/ourstory.jpg);
-background-size: cover;
-width: 100%;
-min-height: 300px;
-}
-
-
-
 /*
   ========================================
   GLOBAL Intro
   ========================================
 */
+.mural {
+background-image:url(../assets/mural_small.jpg);
+background-size: 100%;
+min-height: 280px;
+}
 
 
 .intro {
@@ -134,9 +123,19 @@ h4 {
   GLOBAL Story
   ========================================
 */
-
-.h1-wrapper {
+.story-photo {
+background-image:url(../assets/ourstory.jpg);
+background-size: cover;
+min-height: 300px;
+max-width: 640px;
+margin: 0 auto;
 }
+
+.story-photo-bg {
+// padding-top: 50px;
+background-color: #A7784F;
+}
+
 
 .story {
 	background-color: darken($primary-color-1, 12%);
@@ -146,13 +145,19 @@ h4 {
 
 	p, ul {
 	@include p-font($color-light); 
-	margin: 50px auto;
+	margin: 30px auto;
 	}
 
 	li {
 	list-style-type: disc;
 	list-style-position: outside;
 	margin-left: 30px;
+	}
+
+	a {
+		@include p-font($color-light); 
+		@include link-style($color-light, $primary-color-3);
+		font-size: 25px;
 	}
 }
 /*
