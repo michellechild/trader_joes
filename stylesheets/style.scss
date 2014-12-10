@@ -2,20 +2,16 @@
 @import 'var-and-mixins';
 @import 'presets';
 
-/*
-  ========================================
-  GLOBAL Header / Nav
-  ========================================
-*/
+/* GLOBAL Header / Nav */
 
 header {
-@include div-bg($primary-color-1);
-padding: 10px 0;
+	@include div-bg($primary-color-1);	
+	padding: 10px 0;
 }
 
 .logo {
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	float: left; 
 	display: block;
 }
@@ -24,26 +20,26 @@ padding: 10px 0;
 	display:none;
 }
 
-.store-button-2, .store-zip { 
-	display: none;
-}
-
 .menu {
 	@include button-style($color-light, $color-dark);
-	width: 100%;
-	text-align: left;
-	padding: 10px;
-	border-radius: 0;
-	font-size: 2em;
 }
 
 .store-button-1 {
 	@include button-style($color-dark, $primary-color-2);
+}
+
+.menu, .store-button-1 {
 	width: 100%;
 	text-align: left;
 	padding: 10px;
+	padding-left: 7.5%;
 	border-radius: 0;
 	font-size: 2em;
+}
+
+
+.store-button-2, .store-zip { 
+	display: none;
 }
 
 nav {
@@ -55,15 +51,12 @@ nav li {
 	display: none;
 }
 
-/*
-  ========================================
-  GLOBAL Intro
-  ========================================
-*/
+/* GLOBAL Intro */
+
 .mural {
-background-image:url(../assets/mural_small.jpg);
-background-size: 100%;
-min-height: 280px;
+	background-image:url(../assets/mural_small.jpg);
+	background-size: cover;
+	min-height: 300px;
 }
 
 
@@ -79,17 +72,7 @@ p {
 	}
 }
 
-/*
-  ========================================
-  GLOBAL Box
-  ========================================
-*/
-
-h4 {
-	margin: 70px auto;
-	max-width: 400px;
-
-}
+/* GLOBAL Box */
 
 .h2-wrapper {
 	background-color: $primary-color-1;
@@ -107,6 +90,7 @@ h4 {
 	margin: 0 auto;
 	display: block;
 	max-width: 300px;
+	width: 100%;
 }
 
 .box-wrapper {
@@ -118,24 +102,12 @@ h4 {
 }
 
 
-/*
-  ========================================
-  GLOBAL Story
-  ========================================
-*/
+/* GLOBAL Story */
 .story-photo {
-background-image:url(../assets/ourstory.jpg);
-background-size: cover;
-min-height: 300px;
-max-width: 640px;
-margin: 0 auto;
+	background-color: lighten($primary-color-2, 20%);
+	width: 100%;
+	min-height: 300px;
 }
-
-.story-photo-bg {
-// padding-top: 50px;
-background-color: #A7784F;
-}
-
 
 .story {
 	background-color: darken($primary-color-1, 12%);
@@ -144,14 +116,14 @@ background-color: #A7784F;
 	overflow: hidden;
 
 	p, ul {
-	@include p-font($color-light); 
-	margin: 30px auto;
+		@include p-font($color-light); 
+		margin: 30px auto;
 	}
 
 	li {
-	list-style-type: disc;
-	list-style-position: outside;
-	margin-left: 30px;
+		list-style-type: disc;
+		list-style-position: outside;
+		margin-left: 30px;
 	}
 
 	a {
@@ -160,13 +132,67 @@ background-color: #A7784F;
 		font-size: 25px;
 	}
 }
-/*
-  ========================================
-  GLOBAL Footer
-  ========================================
-*/
+
+
+.y1960s, .y1990s {
+	@include button-style($color-dark, $primary-color-2);
+}
+
+.y1970s, .y2000s {
+	@include button-style($color-light, $primary-color-1);
+}
+
+.y1980s, .y2010s {
+	@include button-style($color-dark, $primary-color-3);
+}
+
+.y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
+	width: 100%;
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 7.5%;
+	border-radius: 0;
+	font-size: 3em;
+}
+
+.content-1960s {
+	display: none;
+		
+		h4{ 
+		margin-bottom: 50px;
+		}
+
+		img { 
+		border: $primary-color-3 solid 1px;
+		float: left;
+		margin-left: 2%;
+		margin-bottom: 20px;
+		display: inline-block;
+		}
+		
+		img:first-of-type {
+			margin-left: 0;
+		}
+
+		h3 {
+			@include h3-font($color-dark);
+			margin-top: 30px;
+			margin-left: 2%;
+			clear: left;
+		}
+
+		p {
+			@include p-font($color-dark);
+			margin-left: 2%;
+			margin-bottom: 30px;
+			clear: left;
+		}	
+	}
+/* GLOBAL Footer */
 
 footer {
+	clear: both; 
 	@include div-bg($color-dark);
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -206,4 +232,6 @@ footer {
 	display: inline-block;
 }
 
-@import 'media-queries';
+@import 'mediaquery38em';
+@import 'mediaquery60em';
+

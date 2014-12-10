@@ -25,7 +25,7 @@
 	.store-button-2 {
 	@include button-style($color-dark, $primary-color-2);
 	margin-top: 10px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	float: right;
 	display: inline-block;
 	}
@@ -33,8 +33,8 @@
 
 	nav li {
 		display: inline-block;
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 15px;
+		padding-bottom: 15px;
 		margin-left: 40px;
 	}
 	
@@ -46,10 +46,7 @@
 	background-image:url(../assets/mural_medium.jpg);
 	min-height: 450px;
 	}
-	
-	.story-photo {
-	min-height: 500px;
-}
+
 /* 38em Intro */
 
 	h4 {
@@ -83,11 +80,42 @@
 
 
 /* 38em Story */
+.story-photo {
+	min-height: 450px;
+}
+
 .story {
 	top: -50px;
 	border-radius: 10px;
 	padding: 20px;
 	max-width: 550px;
+}
+
+.timeline {
+	float: right;
+	width: 70%;
+	margin-left: 5%;
+}
+
+.timeline-header{
+	display: none;
+}
+
+.timeline-buttons {
+	display: none;
+}
+
+.content-1960s {
+	display: block;
+	 
+	h4 {
+	float: left;
+	margin: 0;
+	}
+
+	img {
+	margin-left:2%;
+	}
 
 }
 
@@ -107,63 +135,5 @@
 	display: inline-block;
 }
 
-} /*closing tag 38 ems*/
-
-
-@media screen and (min-width: 60em) {
-
-
-	.logo-small {
-		display: none;
-	}
-
-	
-	.store-zip {
-		display: inline-block;
-		margin-top: 10px;
-		margin-bottom: 20px;
-		margin-right: 20px;
-	}
-
-	nav li {
-	margin-left: 60px;
-	}
-
-	.mural {
-	background-image:url(../assets/mural_large.jpg);
-	min-height: 550px;
-	}
-
-/* 60em Index-Boxes */
-.box-wrapper {
-	width: 32%;
-	float: left;
-	margin-left: 2%;
-}
-
-.box-wrapper:nth-of-type(odd) {
-	margin-left: 2%;
-}
-
-.box-wrapper:nth-of-type(3n+1){
-	margin-left: 0;
-}
-
-/* 60em Footer */
-
-.footer-copy {
-	width: 23.5%;
-	float: left;
-	margin-left: 2%;
-}
-
-.footer-copy:nth-of-type(odd) {
-	margin-left: 2%;
-}
-
-.footer-copy:nth-of-type(1) {
-	margin-left:0;
-}
-
-}
+} 
 

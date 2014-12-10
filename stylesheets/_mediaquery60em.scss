@@ -1,0 +1,64 @@
+@media screen and (min-width: 60em) {
+
+/* 60em Header/Nav */
+
+	.logo-small {
+		display: none;
+	}
+	
+	.store-zip {
+		display: inline-block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-right: 20px;
+	}
+
+	nav li {
+	margin-left: 60px;
+	}
+
+	.mural {
+	background-image:url(../assets/mural_large.jpg);
+	min-height: 550px;
+	}
+
+/* 60em Index-Boxes */
+.box-wrapper {
+	width: 32%;
+	float: left;
+	margin-left: 2%;
+}
+
+.box-wrapper:nth-of-type(odd) {
+	margin-left: 2%;
+}
+
+.box-wrapper:nth-of-type(3n+1){
+	margin-left: 0;
+}
+
+
+/* 60em Story */
+
+img:first-of-type{
+	margin-left: 0;
+}
+
+/* 60em Footer */
+
+.footer-copy {
+	width: 23.5%;
+	float: left;
+	margin-left: 2%;
+}
+
+.footer-copy:nth-of-type(odd) {
+	margin-left: 2%;
+}
+
+.footer-copy:nth-of-type(1) {
+	margin-left:0;
+}
+
+}
+

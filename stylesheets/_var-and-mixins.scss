@@ -1,5 +1,5 @@
 $primary-color-1: #D70B43;
-$primary-color-2: #F8D61A;
+$primary-color-2: #FAF82A;
 $primary-color-3: #00D4E6;
 $color-dark: #462D23;
 $color-light: #FFFFFF;
@@ -47,6 +47,8 @@ $color-light: #FFFFFF;
 	font-weight: 600;
 	font-style: normal;
 	color: $color;
+	margin: 50px auto;
+	max-width: 400px;
 }
 
 @mixin p-font($color){

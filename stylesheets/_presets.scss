@@ -13,14 +13,12 @@ html {
 
 .container{
   max-width: 1000px;
-  width:85%;
+  width: 85%;
   margin: 0 auto;
   overflow: hidden;
 }
 
-img {
-	width: 100%;
-}
+
 
 h1 {
 	@include h1-font ($color-light);
