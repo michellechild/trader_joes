@@ -160,9 +160,6 @@ header {
 .store-button-2, .store-zip {
   display: none; }
 
-nav {
-  background-color: #462D23; }
-
 .menu {
   font-family: "freight-micro-pro" "rockwell" "serif";
   padding: 10px;
@@ -209,6 +206,9 @@ nav {
     text-decoration: underline;
     text-decoration-color: #462D23; }
 
+nav {
+  background-color: #462D23; }
+
 nav li {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   font-size: 30px;
@@ -227,7 +227,7 @@ nav li {
   background-image: url(../assets/mural_small.jpg);
   background-size: cover;
   width: 100%;
-  min-height: 375px; }
+  min-height: 300px; }
 
 /*
   ========================================
@@ -249,7 +249,7 @@ nav li {
   ========================================
 */
 h4 {
-  margin: 0 auto 70px auto;
+  margin: 70px auto;
   max-width: 400px; }
 
 .h2-wrapper {
@@ -273,6 +273,11 @@ h4 {
 .box-wrapper:first-of-type {
   margin-top: 50px; }
 
+/*
+  ========================================
+  GLOBAL Story
+  ========================================
+*/
 /*
   ========================================
   GLOBAL Footer
@@ -340,11 +345,7 @@ footer {
 
 /*40ems*/
 @media screen and (min-width: 38em) {
-  /*
-    ========================================
-    38em Header / Nav
-    ========================================
-  */
+  /* 38em Header/Nav */
   .logo-small {
     display: none; }
 
@@ -403,20 +404,20 @@ footer {
     38em Intro
     ========================================
   */
+  h4 {
+    margin: 0 auto 70px auto;
+    max-width: 400px; }
+
   .intro {
     top: -100px;
     border-radius: 10px;
     max-width: 570px; }
 
   .mural {
-    background-image: url(../assets/mural_large.jpg);
-    min-height: 500px; }
+    background-image: url(../assets/mural_medium.jpg);
+    min-height: 440px; }
 
-  /*
-    ========================================
-    38em Index-Boxes
-    ========================================
-  */
+  /* 38em Index-Boxes */
   .box-wrapper {
     width: 46%;
     float: left;
@@ -428,11 +429,7 @@ footer {
   .box-wrapper:nth-of-type(odd) {
     margin-left: 0; }
 
-  /*
-    ========================================
-    38em Footer
-    ========================================
-  */
+  /* 38em Footer */
   .footer-copy {
     width: 48%;
     float: left;
@@ -440,12 +437,9 @@ footer {
 
   .footer-copy:nth-of-type(odd) {
     margin-left: 0; } }
-/*60ems*/
+/*closing tag 38 ems*/
 @media screen and (min-width: 60em) {
-  .logo-small {
-    display: none; }
-
-  .logo-med {
+  .logo-small, .logo-med {
     display: none; }
 
   .logo-large {
@@ -459,19 +453,13 @@ footer {
     margin-left: 60px; }
 
   .intro {
-    top: -150px;
     border-radius: 10px;
     max-width: 570px; }
 
   .mural {
-    background-image: url(../assets/mural_large.jpg);
-    min-height: 600px; }
+    min-height: 650px; }
 
-  /*
-    ========================================
-    60em Index-Boxes
-    ========================================
-  */
+  /* 60em Index-Boxes */
   .box-wrapper {
     width: 32%;
     float: left;
@@ -483,11 +471,7 @@ footer {
   .box-wrapper:nth-of-type(3n+1) {
     margin-left: 0; }
 
-  /*
-    ========================================
-    60em Footer
-    ========================================
-  */
+  /* 60em Footer */
   .footer-copy {
     width: 23.5%;
     float: left;

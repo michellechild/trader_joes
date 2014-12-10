@@ -28,11 +28,6 @@ padding: 20px 0;
 	display: none;
 }
 
-
-nav {
-	background-color: $color-dark;
-}
-
 .menu {
 	@include button-style($color-light, $color-dark);
 	width: 100%;
@@ -51,6 +46,10 @@ nav {
 	font-size: 2.5em;
 }
 
+nav {
+	background-color: $color-dark;
+}
+
 nav li {
 	@include nav-link-style($color-light, $primary-color-1);
 	display: none;
@@ -60,7 +59,7 @@ nav li {
 background-image:url(../assets/mural_small.jpg);
 background-size: cover;
 width: 100%;
-min-height: 375px;
+min-height: 300px;
 }
 
 
@@ -90,8 +89,9 @@ p {
 */
 
 h4 {
-	margin: 0 auto 70px auto;
+	margin: 70px auto;
 	max-width: 400px;
+
 }
 
 .h2-wrapper {
@@ -118,6 +118,14 @@ h4 {
 .box-wrapper:first-of-type {
 	margin-top: 50px;
 }
+
+
+/*
+  ========================================
+  GLOBAL Story
+  ========================================
+*/
+
 
 
 /*
