@@ -96,8 +96,8 @@ h4 {
   font-weight: 600;
   font-style: normal;
   color: #462D23;
-  margin: 50px auto;
-  max-width: 400px; }
+  margin: 30px auto;
+  max-width: 600px; }
 
 nav li a {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
@@ -109,7 +109,7 @@ nav li a {
   text-decoration: none;
   display: block; }
   nav li a:hover {
-    color: #00D4E6;
+    color: #008d9a;
     text-decoration: none; }
 
 a {
@@ -117,7 +117,7 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: none;
-    color: #00D4E6; }
+    color: #008d9a; }
 
 /* GLOBAL Header / Nav */
 header {
@@ -198,7 +198,7 @@ nav li {
     color: #D70B43;
     text-decoration: none; }
 
-/* GLOBAL Intro */
+/* GLOBAL Index Page */
 .mural {
   background-image: url(../assets/mural_small.jpg);
   background-size: cover;
@@ -211,7 +211,7 @@ nav li {
   .intro p {
     font-family: "freight-micro-pro" "rockwell" "serif";
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 300;
     font-style: normal;
     max-width: 550px;
@@ -219,57 +219,34 @@ nav li {
     font-size: 23px;
     margin-top: 50px; }
 
-/* GLOBAL Box */
-.h2-wrapper {
-  background-color: #D70B43;
-  padding: 5px 0;
-  border-radius: 10px;
-  top: -50px;
-  margin: 0 auto;
-  max-width: 230px; }
-
-.index-box {
-  height: 300px;
-  background-color: #462D23;
-  margin: 0 auto;
-  display: block;
-  max-width: 300px;
-  width: 100%; }
-
-.box-wrapper {
-  width: 100%; }
-
-.box-wrapper:first-of-type {
-  margin-top: 50px; }
-
-/* GLOBAL Story */
-.story-photo {
+/* GLOBAL Subpages */
+.subpage-photo {
   background-color: #fcfb8e;
   width: 100%;
-  min-height: 300px; }
+  min-height: 200px; }
 
-.story {
-  background-color: #9d0831;
+.subpage-intro {
+  background-color: #008d9a;
   padding: 40px 20px;
   margin: 0 auto;
   overflow: hidden; }
-  .story p, .story ul {
+  .subpage-intro p, .subpage-intro ul {
     font-family: "freight-micro-pro" "rockwell" "serif";
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 300;
     font-style: normal;
     max-width: 550px;
     color: #FFFFFF;
     margin: 30px auto; }
-  .story li {
+  .subpage-intro li {
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 30px; }
-  .story a {
+  .subpage-intro a {
     font-family: "freight-micro-pro" "rockwell" "serif";
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 300;
     font-style: normal;
     max-width: 550px;
@@ -277,9 +254,66 @@ nav li {
     color: #FFFFFF;
     text-decoration: none;
     font-size: 25px; }
-    .story a:hover {
+    .subpage-intro a:hover {
       text-decoration: none;
-      color: #00D4E6; }
+      color: #008d9a; }
+
+/*Our Story*/
+.story {
+  padding: 50px 0;
+  max-width: 550px;
+  margin: 0 auto; }
+
+.story-header {
+  background-color: #008d9a;
+  margin: 0 auto;
+  bottom: -25px;
+  padding: 5px 0;
+  border-radius: 10px;
+  max-width: 180px;
+  z-index: 1; }
+
+.story-photo img {
+  width: 100%; }
+
+.story-copy p {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.9em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 550px;
+  color: #462D23;
+  margin-top: 30px; }
+
+.story-value {
+  clear: both;
+  background-color: #FAF82A;
+  width: 100%;
+  background-color: #fbfa5c;
+  padding: 50px 0; }
+  .story-value p, .story-value ul {
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    line-height: 1.6;
+    font-size: 1.9em;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 550px;
+    color: #462D23;
+    margin-bottom: 30px; }
+  .story-value li {
+    font-size: 18px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 20px; }
+  .story-value li:first-of-type, .story-value li:last-of-type {
+    list-style-type: none;
+    margin-left: 0;
+    font-size: 19px; }
+  .story-value li:first-of-type {
+    margin-bottom: 10px; }
+  .story-value li:last-of-type {
+    margin-top: 30px; }
 
 .y1960s, .y1990s {
   font-family: "freight-micro-pro" "rockwell" "serif";
@@ -326,7 +360,7 @@ nav li {
   font-style: normal;
   color: #462D23;
   border-radius: 5px;
-  background-color: #00D4E6;
+  background-color: #008d9a;
   display: block;
   outline: none;
   text-decoration: none;
@@ -346,12 +380,10 @@ nav li {
 
 .content-1960s {
   display: none; }
-  .content-1960s h4 {
-    margin-bottom: 50px; }
   .content-1960s img {
-    border: #00D4E6 solid 1px;
+    border: #008d9a solid 1px;
     float: left;
-    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 20px;
     display: inline-block; }
   .content-1960s img:first-of-type {
@@ -364,19 +396,44 @@ nav li {
     font-style: normal;
     color: #462D23;
     margin-top: 30px;
-    margin-left: 2%;
     clear: left; }
   .content-1960s p {
     font-family: "freight-micro-pro" "rockwell" "serif";
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 300;
     font-style: normal;
     max-width: 550px;
     color: #462D23;
-    margin-left: 2%;
     margin-bottom: 30px;
     clear: left; }
+
+/*Our Culture*/
+/* GLOBAL Boxes */
+.h2-wrapper {
+  background-color: #D70B43;
+  padding: 5px 0;
+  border-radius: 10px;
+  top: -50px;
+  margin: 0 auto;
+  max-width: 230px; }
+
+.h2-wrapper.double {
+  top: -100px; }
+
+.box {
+  height: 300px;
+  background-color: #462D23;
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  width: 100%; }
+
+.box-wrapper {
+  width: 100%; }
+
+.box-wrapper:first-of-type {
+  margin-top: 50px; }
 
 /* GLOBAL Footer */
 footer {
@@ -410,7 +467,7 @@ footer {
   .footer-copy li {
     font-family: "freight-micro-pro" "rockwell" "serif";
     line-height: 1.6;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-weight: 300;
     font-style: normal;
     max-width: 550px;
@@ -425,7 +482,7 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 300;
   font-style: normal;
   max-width: 550px;
@@ -439,7 +496,7 @@ footer {
   height: 40px;
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
-  font-size: 1.8em;
+  font-size: 1.9em;
   font-weight: 300;
   font-style: normal;
   max-width: 550px;
@@ -471,7 +528,7 @@ footer {
       height: 40px;
       font-family: "freight-micro-pro" "rockwell" "serif";
       line-height: 1.6;
-      font-size: 1.8em;
+      font-size: 1.9em;
       font-weight: 300;
       font-style: normal;
       max-width: 550px;
@@ -523,7 +580,40 @@ footer {
     max-width: 570px;
     padding: 30px 10px 50px 10px; }
 
-  /* 38em Index-Boxes */
+  /* 38em Story */
+  .story-header {
+    margin-left: 5%; }
+
+  .story-photo img {
+    max-width: 480px; }
+
+  .story-value h4 {
+    margin: 0 0 30px 0; }
+
+  .subpage-intro {
+    top: -50px;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 550px; }
+
+  .timeline-buttons {
+    display: none; }
+
+  .timeline {
+    float: right;
+    width: 70%;
+    margin-left: 5%;
+    padding: 50px 0; }
+    .timeline h4 {
+      margin: 0 0 30px 0; }
+
+  .content-1960s {
+    display: block; }
+    .content-1960s h4 {
+      margin: 0 0 30px 0;
+      color: #008d9a; }
+
+  /* 38em Boxes */
   .box-wrapper {
     width: 46%;
     float: left;
@@ -534,35 +624,6 @@ footer {
 
   .box-wrapper:nth-of-type(odd) {
     margin-left: 0; }
-
-  /* 38em Story */
-  .story-photo {
-    min-height: 450px; }
-
-  .story {
-    top: -50px;
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 550px; }
-
-  .timeline {
-    float: right;
-    width: 70%;
-    margin-left: 5%; }
-
-  .timeline-header {
-    display: none; }
-
-  .timeline-buttons {
-    display: none; }
-
-  .content-1960s {
-    display: block; }
-    .content-1960s h4 {
-      float: left;
-      margin: 0; }
-    .content-1960s img {
-      margin-left: 2%; }
 
   /* 38em Footer */
   .footer-copy {
@@ -593,7 +654,31 @@ footer {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
 
-  /* 60em Index-Boxes */
+  /* 60em Story */
+  .story {
+    max-width: 1000px; }
+
+  .story-photo {
+    width: 45%;
+    float: left;
+    max-height: 400px; }
+
+  .story-copy {
+    width: 50%;
+    margin-left: 5%;
+    float: left;
+    margin-top: 35px; }
+
+  .story-value p {
+    width: 45%;
+    float: left; }
+
+  .story-value ul {
+    width: 50%;
+    float: left;
+    margin-left: 5%; }
+
+  /* 60em Boxes */
   .box-wrapper {
     width: 32%;
     float: left;
@@ -603,10 +688,6 @@ footer {
     margin-left: 2%; }
 
   .box-wrapper:nth-of-type(3n+1) {
-    margin-left: 0; }
-
-  /* 60em Story */
-  img:first-of-type {
     margin-left: 0; }
 
   /* 60em Footer */

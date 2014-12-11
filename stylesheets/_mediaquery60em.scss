@@ -22,7 +22,38 @@
 	min-height: 550px;
 	}
 
-/* 60em Index-Boxes */
+
+/* 60em Story */
+
+
+.story {
+	max-width: 1000px;
+}
+.story-photo {
+	width: 45%;
+	float: left;
+	max-height: 400px; 
+}
+
+.story-copy { 
+	width: 50%;
+	margin-left: 5%;
+	float: left;
+	margin-top: 35px;
+}
+
+.story-value p{
+	width: 45%;
+	float: left;
+}
+
+.story-value ul {
+	width: 50%;
+	float: left;
+	margin-left: 5%; 
+}
+
+/* 60em Boxes */
 .box-wrapper {
 	width: 32%;
 	float: left;
@@ -38,11 +69,6 @@
 }
 
 
-/* 60em Story */
-
-img:first-of-type{
-	margin-left: 0;
-}
 
 /* 60em Footer */
 

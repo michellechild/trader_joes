@@ -1,6 +1,6 @@
 $primary-color-1: #D70B43;
 $primary-color-2: #FAF82A;
-$primary-color-3: #00D4E6;
+$primary-color-3: #008d9a;
 $color-dark: #462D23;
 $color-light: #FFFFFF;
 
@@ -47,14 +47,14 @@ $color-light: #FFFFFF;
 	font-weight: 600;
 	font-style: normal;
 	color: $color;
-	margin: 50px auto;
-	max-width: 400px;
+	margin: 30px auto;
+	max-width: 600px;
 }
 
 @mixin p-font($color){
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
-	font-size: 1.8em;
+	font-size: 1.9em;
 	font-weight:300;
 	font-style: normal;
 	max-width: 550px;
