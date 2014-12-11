@@ -1,0 +1,15 @@
+	
+.recipe-feature{
+	h4 {
+		@include h4-font($color-dark, 200px);
+		margin: 0 0 50px 0;
+	}
+
+	.highlight-header {
+		h1 {
+		font-size: 37px;
+		}
+		max-width: 250px;
+	}
+}
+

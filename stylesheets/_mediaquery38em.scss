@@ -151,6 +151,16 @@ margin: 0;
 .food-boxes h4 {
 	margin: 50px auto;
 }
+
+/* 38em Recipes */
+
+.recipe-feature{
+@include highlight-60em;
+	img {
+	max-width: 500px;
+	}
+}
+
 /* 38em Footer */
 
 .footer-copy {

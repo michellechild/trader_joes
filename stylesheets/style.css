@@ -505,6 +505,21 @@ nav li {
   max-width: 200px;
   margin: 50px 0; }
 
+.recipe-feature h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23;
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 0 0 50px 0; }
+.recipe-feature .highlight-header {
+  max-width: 250px; }
+  .recipe-feature .highlight-header h1 {
+    font-size: 37px; }
+
 footer {
   clear: both;
   background-color: #462D23;
@@ -721,6 +736,21 @@ footer {
 
   .food-boxes h4 {
     margin: 50px auto; }
+
+  /* 38em Recipes */
+  .recipe-feature .highlight {
+    max-width: none;
+    margin: 50px 0; }
+  .recipe-feature .highlight-photo {
+    width: 48%;
+    float: left; }
+  .recipe-feature .highlight-copy {
+    width: 48%;
+    margin-left: 4%;
+    float: left;
+    margin-top: 50px; }
+  .recipe-feature img {
+    max-width: 500px; }
 
   /* 38em Footer */
   .footer-copy {

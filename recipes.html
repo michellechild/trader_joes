@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trader Joe's</title>
+	<link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//use.typekit.net/fxv0szo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo-small" src="assets/tj_logo_white.png" alt="Logo">
+					<img class="logo-med" src="assets/tj_logo_white_med.png" alt="Logo">
+				</a>
+			</div>
+			<form class="store" action="/store-locator" method="post">
+				<div class="store-zip">
+					<input type="zip-code" id="zip-code" value=" zip code" />
+				</div>
+				<button href="store.html" class="store-button-large">Find a Store</button>
+			</form>
+		</div>
+	</header>
+	<nav>
+		<button class="store-button-small">Find a Store</button>
+		<button class="menu">Menu</button>
+		<div class="container">
+			<ul>
+				<li><a href="ourstory.html">Our Story</a></li>
+				<li><a href="ourculture.html">Our Culture</a></li>
+				<li><a href="ourfood.html">Our Food</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
+	<section class="highlight recipe-feature">
+		<div class="container">
+			<h4>Recipes</h4>
+			<div class="highlight-photo">
+				<img src="assets/featuredrecipe.jpg" alt="Marsala Rice Bowl with Garbanzo Beans">
+				<div class="highlight-header"><h1>Masala Rice Bowl with Garbanzo Beans</h1></div>
+			</div>
+				<div class="highlight-copy">
+					<ul>
+						<li>Serves: 3</li>
+						<li>Prep Time: 10 Minutes</li>
+						<li>Cooking Time: 30 Minutes</li>
+						<li><a href="#">Get the Recipe</a></li>
+					</ul>
+			</div>
+		</div>
+	</section>
+	<section class="recipe-nav">
+		<div class="container">
+			<ul>
+				<li><a href="#">Appetizers and Sides</a></li>
+				<li><a href="#">Beverages</a></li>
+				<li><a href="#">Breakfast</a></li>
+				<li><a href="#">Lunch</a></li>
+				<li><a href="#">Dinner</a></li>
+				<li><a href="#">Desserts</a></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="footer-copy">
+				<h3>Questions</h3>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="contact.html/#faq">FAQs</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+				</ul>
+			</div>
+			<div class="footer-copy">
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="ourstory.html">Our Story</a></li>
+					<li><a href="ourculture.html">Our Culture</a></li>
+					<li><a href="ourfood.html">Our Food</a></li>
+					<li><a href="flyer.html">Fearless Flyer</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+			<div class="footer-copy">
+				<h3>Legal Stuff</h3>
+				<ul>
+					<li><a href="terms-of-use.html">Terms of Use</a></li>
+					<li><a href="privacy-policy.html">	Privacy Policy</a></li>
+					<li><a href="transparency-act.html">Transparency in Supply Chains Act</a></li>
+				</ul>
+			</div>
+			<div class="footer-copy">
+				<h3>Fearless Flyer E-Newsletter</h3>
+				<form class="newsletter" action="/fearless-flyer-database" method="post">
+					<input class="email" type="email" id="mail" value=" email address" />
+					<input class="zip" type="zip-code" id="zip"  value=" zip code" />
+					<button type="submit">Sign Up!</button>
+				</form>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
