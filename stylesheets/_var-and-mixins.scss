@@ -59,6 +59,54 @@ $color-light: #FFFFFF;
 	max-width: 260px;
 }
 
+
+@mixin highlight {
+margin: 50px 0;
+
+	.highlight-header {
+	@include header-wrapper ($primary-color-3);
+	max-width: 180px;
+	top: -50px;
+	z-index: 1;
+	margin: 0 auto;
+	}
+	.highlight-photo img {	
+	width: 100%;
+	}
+}
+
+@mixin highlight-38em($photo-width) {
+	.highlight {
+	max-width: 550px;
+	margin: 50px auto;
+	}
+	.highlight-photo{
+	max-width: $photo-width;
+	margin: 0 auto;
+	}
+	.highlight-copy p {
+	margin: 0 auto;
+	}
+}
+@mixin highlight-60em {
+.highlight {
+max-width: none;
+margin: 50px 0;
+}
+
+.highlight-photo {
+width: 48%;
+float: left;
+}
+
+.highlight-copy { 
+width: 48%;
+margin-left: 4%;
+float: left;
+margin-top: 50px;
+}
+}
+
 @mixin p-font($color){
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
@@ -122,3 +170,4 @@ $color-light: #FFFFFF;
 	height: $height;
 	@include p-font (#999999);
 }
+

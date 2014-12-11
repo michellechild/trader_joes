@@ -1,0 +1,14 @@
+
+.food {
+	.highlight-header {
+		max-width: 250px;
+		top: -20px;
+		h1{
+		font-size: 30px;
+		}
+	}
+	h4 {
+		@include h4-font($color-dark, 200px);
+		margin: 0;
+	}
+}

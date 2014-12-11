@@ -118,6 +118,21 @@ a {
     text-decoration: none;
     color: #008d9a; }
 
+.highlight {
+  margin: 50px 0; }
+  .highlight .highlight-header {
+    background-color: #008d9a;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 0 auto;
+    max-width: 260px;
+    max-width: 180px;
+    top: -50px;
+    z-index: 1;
+    margin: 0 auto; }
+  .highlight .highlight-photo img {
+    width: 100%; }
+
 header {
   background-color: #D70B43;
   width: 100%;
@@ -250,25 +265,9 @@ nav li {
 .h2-wrapper.double {
   top: -100px; }
 
-.story {
-  margin: 50px 0; }
-
-.story-header {
-  background-color: #008d9a;
-  padding: 5px;
-  border-radius: 10px;
-  margin: 0 auto;
-  max-width: 260px;
-  max-width: 180px;
-  top: -50px;
-  z-index: 1;
-  margin: 0 auto; }
-
-.story-photo img {
-  width: 100%;
+.story img {
   border: 10px solid #008d9a; }
-
-.story-copy p:nth-of-type(2) {
+.story p:nth-of-type(2) {
   margin-top: 30px; }
 
 .story-value {
@@ -450,6 +449,22 @@ nav li {
   margin: -50px 2% 50px 2%; }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
+.food .highlight-header {
+  max-width: 250px;
+  top: -20px; }
+  .food .highlight-header h1 {
+    font-size: 30px; }
+.food h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23;
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 0; }
+
 footer {
   clear: both;
   background-color: #462D23;
@@ -595,12 +610,13 @@ footer {
     margin-left: 0; }
 
   /* 38em Story */
-  .story {
+  .story .highlight {
     max-width: 550px;
     margin: 50px auto; }
-
-  .story-photo img {
+  .story .highlight-photo {
     max-width: 480px;
+    margin: 0 auto; }
+  .story .highlight-copy p {
     margin: 0 auto; }
 
   .story-value {
@@ -645,6 +661,21 @@ footer {
     float: left;
     margin: 0; }
 
+  /* 38em Food */
+  .food .highlight {
+    max-width: none;
+    margin: 50px 0; }
+  .food .highlight-photo {
+    width: 48%;
+    float: left; }
+  .food .highlight-copy {
+    width: 48%;
+    margin-left: 4%;
+    float: left;
+    margin-top: 50px; }
+  .food img {
+    max-width: 355px; }
+
   /* 38em Footer */
   .footer-copy {
     width: 48%;
@@ -673,11 +704,12 @@ footer {
   nav li {
     margin-left: 60px; }
 
-  /* 60em Index */
+  /* 60em full width photos */
   .mural {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
 
+  /* 60em Boxes */
   .box-wrapper {
     width: 32%;
     float: left;
@@ -690,17 +722,15 @@ footer {
     margin-left: 0; }
 
   /* 60em Story */
-  .story {
+  .story .highlight {
     max-width: none;
     margin: 50px 0; }
-
-  .story-photo {
-    width: 45%;
+  .story .highlight-photo {
+    width: 48%;
     float: left; }
-
-  .story-copy {
-    width: 50%;
-    margin-left: 5%;
+  .story .highlight-copy {
+    width: 48%;
+    margin-left: 4%;
     float: left;
     margin-top: 50px; }
 

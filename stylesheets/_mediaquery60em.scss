@@ -20,12 +20,15 @@ nav li {
 margin-left: 60px;
 }
 
-/* 60em Index */
+/* 60em full width photos */
 
 .mural {
 background-image:url(../assets/mural_large.jpg);
 min-height: 550px;
 }
+
+
+/* 60em Boxes */
 
 .box-wrapper {
 	width: 32%;
@@ -43,21 +46,9 @@ min-height: 550px;
 
 
 /* 60em Story */
+
 .story {
-	max-width: none;
-	margin: 50px 0;
-}
-
-.story-photo {
-width: 45%;
-float: left;
-}
-
-.story-copy { 
-width: 50%;
-margin-left: 5%;
-float: left;
-margin-top: 50px;
+	@include highlight-60em;
 }
 
 .story-value {

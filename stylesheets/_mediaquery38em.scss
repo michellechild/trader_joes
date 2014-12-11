@@ -72,14 +72,8 @@ min-height: 450px;
 }
 
 /* 38em Story */
-
 .story {
-max-width: 550px;
-margin: 50px auto;
-}
-.story-photo img{
-max-width: 480px;
-margin: 0 auto;
+@include highlight-38em(480px);
 }
 
 .story-value {
@@ -139,6 +133,16 @@ width: 50%;
 float: left;
 margin: 0;
 } 
+
+
+/* 38em Food */
+
+.food {
+@include highlight-60em;
+img {
+	max-width: 355px;
+}
+}
 
 /* 38em Footer */
 
