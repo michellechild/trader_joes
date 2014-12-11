@@ -1,34 +1,36 @@
 .story {
-	padding: 50px 0;
-	max-width: 550px;
-	margin: 0 auto;
+margin: 50px 0;
 }
 
 .story-header {
-	@include header-wrapper ($primary-color-3);
-	bottom: -25px;
-	max-width: 180px;
-	z-index: 1;
+@include header-wrapper ($primary-color-3);
+max-width: 180px;
+top: -50px;
+z-index: 1;
+margin: 0 auto;
 }
 
-.story-photo {	
-	img {	
-	width: 100%;
+.story-photo img {	
+width: 100%;
+border: 10px solid $primary-color-3;
 	}
-}
-.story-copy p { 
-	margin-top: 30px;
+
+.story-copy p:nth-of-type(2) {
+margin-top: 30px;
 }
 
 .story-value {
-	clear: both;
-	@include div-bg($primary-color-2);
-	background-color: lighten($primary-color-2, 10%);
-	padding: 50px 0;
+@include div-bg($primary-color-2);
+background-color: lighten($primary-color-2, 10%);
+padding: 50px 0;
 
+	h4 {
+		@include h4-font($color-dark, 340px);
+		margin: 0;
+	}
 
 	p, ul {
-	margin-bottom: 30px;
+	margin-top: 30px;
 	}
 
 	li {
@@ -44,13 +46,17 @@
 	font-size: 19px;
 	}
 	li:first-of-type {
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 	}
 	li:last-of-type {
 	margin-top: 30px;
 	}
 }
 
+.timeline h4 {
+@include h4-font($color-dark, 200px);
+margin: 50px 0;
+}
 
 .y1960s, .y1990s {
 	@include button-style($color-dark, $primary-color-2);
@@ -75,28 +81,32 @@
 }
 
 .content-1960s {
-	display: none;
+display: none;
 
-		img { 
-		border: $primary-color-3 solid 1px;
-		float: left;
-		margin-right: 2%;
-		margin-bottom: 20px;
-		display: inline-block;
-		}
-		
-		img:first-of-type {
-			margin-left: 0;
-		}
-
-		h3 {
-			@include h3-font($color-dark);
-			margin-top: 30px;
-			clear: left;
-		}
-
-		p {
-			margin-bottom: 30px;
-			clear: left;
-		}	
+	h4 {
+	@include h4-font ($primary-color-3, 400px);
+	margin-bottom: 30px;
 	}
+
+	img { 
+	border: $primary-color-3 solid 1px;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+	display: inline-block;
+	}
+
+	img:first-of-type {
+	margin-left: 0;
+	}
+
+	h3 {
+	@include h3-font($color-dark);
+	margin-top: 30px;
+	clear: left;
+	}
+
+	p {
+	margin-bottom: 30px;
+	}	
+}

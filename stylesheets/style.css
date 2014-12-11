@@ -89,16 +89,6 @@ h3 {
   font-style: normal;
   color: #FFFFFF; }
 
-h4 {
-  font-family: "hooligan" "arial-black" "arial" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
-  color: #462D23;
-  margin: 30px auto;
-  max-width: 600px; }
-
 nav li a {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   font-size: 30px;
@@ -160,7 +150,7 @@ header {
     text-decoration: underline;
     text-decoration-color: #FFFFFF; }
 
-.store-button-1 {
+.store-button-small, .store-button-large {
   font-family: "freight-micro-pro" "rockwell" "serif";
   padding: 10px;
   font-size: 1.7em;
@@ -174,11 +164,11 @@ header {
   outline: none;
   text-decoration: none;
   text-align: center; }
-  .store-button-1:hover {
+  .store-button-small:hover, .store-button-large:hover {
     text-decoration: underline;
     text-decoration-color: #462D23; }
 
-.menu, .store-button-1 {
+.menu, .store-button-small {
   width: 100%;
   text-align: left;
   padding: 10px;
@@ -186,7 +176,7 @@ header {
   border-radius: 0;
   font-size: 2em; }
 
-.store-button-2, .store-zip {
+.store-button-large, .store-zip {
   display: none; }
 
 nav {
@@ -214,7 +204,7 @@ nav li {
 
 .intro {
   background-color: #9d0831;
-  padding: 50px 20px;
+  padding: 30px;
   margin: 0 auto; }
   .intro p {
     font-family: "freight-micro-pro" "rockwell" "serif";
@@ -227,6 +217,28 @@ nav li {
     font-size: 23px;
     margin-top: 50px; }
 
+.index-boxes h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23;
+  margin: 0 auto;
+  max-width: 400px;
+  margin: 50px auto; }
+
+.box {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  background-color: #462D23; }
+
+.box-wrapper:first-of-type {
+  margin-top: 50px; }
+
 .h2-wrapper {
   background-color: #D70B43;
   padding: 5px;
@@ -238,24 +250,8 @@ nav li {
 .h2-wrapper.double {
   top: -100px; }
 
-.box {
-  height: 300px;
-  background-color: #462D23;
-  margin: 0 auto;
-  display: block;
-  max-width: 300px;
-  width: 100%; }
-
-.box-wrapper {
-  width: 100%; }
-
-.box-wrapper:first-of-type {
-  margin-top: 50px; }
-
 .story {
-  padding: 50px 0;
-  max-width: 550px;
-  margin: 0 auto; }
+  margin: 50px 0; }
 
 .story-header {
   background-color: #008d9a;
@@ -263,24 +259,35 @@ nav li {
   border-radius: 10px;
   margin: 0 auto;
   max-width: 260px;
-  bottom: -25px;
   max-width: 180px;
-  z-index: 1; }
+  top: -50px;
+  z-index: 1;
+  margin: 0 auto; }
 
 .story-photo img {
-  width: 100%; }
+  width: 100%;
+  border: 10px solid #008d9a; }
 
-.story-copy p {
+.story-copy p:nth-of-type(2) {
   margin-top: 30px; }
 
 .story-value {
-  clear: both;
   background-color: #FAF82A;
   width: 100%;
   background-color: #fbfa5c;
   padding: 50px 0; }
+  .story-value h4 {
+    font-family: "hooligan" "arial-black" "arial" "sans-serif";
+    line-height: 1.6;
+    font-size: 4.5em;
+    font-weight: 600;
+    font-style: normal;
+    color: #462D23;
+    margin: 0 auto;
+    max-width: 340px;
+    margin: 0; }
   .story-value p, .story-value ul {
-    margin-bottom: 30px; }
+    margin-top: 30px; }
   .story-value li {
     font-size: 18px;
     list-style-type: disc;
@@ -291,9 +298,20 @@ nav li {
     margin-left: 0;
     font-size: 19px; }
   .story-value li:first-of-type {
-    margin-bottom: 10px; }
+    margin-bottom: 30px; }
   .story-value li:last-of-type {
     margin-top: 30px; }
+
+.timeline h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23;
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 50px 0; }
 
 .y1960s, .y1990s {
   font-family: "freight-micro-pro" "rockwell" "serif";
@@ -360,6 +378,16 @@ nav li {
 
 .content-1960s {
   display: none; }
+  .content-1960s h4 {
+    font-family: "hooligan" "arial-black" "arial" "sans-serif";
+    line-height: 1.6;
+    font-size: 4.5em;
+    font-weight: 600;
+    font-style: normal;
+    color: #008d9a;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 30px; }
   .content-1960s img {
     border: #008d9a solid 1px;
     float: left;
@@ -378,15 +406,14 @@ nav li {
     margin-top: 30px;
     clear: left; }
   .content-1960s p {
-    margin-bottom: 30px;
-    clear: left; }
+    margin-bottom: 30px; }
 
 .culture-photo {
   background-color: #fcfb8e;
   width: 100%;
   min-height: 300px; }
 
-.culture-header {
+.culture-h1 {
   background-color: #008d9a;
   padding: 5px;
   border-radius: 10px;
@@ -403,8 +430,18 @@ nav li {
   font-style: normal;
   max-width: 550px;
   color: #462D23;
-  margin: 30px auto;
-  max-width: 600px; }
+  margin: 30px auto; }
+
+.culture-wrapper h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #462D23;
+  margin: 0 auto;
+  max-width: none;
+  margin: 30px 0; }
 
 .culture-box {
   margin-bottom: 30px; }
@@ -412,6 +449,7 @@ nav li {
 .culture-copy {
   margin: -50px 2% 50px 2%; }
 
+/* Box, h2-wrapper, and double are styled in index.scss page */
 footer {
   clear: both;
   background-color: #462D23;
@@ -485,7 +523,7 @@ footer {
   .logo-med {
     display: block; }
 
-  .store-button-1, .menu {
+  .store-button-small, .menu {
     display: none; }
 
   .store {
@@ -503,7 +541,7 @@ footer {
       max-width: 550px;
       color: #999999; }
 
-  .store-button-2 {
+  .store-button-large {
     font-family: "freight-micro-pro" "rockwell" "serif";
     padding: 10px;
     font-size: 1.7em;
@@ -521,7 +559,7 @@ footer {
     margin-bottom: 10px;
     float: right;
     display: inline-block; }
-    .store-button-2:hover {
+    .store-button-large:hover {
       text-decoration: underline;
       text-decoration-color: #462D23; }
 
@@ -534,14 +572,10 @@ footer {
   nav li:first-of-type {
     margin-left: 0; }
 
+  /* 38em Index */
   .mural {
     background-image: url(../assets/mural_medium.jpg);
     min-height: 450px; }
-
-  /* 38em Home */
-  .index-h4 {
-    margin: 0 auto 70px auto;
-    max-width: 400px; }
 
   .intro {
     top: -100px;
@@ -561,20 +595,18 @@ footer {
     margin-left: 0; }
 
   /* 38em Story */
-  .story-header {
-    margin-left: 5%; }
+  .story {
+    max-width: 550px;
+    margin: 50px auto; }
 
   .story-photo img {
-    max-width: 480px; }
+    max-width: 480px;
+    margin: 0 auto; }
 
-  .story-value h4 {
-    margin: 0 0 30px 0; }
-
-  .subpage-intro {
-    top: -50px;
+  .story-value {
+    max-width: 600px;
     border-radius: 10px;
-    padding: 20px;
-    max-width: 550px; }
+    margin: 0 auto; }
 
   .timeline-buttons {
     display: none; }
@@ -589,25 +621,24 @@ footer {
 
   .content-1960s {
     display: block; }
-    .content-1960s h4 {
-      margin: 0 0 30px 0;
-      color: #008d9a; }
 
   /* 38em Culture */
   .culture-wrapper {
     overflow: hidden; }
     .culture-wrapper h4 {
-      margin: 30px 0; }
+      margin: 30px 0;
+      max-width: none; }
+    .culture-wrapper .box {
+      margin: 0; }
 
   .culture-box {
     display: block;
     width: 45%;
     margin-right: 5%;
     margin-bottom: 0;
-    float: left;
-    max-width: 325px; }
+    float: left; }
     .culture-box h2 {
-      font-size: 30px; }
+      max-width: 300px; }
 
   .culture-copy {
     width: 50%;
@@ -642,35 +673,11 @@ footer {
   nav li {
     margin-left: 60px; }
 
+  /* 60em Index */
   .mural {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
 
-  /* 60em Story */
-  .story {
-    max-width: 1000px; }
-
-  .story-photo {
-    width: 45%;
-    float: left;
-    max-height: 400px; }
-
-  .story-copy {
-    width: 50%;
-    margin-left: 5%;
-    float: left;
-    margin-top: 35px; }
-
-  .story-value p {
-    width: 45%;
-    float: left; }
-
-  .story-value ul {
-    width: 50%;
-    float: left;
-    margin-left: 5%; }
-
-  /* 60em Boxes */
   .box-wrapper {
     width: 32%;
     float: left;
@@ -681,6 +688,31 @@ footer {
 
   .box-wrapper:nth-of-type(3n+1) {
     margin-left: 0; }
+
+  /* 60em Story */
+  .story {
+    max-width: none;
+    margin: 50px 0; }
+
+  .story-photo {
+    width: 45%;
+    float: left; }
+
+  .story-copy {
+    width: 50%;
+    margin-left: 5%;
+    float: left;
+    margin-top: 50px; }
+
+  .story-value {
+    max-width: 850px; }
+
+  /* 60em Culture */
+  .culture-box {
+    width: 30%; }
+
+  .culture-copy {
+    width: 65%; }
 
   /* 60em Footer */
   .footer-copy {

@@ -1,26 +1,31 @@
 .culture-photo {
-	background-color: lighten($primary-color-2, 20%);
-	width: 100%;
-	min-height: 300px;
+background-color: lighten($primary-color-2, 20%);
+width: 100%;
+min-height: 300px;
 }
 
-.culture-header {
-	@include header-wrapper ($primary-color-3);
-	top: -50px;
-	max-width: 200px;
+.culture-h1 {
+@include header-wrapper ($primary-color-3);
+top: -50px;
+max-width: 200px;
 }
 
 .culture-intro p { 
-	@include p-font ($color-dark);
-	margin: 30px auto;
-	max-width: 600px;
+@include p-font ($color-dark);
+margin: 30px auto;
+}
 
+.culture-wrapper h4 {
+@include h4-font($color-dark, none);
+margin: 30px 0;
 }
 
 .culture-box {
-		margin-bottom: 30px;
+margin-bottom: 30px;
 }
 
 .culture-copy{
-	margin: -50px 2% 50px 2%;
+margin: -50px 2% 50px 2%;
 }
+
+/* Box, h2-wrapper, and double are styled in index.scss page */

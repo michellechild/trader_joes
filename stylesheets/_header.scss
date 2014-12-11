@@ -18,11 +18,11 @@ header {
 	@include button-style($color-light, $color-dark);
 }
 
-.store-button-1 {
+.store-button-small, .store-button-large{
 	@include button-style($color-dark, $primary-color-2);
 }
 
-.menu, .store-button-1 {
+.menu, .store-button-small {
 	width: 100%;
 	text-align: left;
 	padding: 10px;
@@ -32,7 +32,7 @@ header {
 }
 
 
-.store-button-2, .store-zip { 
+.store-button-large, .store-zip { 
 	display: none;
 }
 

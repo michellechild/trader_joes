@@ -40,15 +40,15 @@ $color-light: #FFFFFF;
 	color: $color;
 }
 
-@mixin h4-font($color){
+@mixin h4-font($color, $width){
 	font-family: "hooligan" "arial-black" "arial" "sans-serif";	
 	line-height: 1.6;
 	font-size: 4.5em;
 	font-weight: 600;
 	font-style: normal;
 	color: $color;
-	margin: 30px auto;
-	max-width: 600px;
+	margin: 0 auto;
+	max-width: $width;
 }
 
 @mixin header-wrapper($color) {

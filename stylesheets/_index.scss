@@ -6,10 +6,9 @@
 	min-height: 300px;
 }
 
-
 .intro {
 	background-color: darken($primary-color-1, 12%);
-	padding: 50px 20px;
+	padding: 30px;
 	margin: 0 auto;
 
 	p {	
@@ -19,34 +18,29 @@
 	}
 }
 
-h4 {
-	
+.index-boxes h4 {
+	@include h4-font ($color-dark, 400px);
+	margin: 50px auto;
+}
+
+.box {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 300px;
+	height: 300px;
+	background-color: $color-dark;
+}
+
+.box-wrapper:first-of-type {
+	margin-top: 50px;
 }
 
 .h2-wrapper {
 	@include header-wrapper ($primary-color-1);
 	top: -50px;
-
 }
-
 
 .h2-wrapper.double{
 	top: -100px;
-}
-
-.box {
-	height: 300px;
-	background-color: $color-dark;
-	margin: 0 auto;
-	display: block;
-	max-width: 300px;
-	width: 100%;
-}
-
-.box-wrapper {
-	width: 100%;
-}
-
-.box-wrapper:first-of-type {
-	margin-top: 50px;
 }

@@ -11,7 +11,7 @@
 		display: block;
 	}
 	
-	.store-button-1, .menu {
+	.store-button-small, .menu {
 		display: none;
 	}
 
@@ -22,7 +22,7 @@
 		}
 	}
 
-	.store-button-2 {
+	.store-button-large {
 	@include button-style($color-dark, $primary-color-2);
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -32,28 +32,24 @@
 
 
 	nav li {
-		display: inline-block;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		margin-left: 40px;
+	display: inline-block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-left: 40px;
 	}
 	
 	nav li:first-of-type {
 	margin-left: 0;
 	}
 
-	.mural {
-	background-image:url(../assets/mural_medium.jpg);
-	min-height: 450px;
-	}
+/* 38em Index */
 
-/* 38em Home */
-
-	
-.index-h4 {
-		margin: 0 auto 70px auto;
-		max-width: 400px;
+.mural {
+background-image:url(../assets/mural_medium.jpg);
+min-height: 450px;
 }
+
+
 .intro {
 	top: -100px;
 	border-radius: 10px;
@@ -77,78 +73,71 @@
 
 /* 38em Story */
 
-
-.story-header {
-	margin-left: 5%;
+.story {
+max-width: 550px;
+margin: 50px auto;
 }
-
 .story-photo img{
-	max-width: 480px;
+max-width: 480px;
+margin: 0 auto;
 }
 
-.story-value h4 {
-	margin: 0 0 30px 0;
-}
-
-.subpage-intro {
-	top: -50px;
-	border-radius: 10px;
-	padding: 20px;
-	max-width: 550px;
+.story-value {
+max-width: 600px;
+border-radius: 10px;
+margin: 0 auto;
 }
 
 .timeline-buttons {
-	display: none;
+display: none;
 }
 
 .timeline {
-	float: right;
-	width: 70%;
-	margin-left: 5%;
-	padding: 50px 0;
+float: right;
+width: 70%;
+margin-left: 5%;
+padding: 50px 0;
 
-	
 	h4 {
-		margin: 0 0 30px 0;
+	margin: 0 0 30px 0;
 	}
-
 }
 
 .content-1960s {
 	display: block;
-	h4 {
-		margin: 0 0 30px 0;
-		color: $primary-color-3;
-	}
 }
+
 /* 38em Culture */
 
-
 .culture-wrapper {
-	overflow: hidden;
+overflow: hidden;
+	
 	h4 {
-		margin: 30px 0;
+	margin: 30px 0;
+	max-width: none;
+	}
+
+	.box {
+	margin: 0;
 	}
 
 }
 .culture-box {
-	display: block;
-	width: 45%;
-	margin-right: 5%;
-	margin-bottom: 0;
-	float: left;
-	max-width: 325px; 
+display: block;
+width: 45%;
+margin-right: 5%;
+margin-bottom: 0;
+float: left;
 
 	h2{
-		font-size: 30px;
+	max-width: 300px;
 	}
-
 }
 
 .culture-copy{
-	width: 50%;
-	float: left;
-	margin: 0;
+width: 50%;
+float: left;
+margin: 0;
 } 
 
 /* 38em Footer */
