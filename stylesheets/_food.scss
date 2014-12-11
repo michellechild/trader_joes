@@ -1,5 +1,5 @@
 
-.food {
+.newfood, {
 	.highlight-header {
 		max-width: 250px;
 		top: -20px;
@@ -7,8 +7,46 @@
 		font-size: 30px;
 		}
 	}
+
+	h4 {
+		@include h4-font($primary-color-1, 200px);
+		margin: 0;
+	}
+}
+
+.food {
+	margin: 50px 0;
+	max-width: 550px;
+
+	h4 {
+	@include h4-font($color-dark, 200px);
+	margin: 50px 0 0 0;
+	}
+
+	h3 {
+	color: $primary-color-1;
+	margin: 20px 0;
+	}
+}
+
+.tj-label {
+	display: block;
+	margin-bottom: 20px;
+	background-color: $color-dark;
+	width: 30%;
+	height: 72px;
+	margin-left: 3.3333%;
+	float: left;
+
+}
+
+.tj-label:nth-of-type(3n+1){
+	margin-left: 0;
+}
+
+.food-boxes {
 	h4 {
 		@include h4-font($color-dark, 200px);
-		margin: 0;
+		margin: 50px 0;
 	}
 }

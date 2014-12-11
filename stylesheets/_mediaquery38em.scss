@@ -137,13 +137,20 @@ margin: 0;
 
 /* 38em Food */
 
-.food {
+.newfood {
 @include highlight-60em;
-img {
+	img {
 	max-width: 355px;
-}
+	}
 }
 
+.food {
+	margin: 0 auto;
+}
+
+.food-boxes h4 {
+	margin: 50px auto;
+}
 /* 38em Footer */
 
 .footer-copy {

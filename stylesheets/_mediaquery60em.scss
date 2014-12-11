@@ -85,6 +85,31 @@ width: 30%;
 width: 65%;
 } 
 
+/* 60em Food */
+.newfood {
+
+	.highlight-photo {
+	width: 30%;
+	}
+
+	.highlight-copy{
+	width: 65%;
+	} 
+}
+
+.food {
+width: 48%;
+float: left;
+margin-left: 4%;
+
+h4 {
+	margin: 0;
+}
+}
+
+.food:first-of-type {
+	margin-left: 0;
+}
 /* 60em Footer */
 
 .footer-copy {

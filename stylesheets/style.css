@@ -449,12 +449,52 @@ nav li {
   margin: -50px 2% 50px 2%; }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
-.food .highlight-header {
+.newfood .highlight-header {
   max-width: 250px;
   top: -20px; }
-  .food .highlight-header h1 {
+  .newfood .highlight-header h1 {
     font-size: 30px; }
-.food h4 {
+.newfood h4 {
+  font-family: "hooligan" "arial-black" "arial" "sans-serif";
+  line-height: 1.6;
+  font-size: 4.5em;
+  font-weight: 600;
+  font-style: normal;
+  color: #D70B43;
+  margin: 0 auto;
+  max-width: 200px;
+  margin: 0; }
+
+.food {
+  margin: 50px 0;
+  max-width: 550px; }
+  .food h4 {
+    font-family: "hooligan" "arial-black" "arial" "sans-serif";
+    line-height: 1.6;
+    font-size: 4.5em;
+    font-weight: 600;
+    font-style: normal;
+    color: #462D23;
+    margin: 0 auto;
+    max-width: 200px;
+    margin: 50px 0 0 0; }
+  .food h3 {
+    color: #D70B43;
+    margin: 20px 0; }
+
+.tj-label {
+  display: block;
+  margin-bottom: 20px;
+  background-color: #462D23;
+  width: 30%;
+  height: 72px;
+  margin-left: 3.3333%;
+  float: left; }
+
+.tj-label:nth-of-type(3n+1) {
+  margin-left: 0; }
+
+.food-boxes h4 {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   line-height: 1.6;
   font-size: 4.5em;
@@ -463,7 +503,7 @@ nav li {
   color: #462D23;
   margin: 0 auto;
   max-width: 200px;
-  margin: 0; }
+  margin: 50px 0; }
 
 footer {
   clear: both;
@@ -662,19 +702,25 @@ footer {
     margin: 0; }
 
   /* 38em Food */
-  .food .highlight {
+  .newfood .highlight {
     max-width: none;
     margin: 50px 0; }
-  .food .highlight-photo {
+  .newfood .highlight-photo {
     width: 48%;
     float: left; }
-  .food .highlight-copy {
+  .newfood .highlight-copy {
     width: 48%;
     margin-left: 4%;
     float: left;
     margin-top: 50px; }
-  .food img {
+  .newfood img {
     max-width: 355px; }
+
+  .food {
+    margin: 0 auto; }
+
+  .food-boxes h4 {
+    margin: 50px auto; }
 
   /* 38em Footer */
   .footer-copy {
@@ -750,6 +796,22 @@ footer {
 
   .culture-copy {
     width: 65%; }
+
+  /* 60em Food */
+  .newfood .highlight-photo {
+    width: 30%; }
+  .newfood .highlight-copy {
+    width: 65%; }
+
+  .food {
+    width: 48%;
+    float: left;
+    margin-left: 4%; }
+    .food h4 {
+      margin: 0; }
+
+  .food:first-of-type {
+    margin-left: 0; }
 
   /* 60em Footer */
   .footer-copy {
