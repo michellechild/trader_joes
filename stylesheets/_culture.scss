@@ -12,7 +12,7 @@ max-width: 200px;
 
 .culture-intro p { 
 @include p-font ($color-dark);
-margin: 30px auto;
+margin: 0 auto 30px auto;
 }
 
 .culture-wrapper h4 {
