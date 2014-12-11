@@ -39,7 +39,9 @@ h4 {
 nav li a {
 	@include nav-link-style($color-light, $primary-color-3);
 }
-
+p, ul {
+  @include p-font($color-dark);
+}
 a {
 	@include link-style($color-light, $primary-color-3);
 }

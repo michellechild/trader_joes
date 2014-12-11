@@ -47,19 +47,33 @@
 	min-height: 450px;
 	}
 
-/* 38em Intro */
+/* 38em Home */
 
-	h4 {
+	
+.index-h4 {
 		margin: 0 auto 70px auto;
 		max-width: 400px;
-	}
-
-	.intro {
+}
+.intro {
 	top: -100px;
 	border-radius: 10px;
 	max-width: 570px;
 	padding: 30px 10px 50px 10px;
 	}
+
+.box-wrapper {
+	width: 46%;
+	float: left;
+	margin-left: 6%;
+}
+
+.box-wrapper:first-of-type {
+	margin-top: 0;
+}
+
+.box-wrapper:nth-of-type(odd)  {
+	margin-left: 0;
+}
 
 /* 38em Story */
 
@@ -107,23 +121,35 @@
 		color: $primary-color-3;
 	}
 }
+/* 38em Culture */
 
-/* 38em Boxes */
 
-.box-wrapper {
-	width: 46%;
+.culture-wrapper {
+	overflow: hidden;
+	h4 {
+		margin: 30px 0;
+	}
+
+}
+.culture-box {
+	display: block;
+	width: 45%;
+	margin-right: 5%;
+	margin-bottom: 0;
 	float: left;
-	margin-left: 6%;
+	max-width: 325px; 
+
+	h2{
+		font-size: 30px;
+	}
+
 }
 
-.box-wrapper:first-of-type {
-	margin-top: 0;
-}
-
-.box-wrapper:nth-of-type(odd)  {
-	margin-left: 0;
-}
-
+.culture-copy{
+	width: 50%;
+	float: left;
+	margin: 0;
+} 
 
 /* 38em Footer */
 

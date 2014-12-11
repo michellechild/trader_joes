@@ -112,6 +112,15 @@ nav li a {
     color: #008d9a;
     text-decoration: none; }
 
+p, ul {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.9em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 550px;
+  color: #462D23; }
+
 a {
   color: #FFFFFF;
   text-decoration: none; }
@@ -119,7 +128,6 @@ a {
     text-decoration: none;
     color: #008d9a; }
 
-/* GLOBAL Header / Nav */
 header {
   background-color: #D70B43;
   width: 100%;
@@ -219,46 +227,31 @@ nav li {
     font-size: 23px;
     margin-top: 50px; }
 
-/* GLOBAL Subpages */
-.subpage-photo {
-  background-color: #fcfb8e;
-  width: 100%;
-  min-height: 200px; }
-
-.subpage-intro {
-  background-color: #008d9a;
-  padding: 40px 20px;
+.h2-wrapper {
+  background-color: #D70B43;
+  padding: 5px;
+  border-radius: 10px;
   margin: 0 auto;
-  overflow: hidden; }
-  .subpage-intro p, .subpage-intro ul {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 550px;
-    color: #FFFFFF;
-    margin: 30px auto; }
-  .subpage-intro li {
-    list-style-type: disc;
-    list-style-position: outside;
-    margin-left: 30px; }
-  .subpage-intro a {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 550px;
-    color: #FFFFFF;
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 25px; }
-    .subpage-intro a:hover {
-      text-decoration: none;
-      color: #008d9a; }
+  max-width: 260px;
+  top: -50px; }
 
-/*Our Story*/
+.h2-wrapper.double {
+  top: -100px; }
+
+.box {
+  height: 300px;
+  background-color: #462D23;
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  width: 100%; }
+
+.box-wrapper {
+  width: 100%; }
+
+.box-wrapper:first-of-type {
+  margin-top: 50px; }
+
 .story {
   padding: 50px 0;
   max-width: 550px;
@@ -266,10 +259,11 @@ nav li {
 
 .story-header {
   background-color: #008d9a;
-  margin: 0 auto;
-  bottom: -25px;
-  padding: 5px 0;
+  padding: 5px;
   border-radius: 10px;
+  margin: 0 auto;
+  max-width: 260px;
+  bottom: -25px;
   max-width: 180px;
   z-index: 1; }
 
@@ -277,13 +271,6 @@ nav li {
   width: 100%; }
 
 .story-copy p {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 1.9em;
-  font-weight: 300;
-  font-style: normal;
-  max-width: 550px;
-  color: #462D23;
   margin-top: 30px; }
 
 .story-value {
@@ -293,13 +280,6 @@ nav li {
   background-color: #fbfa5c;
   padding: 50px 0; }
   .story-value p, .story-value ul {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 550px;
-    color: #462D23;
     margin-bottom: 30px; }
   .story-value li {
     font-size: 18px;
@@ -398,44 +378,40 @@ nav li {
     margin-top: 30px;
     clear: left; }
   .content-1960s p {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 550px;
-    color: #462D23;
     margin-bottom: 30px;
     clear: left; }
 
-/*Our Culture*/
-/* GLOBAL Boxes */
-.h2-wrapper {
-  background-color: #D70B43;
-  padding: 5px 0;
+.culture-photo {
+  background-color: #fcfb8e;
+  width: 100%;
+  min-height: 300px; }
+
+.culture-header {
+  background-color: #008d9a;
+  padding: 5px;
   border-radius: 10px;
+  margin: 0 auto;
+  max-width: 260px;
   top: -50px;
-  margin: 0 auto;
-  max-width: 230px; }
+  max-width: 200px; }
 
-.h2-wrapper.double {
-  top: -100px; }
+.culture-intro p {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.9em;
+  font-weight: 300;
+  font-style: normal;
+  max-width: 550px;
+  color: #462D23;
+  margin: 30px auto;
+  max-width: 600px; }
 
-.box {
-  height: 300px;
-  background-color: #462D23;
-  margin: 0 auto;
-  display: block;
-  max-width: 300px;
-  width: 100%; }
+.culture-box {
+  margin-bottom: 30px; }
 
-.box-wrapper {
-  width: 100%; }
+.culture-copy {
+  margin: -50px 2% 50px 2%; }
 
-.box-wrapper:first-of-type {
-  margin-top: 50px; }
-
-/* GLOBAL Footer */
 footer {
   clear: both;
   background-color: #462D23;
@@ -465,14 +441,7 @@ footer {
   margin-top: 40px;
   margin-bottom: 40px; }
   .footer-copy li {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 300;
-    font-style: normal;
-    max-width: 550px;
-    color: #FFFFFF;
-    font-size: 1.8em;
+    font-size: 18px;
     list-style-type: none; }
 
 .newsletter input.email {
@@ -569,8 +538,8 @@ footer {
     background-image: url(../assets/mural_medium.jpg);
     min-height: 450px; }
 
-  /* 38em Intro */
-  h4 {
+  /* 38em Home */
+  .index-h4 {
     margin: 0 auto 70px auto;
     max-width: 400px; }
 
@@ -579,6 +548,17 @@ footer {
     border-radius: 10px;
     max-width: 570px;
     padding: 30px 10px 50px 10px; }
+
+  .box-wrapper {
+    width: 46%;
+    float: left;
+    margin-left: 6%; }
+
+  .box-wrapper:first-of-type {
+    margin-top: 0; }
+
+  .box-wrapper:nth-of-type(odd) {
+    margin-left: 0; }
 
   /* 38em Story */
   .story-header {
@@ -613,17 +593,26 @@ footer {
       margin: 0 0 30px 0;
       color: #008d9a; }
 
-  /* 38em Boxes */
-  .box-wrapper {
-    width: 46%;
+  /* 38em Culture */
+  .culture-wrapper {
+    overflow: hidden; }
+    .culture-wrapper h4 {
+      margin: 30px 0; }
+
+  .culture-box {
+    display: block;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 0;
     float: left;
-    margin-left: 6%; }
+    max-width: 325px; }
+    .culture-box h2 {
+      font-size: 30px; }
 
-  .box-wrapper:first-of-type {
-    margin-top: 0; }
-
-  .box-wrapper:nth-of-type(odd) {
-    margin-left: 0; }
+  .culture-copy {
+    width: 50%;
+    float: left;
+    margin: 0; }
 
   /* 38em Footer */
   .footer-copy {
@@ -646,6 +635,9 @@ footer {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 20px; }
+
+  nav ul {
+    max-width: 700px; }
 
   nav li {
     margin-left: 60px; }

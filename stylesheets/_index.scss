@@ -1,0 +1,52 @@
+/* GLOBAL Index Page */
+
+.mural {
+	background-image:url(../assets/mural_small.jpg);
+	background-size: cover;
+	min-height: 300px;
+}
+
+
+.intro {
+	background-color: darken($primary-color-1, 12%);
+	padding: 50px 20px;
+	margin: 0 auto;
+
+	p {	
+	@include p-font($color-light);	
+	font-size: 23px;
+	margin-top: 50px;
+	}
+}
+
+h4 {
+	
+}
+
+.h2-wrapper {
+	@include header-wrapper ($primary-color-1);
+	top: -50px;
+
+}
+
+
+.h2-wrapper.double{
+	top: -100px;
+}
+
+.box {
+	height: 300px;
+	background-color: $color-dark;
+	margin: 0 auto;
+	display: block;
+	max-width: 300px;
+	width: 100%;
+}
+
+.box-wrapper {
+	width: 100%;
+}
+
+.box-wrapper:first-of-type {
+	margin-top: 50px;
+}

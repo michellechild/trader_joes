@@ -1,0 +1,46 @@
+header {
+	@include div-bg($primary-color-1);	
+	padding: 10px 0;
+}
+
+.logo {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	float: left; 
+	display: block;
+}
+
+.logo-med {
+	display:none;
+}
+
+.menu {
+	@include button-style($color-light, $color-dark);
+}
+
+.store-button-1 {
+	@include button-style($color-dark, $primary-color-2);
+}
+
+.menu, .store-button-1 {
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	padding-left: 7.5%;
+	border-radius: 0;
+	font-size: 2em;
+}
+
+
+.store-button-2, .store-zip { 
+	display: none;
+}
+
+nav {
+	background-color: $color-dark;
+}
+
+nav li {
+	@include nav-link-style($color-light, $primary-color-1);
+	display: none;
+}

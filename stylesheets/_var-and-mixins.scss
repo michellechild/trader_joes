@@ -51,6 +51,14 @@ $color-light: #FFFFFF;
 	max-width: 600px;
 }
 
+@mixin header-wrapper($color) {
+	background-color: $color;
+	padding: 5px;
+	border-radius: 10px;
+	margin: 0 auto;
+	max-width: 260px;
+}
+
 @mixin p-font($color){
 	font-family: "freight-micro-pro" "rockwell" "serif";
 	line-height: 1.6;
