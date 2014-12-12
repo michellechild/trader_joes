@@ -40,7 +40,8 @@ p, ul {
 
 a {
 	@include link-style($color-light, $primary-color-3);
-}
+  overflow: hidden;
+  }
 
 .highlight {
 @include highlight;

@@ -3,28 +3,34 @@
 
 /* 38em Header/Nav */
 	
-	.logo {
-		margin-top: 20px;
+.logo {
+margin-top: 20px;
+}
+
+.store-button-small, .menu {
+display: none;
+}
+	
+.store {
+float: right;
+	input {
+	@include input-style(113px, 45px);
+	}
+}
+
+.store-button-large {
+@include button-style($color-dark, $primary-color-2);
+margin-top: 10px;
+margin-bottom: 10px;
+float: right;
+display: inline-block;
+	
+	span {
+		font-size: .8em;
+		display: block;
+		letter-spacing: 0.2em;
 	}
 
-	.store-button-small, .menu {
-	display: none;
-	}
-
-	.store {
-	float: right;
-		input {
-		@include input-style(113px, 45px);
-		}
-	}
-
-	.store-button-large {
-	@include button-style($color-dark, $primary-color-2);
-	margin-top: 10px;
-	margin-bottom: 10px;
-	float: right;
-	display: inline-block;
-		
 	}
 
 
@@ -59,7 +65,7 @@ padding: 30px 10px 50px 10px;
 margin: 0 auto 100px auto;	
 }
 
-/* 60em Boxes */
+/* 38em Boxes */
 
 .box-wrapper {
 	width: 46%;

@@ -6,6 +6,7 @@
 	min-height: 300px;
 }
 
+
 .intro {
 	background-color: darken($primary-color-1, 10%);
 	padding: 50px 20px;
@@ -18,26 +19,102 @@
 	}
 }
 
-
-
 .index-box h4 {
 	@include h4-font ($color-dark, 400px);
 	margin: 50px auto;	
 }
 
-.box {
+.box-wrapper:first-of-type {
+margin-top: 50px;
+}
+
+.announcements, .flyer, .whatsnew, .events, .recipes, .holidays, .productstories, .guides, .lists {
 	display: block;
 	margin: 0 auto;
 	width: 100%;
 	max-width: 300px;
 	height: 300px;
 	border-radius: 15px;
+	background-repeat: no-repeat;
+	transition: all 1s ease;
+}
+
+
+
+.announcements {
+	background: linear-gradient(rgba(0, 141, 154, 0),rgba(0, 141, 154, 0)), url(../assets/dec-fearless-flyer.jpg);
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/dec-fearless-flyer.jpg); 
+	}
+}
+
+.whatsnew {
+background:url(../assets/newproduct.png) no-repeat;
+
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/newproduct.png) no-repeat; 
+	}
+}
+
+.flyer {
+background:url(../assets/dec-fearless-flyer.jpg);
+	
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/dec-fearless-flyer.jpg); 
+	}
 
 }
 
-.box-wrapper:first-of-type {
-	margin-top: 50px;
+.events {
+background:url(../assets/eventsandcontests.jpg);
+	
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/eventsandcontests.jpg); 
+	}
+
 }
+
+.recipes {
+background:url(../assets/recipes.jpg);
+	
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/recipes.jpg); 
+	}
+
+}
+
+.holidays {
+background:url(../assets/crostini-rootini-bar.jpg);
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/crostini-rootini-bar.jpg); 
+	}
+
+}
+
+.productstories {
+background:url(../assets/productstories.jpg);
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/productstories.jpg); 
+	}
+
+}
+
+.guides {
+background:url(../assets/build-a-better-snack.jpg);
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/build-a-better-snack.jpg); 
+	}
+
+}
+
+.lists {
+background:url(../assets/guide-to-fruits-and-veggies.jpg);
+	&:hover {
+	background: linear-gradient(rgba(0, 141, 154, 0.5),rgba(0, 141, 154, 0.9)),url(../assets/guide-to-fruits-and-veggies.jpg); 
+	}
+}
+
+
 
 .h2-wrapper {
 	@include header-wrapper ($primary-color-1, 250px);
