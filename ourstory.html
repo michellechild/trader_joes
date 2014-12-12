@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Trader Joe's</title>
-		<link href="stylesheets/style.css" type="text/css" rel="stylesheet">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="//use.typekit.net/fxv0szo.js"></script>
-		<script>try{Typekit.load();}catch(e){}</script>
-		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-	</head>
-	<body>
-		<header>
-			<div class="container">
-				<div class="logo">
-					<a href="index.html">
-						<img class="logo-small" src="assets/tj_logo_white.png" alt="Logo">
-						<img class="logo-med" src="assets/tj_logo_white_med.png" alt="Logo">
-					</a>
-				</div>
-				<form class="store" action="/store-locator" method="post">
-					<div class="store-zip">
-						<input type="zip-code" id="zip-code" value=" zip code" />
-					</div>
-					<button href="store.html" class="store-button-large">Find a Store</button>
-				</form>
+<head>
+	<title>Trader Joe's</title>
+	<link href="stylesheets/style.css" type="text/css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//use.typekit.net/fxv0szo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="logo">
+			<a href="index.html">
+			<img src="assets/tj_logo_white.svg" alt="Logo">
+			</a>
 			</div>
-		</header>
-		<nav>
-			<button class="store-button-small">Find a Store</button>
-			<button class="menu">Menu</button>
-			<div class="container">
-				<ul>
-					<li><a href="ourstory.html">Our Story</a></li>
-					<li><a href="ourculture.html">Our Culture</a></li>
-					<li><a href="ourfood.html">Our Food</a></li>
-					<li><a href="contact.html">Contact Us</a></li>
-				</ul>
-			</div>
-		</nav>
+			<form class="store" action="/store-locator" method="post">
+    			<div class="store-zip">
+        			<input type="text" id="zip-code" placeholder="zip code" />
+    			</div>
+				<a href="store.html" class="store-button-large">Find a Store</a>
+			</form>
+		</div>
+	</header>
+	<nav>
+		<button class="store-button-small">Find a Store</button>
+		<button class="menu">Menu</button>
+		<div class="container">
+			<ul>
+				<li><a href="ourstory.html">Our Story</a></li>
+				<li><a href="ourculture.html">Our Culture</a></li>
+				<li><a href="ourfood.html">Our Food</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</nav>
 		<section class="highlight story">
 			<div class="container">
 				<div class="highlight-photo">
@@ -52,7 +51,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="story-value">
+<!-- 		<section class="story-value">
 			<div class="container">
 				<h4>The Trader Joe’s ‘Value’</h4>
 				<p>“Value” is a concept we take very seriously. By ‘value’ we mean great everyday prices on all of our great products — no sales, no gimmicks, no clubs to join, no special cards to swipe...
@@ -66,10 +65,9 @@
 					<li>We keep our costs low — because every penny we save is a penny you save.</li>
 					<li class="story-value-last">It’s not complicated. We just focus on what matters — great food + great prices = Value.</li>
 				</ul>
-				<!--<img class="flourish" src="assets/flower.png" alt="flower">
-				<-->
+				<img class="flourish" src="assets/flower.png" alt="flower">
 			</div>
-		</section>
+		</section> -->
 		<section class="timeline">
 		<div class="container">
 			<h4>Timeline</h4>
@@ -97,43 +95,42 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="container">
-				<div class="footer-copy">
-					<h3>Questions</h3>
-					<ul>
-						<li><a href="contact.html">Contact Us</a></li>
-						<li><a href="contact.html/#faq">FAQs</a></li>
-						<li><a href="sitemap.html">Sitemap</a></li>
-					</ul>
-				</div>
-				<div class="footer-copy">
-					<h3>Menu</h3>
-					<ul>
-						<li><a href="ourstory.html">Our Story</a></li>
-						<li><a href="ourculture.html">Our Culture</a></li>
-						<li><a href="ourfood.html">Our Food</a></li>
-						<li><a href="flyer.html">Fearless Flyer</a></li>
-						<li><a href="contact.html">Contact Us</a></li>
-					</ul>
-				</div>
-				<div class="footer-copy">
-					<h3>Legal Stuff</h3>
-					<ul>
-						<li><a href="terms-of-use.html">Terms of Use</a></li>
-						<li><a href="privacy-policy.html">	Privacy Policy</a></li>
-						<li><a href="transparency-act.html">Transparency in Supply Chains Act</a></li>
-					</ul>
-				</div>
-				<div class="footer-copy">
-					<h3>Fearless Flyer E-Newsletter</h3>
-					<form class="newsletter" action="/fearless-flyer-database" method="post">
-						<input class="email" type="email" id="mail" value=" email address" />
-						<input class="zip" type="zip-code" id="zip"  value=" zip code" />
-						<button type="submit">Sign Up!</button>
-					</form>
-				</div>
+	<footer>
+		<div class="container">
+			<div class="footer-copy">
+				<h3>Questions</h3>
+				<ul>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="contact.html/#faq">FAQs</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>	
+				</ul>
 			</div>
-		</footer>
-	</body>
-</html>
+			 <div class="footer-copy">
+			<h3>Menu</h3>
+			<ul>
+				<li><a href="ourstory.html">Our Story</a></li>
+				<li><a href="ourculture.html">Our Culture</a></li>
+				<li><a href="ourfood.html">Our Food</a></li>
+				<li><a href="flyer.html">Fearless Flyer</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+			</div>
+			 <div class="footer-copy">
+				<h3>Legal Stuff</h3>
+				<ul>
+					<li><a href="terms-of-use.html">Terms of Use</a></li>
+					<li><a href="privacy-policy.html">	Privacy Policy</a></li>
+					<li><a href="transparency-act.html">Transparency in Supply Chains Act</a></li>
+				</ul>
+			</div>
+			<div class="footer-copy">			
+				<h3>Fearless Flyer E-Newsletter</h3>
+				<form class="newsletter" action="/fearless-flyer-database" method="post">
+        			<input class="email" type="email" id="mail" placeholder=" email address" />
+        			<input class="zip" type="text" id="zip"  placeholder=" zip code" />
+        			<button type="submit">Sign Up!</button>
+    			</form>
+			</div>
+		</div>
+	</footer>
+</body>

@@ -1,7 +1,8 @@
 
 .story {
+
 	img {
-		border: 10px solid $primary-color-3;
+	border-radius: 15px;
 	}
 
 	p:nth-of-type(2) {
@@ -9,39 +10,37 @@
 	}
 }
 
-.story-value {
-@include div-bg($primary-color-2);
-background-color: lighten($primary-color-2, 10%);
-padding: 50px 0;
+// .story-value {
+// padding: 50px 0;
 
-	h4 {
-		@include h4-font($color-dark, 340px);
-		margin: 0;
-	}
+// 	h4 {
+// 	@include h4-font($color-dark, 340px);
+// 	margin: 0;
+// 	}
 
-	p, ul {
-	margin-top: 30px;
-	}
+// 	p, ul {
+// 	margin-top: 30px;
+// 	}
 
-	li {
-	font-size: 18px;
-	list-style-type: disc;
-	list-style-position: outside;
-	margin-left: 20px;
-	}
+// 	li {
+// 	font-size: 18px;
+// 	list-style-type: disc;
+// 	list-style-position: outside;
+// 	margin-left: 20px;
+// 	}
 	
-	li:first-of-type, li:last-of-type {
-	list-style-type: none;
-	margin-left: 0;
-	font-size: 19px;
-	}
-	li:first-of-type {
-	margin-bottom: 30px;
-	}
-	li:last-of-type {
-	margin-top: 30px;
-	}
-}
+// 	li:first-of-type, li:last-of-type {
+// 	list-style-type: none;
+// 	margin-left: 0;
+// 	font-size: 19px;
+// 	}
+// 	li:first-of-type {
+// 	margin-bottom: 30px;
+// 	}
+// 	li:last-of-type {
+// 	margin-top: 30px;
+// 	}
+// }
 
 .timeline h4 {
 @include h4-font($color-dark, 200px);

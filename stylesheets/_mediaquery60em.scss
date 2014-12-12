@@ -22,7 +22,7 @@ margin-left: 60px;
 
 /* 60em full width photos */
 
-.mural {
+.fullwidth-photo {
 background-image:url(../assets/mural_large.jpg);
 min-height: 550px;
 }
@@ -101,10 +101,6 @@ width: 65%;
 width: 48%;
 float: left;
 margin-left: 4%;
-
-h4 {
-	margin: 0;
-}
 }
 
 .food:first-of-type {

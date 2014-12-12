@@ -12,6 +12,10 @@
 		@include h4-font($primary-color-1, 200px);
 		margin: 0;
 	}
+
+	a {
+	@include link-style ($color-dark, $primary-color-1);
+	}
 }
 
 .food {
@@ -26,6 +30,10 @@
 	h3 {
 	color: $primary-color-1;
 	margin: 20px 0;
+	}
+	
+	a{
+	@include link-style ($color-dark, $primary-color-1);
 	}
 }
 

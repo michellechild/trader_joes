@@ -14,15 +14,14 @@
 		<div class="container">
 			<div class="logo">
 			<a href="index.html">
-			<img class="logo-small" src="assets/tj_logo_white.png" alt="Logo">
-			<img class="logo-med" src="assets/tj_logo_white_med.png" alt="Logo">
+			<img src="assets/tj_logo_white.svg" alt="Logo">
 			</a>
 			</div>
 			<form class="store" action="/store-locator" method="post">
     			<div class="store-zip">
-        			<input type="zip-code" id="zip-code" value=" zip code" />
+        			<input type="text" id="zip-code" placeholder="zip code" />
     			</div>
-				<button href="store.html" class="store-button-large">Find a Store</button>
+				<a href="store.html" class="store-button-large">Find a Store</a>
 			</form>
 		</div>
 	</header>
@@ -38,7 +37,7 @@
 			</ul>
 		</div>
 	</nav>
-	<div class="mural"></div>
+	<div class="fullwidth-photo"></div>
 	<section class="intro">
 	<h1>Welcome to Trader Joe’s</h1>
 	<div  class="container">
@@ -47,7 +46,7 @@
 			 <-->
 	</div>	
 	</section>
-	<section class="index-boxes">
+	<section class="index-box">
 		<div class="container">
 			<h4>We've Got Lot’s to Share!</h4>
 			<div class="box-wrapper">
@@ -60,7 +59,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/dec-fearless-flyer.jpg" alt="Fearless Flyer">
 					<div class="h2-wrapper">
 						<h2>Fearless Flyer</h2>
 					</div>
@@ -68,7 +67,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/whatsnew.jpg" alt="What’s New?">
 					<div class="h2-wrapper">
 						<h2>What's New?</h2>
 					</div>
@@ -76,7 +75,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/eventsandcontests.jpg" alt="Events and Contests">
 					<div class="h2-wrapper double">
 						<h2>Events and Contests</h2>
 					</div>
@@ -84,7 +83,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/recipes.jpg" alt="Recipe">
 					<div class="h2-wrapper">
 						<h2>Recipes</h2>
 					</div>
@@ -92,7 +91,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/crostini-rootini-bar.jpg" alt="Holidays and Gatherings">
 					<div class="h2-wrapper double">
 						<h2>Holidays and Gatherings</h2>
 					</div>
@@ -100,7 +99,7 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">	
+					<img class="box" src="assets/productstories.jpg" alt="Product Stories">	
 					<div class="h2-wrapper">
 						<h2>Product Stories</h2>
 					</div>
@@ -108,15 +107,15 @@
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/build-a-better-snack.jpg" alt="Guides and How To’s">
 					<div class="h2-wrapper double">
-						<h2>Guides and How-to’s</h2>
+						<h2>Guides and<br>How-to’s</h2>
 					</div>
 				</a>
 			</div>
 			<div class="box-wrapper">
 				<a href="#">
-					<img class="box" src="" alt="">
+					<img class="box" src="assets/guide-to-fruits-and-veggies.jpg" alt="Guide to Fruit and Veggies">
 					<div class="h2-wrapper">
 						<h2>Dietary Lists</h2>
 					</div>
@@ -155,8 +154,8 @@
 			<div class="footer-copy">			
 				<h3>Fearless Flyer E-Newsletter</h3>
 				<form class="newsletter" action="/fearless-flyer-database" method="post">
-        			<input class="email" type="email" id="mail" value=" email address" />
-        			<input class="zip" type="zip-code" id="zip"  value=" zip code" />
+        			<input class="email" type="email" id="mail" placeholder=" email address" />
+        			<input class="zip" type="text" id="zip"  placeholder=" zip code" />
         			<button type="submit">Sign Up!</button>
     			</form>
 			</div>

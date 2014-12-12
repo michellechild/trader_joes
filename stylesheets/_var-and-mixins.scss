@@ -1,13 +1,8 @@
-$primary-color-1: #D70B43;
-$primary-color-2: #FAF82A;
+$primary-color-1: #D60D34;
+$primary-color-2: #fbf943;
 $primary-color-3: #008d9a;
 $color-dark: #462D23;
 $color-light: #FFFFFF;
-
-@mixin div-bg($bg-color) {
-	background-color: $bg-color;
-	width: 100%;
-}
 
 @mixin h1-font ($color) {
 	font-family: "hooligan" "arial-black" "arial" "sans-serif";
@@ -51,12 +46,89 @@ $color-light: #FFFFFF;
 	max-width: $width;
 }
 
-@mixin header-wrapper($color) {
-	background-color: $color;
-	padding: 5px;
-	border-radius: 10px;
-	margin: 0 auto;
-	max-width: 260px;
+@mixin p-font($color){
+font-family: "freight-micro-pro" "rockwell" "serif";
+line-height: 1.6;
+font-size: 1.9em;
+font-weight:400;
+font-style: normal;
+max-width: 550px;
+color: $color;
+}
+
+@mixin nav-link-style ($color, $color-hover){
+font-family: "hooligan" "arial-black" "arial" "sans-serif";
+font-size: 30px;
+line-height: 1;
+font-weight: 300;
+font-style: normal;
+color: $color;
+text-decoration: none; 
+display: block;
+
+	&:hover {
+		color: $color-hover;
+		text-decoration: none;
+		}
+}
+
+@mixin link-style ($color, $color-hover){
+color: $color;
+text-decoration: none; 
+	&:hover {
+		text-decoration: none;
+		color: $color-hover;
+	}
+}
+
+@mixin button-style ($color, $background-color){
+font-family: "freight-micro-pro" "rockwell" "serif";
+padding: 14px;
+font-size: 1.6em;
+line-height: 1;
+font-weight: 400;
+font-style: normal;
+color: $color;
+border-radius: 5px;
+background-color: $background-color;
+display: block;
+outline: none;
+text-decoration: none;
+text-align: center;
+
+	&:hover{
+	color: $color;
+	background-color: darken($background-color, 10%);
+	}
+}
+
+@mixin input-style ($width, $height){
+font-family: "freight-micro-pro" "rockwell" "serif";
+padding: 10px;
+font-size: 1.6em;
+line-height: 1;
+font-weight: 400;
+outline: none;
+border-radius: 5px;
+color: #999999;
+border: none;
+width: $width;
+height: $height;
+
+
+}
+@mixin header-wrapper($color, $max-width) {
+background-color: $color;
+padding: 10px;
+border-radius: 10px;
+margin: 0 auto;
+max-width: $max-width;
+}
+
+
+@mixin div-bg($bg-color) {
+	background-color: $bg-color;
+	width: 100%;
 }
 
 
@@ -64,8 +136,7 @@ $color-light: #FFFFFF;
 margin: 50px 0;
 
 	.highlight-header {
-	@include header-wrapper ($primary-color-3);
-	max-width: 180px;
+	@include header-wrapper ($primary-color-3, 180px);
 	top: -50px;
 	z-index: 1;
 	margin: 0 auto;
@@ -88,86 +159,24 @@ margin: 50px 0;
 	margin: 0 auto;
 	}
 }
+
 @mixin highlight-60em {
-.highlight {
-max-width: none;
-margin: 50px 0;
-}
+	.highlight {
+	max-width: none;
+	margin: 50px 0;
+	}
 
-.highlight-photo {
-width: 48%;
-float: left;
-}
+	.highlight-photo {
+	width: 48%;
+	float: left;
+	}
 
-.highlight-copy { 
-width: 48%;
-margin-left: 4%;
-float: left;
-margin-top: 50px;
-}
-}
-
-@mixin p-font($color){
-	font-family: "freight-micro-pro" "rockwell" "serif";
-	line-height: 1.6;
-	font-size: 1.9em;
-	font-weight:400;
-	font-style: normal;
-	max-width: 550px;
-	color: $color;
-}
-
-@mixin nav-link-style ($color, $color-hover){
-	font-family: "hooligan" "arial-black" "arial" "sans-serif";
-	font-size: 30px;
-	line-height: 1;
-	font-weight: 300;
-	font-style: normal;
-	color: $color;
-	text-decoration: none; 
-	display: block;
-
-	&:hover {
-		color: $color-hover;
-		text-decoration: none;
-		}
-}
-
-@mixin link-style ($color, $color-hover){
-	color: $color;
-	text-decoration: none; 
-	&:hover {
-		text-decoration: none;
-		color: $color-hover;
+	.highlight-copy { 
+	width: 48%;
+	margin-left: 4%;
+	float: left;
 	}
 }
 
-@mixin button-style ($color, $background-color){
-	font-family: "freight-micro-pro" "rockwell" "serif";
-	padding: 10px;
-	font-size: 1.7em;
-	line-height: 1.5;
-	font-weight: 400;
-	font-style: normal;
-	color: $color;
-	border-radius: 5px;
-	background-color: $background-color;
-	display: block;
-    outline: none;
-    text-decoration: none;
-    text-align: center;
 
-    &:hover {
-    text-decoration: underline;
-    text-decoration-color: $color;
-    }
-}
-
-@mixin input-style ($width, $height){
-	outline: none;
-	border-radius: 5px;
-	width: $width;
-	height: $height;
-	@include p-font (#999999);
-}
 

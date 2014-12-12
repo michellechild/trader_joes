@@ -23,7 +23,7 @@ footer {
 }
 
 .newsletter input.email {
-	@include input-style(200px, 40px);
+	@include input-style(180px, 40px);
 	margin-top: 20px;
 }
 

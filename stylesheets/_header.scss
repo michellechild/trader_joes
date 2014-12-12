@@ -1,46 +1,41 @@
 header {
-	@include div-bg($primary-color-1);	
-	padding: 10px 0;
+@include div-bg($primary-color-1);	
+padding: 10px 0;
 }
 
 .logo {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	float: left; 
-	display: block;
-}
-
-.logo-med {
-	display:none;
+margin-top: 10px;
+margin-bottom: 10px;
+float: left; 
+display: block;
 }
 
 .menu {
-	@include button-style($color-light, $color-dark);
+@include button-style($color-light, $color-dark);
 }
 
 .store-button-small, .store-button-large{
-	@include button-style($color-dark, $primary-color-2);
+@include button-style($color-dark, $primary-color-2);
 }
 
 .menu, .store-button-small {
-	width: 100%;
-	text-align: left;
-	padding: 10px;
-	padding-left: 7.5%;
-	border-radius: 0;
-	font-size: 2em;
+width: 100%;
+text-align: left;
+padding: 15px;
+padding-left: 7.5%;
+border-radius: 0;
 }
 
 
 .store-button-large, .store-zip { 
-	display: none;
+display: none;
 }
 
 nav {
-	background-color: $color-dark;
+background-color: $color-dark;
 }
 
 nav li {
-	@include nav-link-style($color-light, $primary-color-1);
-	display: none;
+@include nav-link-style($color-light, $primary-color-1);
+display: none;
 }

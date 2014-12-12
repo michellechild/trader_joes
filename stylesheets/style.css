@@ -122,10 +122,9 @@ a {
   margin: 50px 0; }
   .highlight .highlight-header {
     background-color: #008d9a;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    max-width: 260px;
     max-width: 180px;
     top: -50px;
     z-index: 1;
@@ -134,7 +133,7 @@ a {
     width: 100%; }
 
 header {
-  background-color: #D70B43;
+  background-color: #D60D34;
   width: 100%;
   padding: 10px 0; }
 
@@ -144,14 +143,11 @@ header {
   float: left;
   display: block; }
 
-.logo-med {
-  display: none; }
-
 .menu {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
+  padding: 14px;
+  font-size: 1.6em;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF;
@@ -162,34 +158,33 @@ header {
   text-decoration: none;
   text-align: center; }
   .menu:hover {
-    text-decoration: underline;
-    text-decoration-color: #FFFFFF; }
+    color: #FFFFFF;
+    background-color: #241712; }
 
 .store-button-small, .store-button-large {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
+  padding: 14px;
+  font-size: 1.6em;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: #462D23;
   border-radius: 5px;
-  background-color: #FAF82A;
+  background-color: #fbf943;
   display: block;
   outline: none;
   text-decoration: none;
   text-align: center; }
   .store-button-small:hover, .store-button-large:hover {
-    text-decoration: underline;
-    text-decoration-color: #462D23; }
+    color: #462D23;
+    background-color: #faf711; }
 
 .menu, .store-button-small {
   width: 100%;
   text-align: left;
-  padding: 10px;
+  padding: 15px;
   padding-left: 7.5%;
-  border-radius: 0;
-  font-size: 2em; }
+  border-radius: 0; }
 
 .store-button-large, .store-zip {
   display: none; }
@@ -208,18 +203,18 @@ nav li {
   display: block;
   display: none; }
   nav li:hover {
-    color: #D70B43;
+    color: #D60D34;
     text-decoration: none; }
 
 /* GLOBAL Index Page */
-.mural {
+.fullwidth-photo {
   background-image: url(../assets/mural_small.jpg);
   background-size: cover;
   min-height: 300px; }
 
 .intro {
-  background-color: #9d0831;
-  padding: 30px;
+  background-color: #a60a28;
+  padding: 50px 20px;
   margin: 0 auto; }
   .intro p {
     font-family: "freight-micro-pro" "rockwell" "serif";
@@ -229,10 +224,10 @@ nav li {
     font-style: normal;
     max-width: 550px;
     color: #FFFFFF;
-    font-size: 23px;
+    font-size: 21px;
     margin-top: 50px; }
 
-.index-boxes h4 {
+.index-box h4 {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   line-height: 1.6;
   font-size: 4.5em;
@@ -249,57 +244,27 @@ nav li {
   width: 100%;
   max-width: 300px;
   height: 300px;
-  background-color: #462D23; }
+  border-radius: 15px; }
 
 .box-wrapper:first-of-type {
   margin-top: 50px; }
 
 .h2-wrapper {
-  background-color: #D70B43;
-  padding: 5px;
+  background-color: #D60D34;
+  padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  max-width: 260px;
+  max-width: 250px;
+  background-color: #a60a28;
   top: -50px; }
 
 .h2-wrapper.double {
   top: -100px; }
 
 .story img {
-  border: 10px solid #008d9a; }
+  border-radius: 15px; }
 .story p:nth-of-type(2) {
   margin-top: 30px; }
-
-.story-value {
-  background-color: #FAF82A;
-  width: 100%;
-  background-color: #fbfa5c;
-  padding: 50px 0; }
-  .story-value h4 {
-    font-family: "hooligan" "arial-black" "arial" "sans-serif";
-    line-height: 1.6;
-    font-size: 4.5em;
-    font-weight: 600;
-    font-style: normal;
-    color: #462D23;
-    margin: 0 auto;
-    max-width: 340px;
-    margin: 0; }
-  .story-value p, .story-value ul {
-    margin-top: 30px; }
-  .story-value li {
-    font-size: 18px;
-    list-style-type: disc;
-    list-style-position: outside;
-    margin-left: 20px; }
-  .story-value li:first-of-type, .story-value li:last-of-type {
-    list-style-type: none;
-    margin-left: 0;
-    font-size: 19px; }
-  .story-value li:first-of-type {
-    margin-bottom: 30px; }
-  .story-value li:last-of-type {
-    margin-top: 30px; }
 
 .timeline h4 {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
@@ -314,45 +279,45 @@ nav li {
 
 .y1960s, .y1990s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
+  padding: 14px;
+  font-size: 1.6em;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: #462D23;
   border-radius: 5px;
-  background-color: #FAF82A;
+  background-color: #fbf943;
   display: block;
   outline: none;
   text-decoration: none;
   text-align: center; }
   .y1960s:hover, .y1990s:hover {
-    text-decoration: underline;
-    text-decoration-color: #462D23; }
+    color: #462D23;
+    background-color: #faf711; }
 
 .y1970s, .y2000s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
+  padding: 14px;
+  font-size: 1.6em;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF;
   border-radius: 5px;
-  background-color: #D70B43;
+  background-color: #D60D34;
   display: block;
   outline: none;
   text-decoration: none;
   text-align: center; }
   .y1970s:hover, .y2000s:hover {
-    text-decoration: underline;
-    text-decoration-color: #FFFFFF; }
+    color: #FFFFFF;
+    background-color: #a60a28; }
 
 .y1980s, .y2010s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.7em;
-  line-height: 1.5;
+  padding: 14px;
+  font-size: 1.6em;
+  line-height: 1;
   font-weight: 400;
   font-style: normal;
   color: #462D23;
@@ -363,8 +328,8 @@ nav li {
   text-decoration: none;
   text-align: center; }
   .y1980s:hover, .y2010s:hover {
-    text-decoration: underline;
-    text-decoration-color: #462D23; }
+    color: #462D23;
+    background-color: #005e67; }
 
 .y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
   width: 100%;
@@ -407,19 +372,13 @@ nav li {
   .content-1960s p {
     margin-bottom: 30px; }
 
-.culture-photo {
-  background-color: #fcfb8e;
-  width: 100%;
-  min-height: 300px; }
-
 .culture-h1 {
   background-color: #008d9a;
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  max-width: 260px;
-  top: -50px;
-  max-width: 200px; }
+  max-width: 200px;
+  top: -50px; }
 
 .culture-intro p {
   font-family: "freight-micro-pro" "rockwell" "serif";
@@ -431,7 +390,10 @@ nav li {
   color: #462D23;
   margin: 0 auto 30px auto; }
 
-.culture-wrapper h4 {
+.culture-wrapper {
+  margin-top: 50px; }
+
+.culture-copy h4 {
   font-family: "hooligan" "arial-black" "arial" "sans-serif";
   line-height: 1.6;
   font-size: 4.5em;
@@ -440,13 +402,10 @@ nav li {
   color: #462D23;
   margin: 0 auto;
   max-width: none;
-  margin: 30px 0; }
-
-.culture-box {
+  margin-top: -50px;
   margin-bottom: 30px; }
-
-.culture-copy {
-  margin: -50px 2% 50px 2%; }
+.culture-copy p {
+  margin-bottom: 50px; }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
 .newfood .highlight-header {
@@ -460,10 +419,16 @@ nav li {
   font-size: 4.5em;
   font-weight: 600;
   font-style: normal;
-  color: #D70B43;
+  color: #D60D34;
   margin: 0 auto;
   max-width: 200px;
   margin: 0; }
+.newfood a {
+  color: #462D23;
+  text-decoration: none; }
+  .newfood a:hover {
+    text-decoration: none;
+    color: #D60D34; }
 
 .food {
   margin: 50px 0;
@@ -479,8 +444,14 @@ nav li {
     max-width: 200px;
     margin: 50px 0 0 0; }
   .food h3 {
-    color: #D70B43;
+    color: #D60D34;
     margin: 20px 0; }
+  .food a {
+    color: #462D23;
+    text-decoration: none; }
+    .food a:hover {
+      text-decoration: none;
+      color: #D60D34; }
 
 .tj-label {
   display: block;
@@ -528,22 +499,22 @@ footer {
   padding-bottom: 100px; }
   footer button {
     font-family: "freight-micro-pro" "rockwell" "serif";
-    padding: 10px;
-    font-size: 1.7em;
-    line-height: 1.5;
+    padding: 14px;
+    font-size: 1.6em;
+    line-height: 1;
     font-weight: 400;
     font-style: normal;
     color: #462D23;
     border-radius: 5px;
-    background-color: #FAF82A;
+    background-color: #fbf943;
     display: block;
     outline: none;
     text-decoration: none;
     text-align: center;
     margin-top: 20px; }
     footer button:hover {
-      text-decoration: underline;
-      text-decoration-color: #462D23; }
+      color: #462D23;
+      background-color: #faf711; }
 
 .footer-copy {
   margin-top: 40px;
@@ -553,31 +524,31 @@ footer {
     list-style-type: none; }
 
 .newsletter input.email {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  padding: 10px;
+  font-size: 1.6em;
+  line-height: 1;
+  font-weight: 400;
   outline: none;
   border-radius: 5px;
-  width: 200px;
-  height: 40px;
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 1.9em;
-  font-weight: 400;
-  font-style: normal;
-  max-width: 550px;
   color: #999999;
+  border: none;
+  width: 180px;
+  height: 40px;
   margin-top: 20px; }
 
 .newsletter input.zip {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  padding: 10px;
+  font-size: 1.6em;
+  line-height: 1;
+  font-weight: 400;
   outline: none;
   border-radius: 5px;
+  color: #999999;
+  border: none;
   width: 100px;
   height: 40px;
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 1.9em;
-  font-weight: 400;
-  font-style: normal;
-  max-width: 550px;
-  color: #999999;
   margin-top: 20px;
   margin-right: 20px;
   display: block; }
@@ -587,11 +558,8 @@ footer {
 
 @media screen and (min-width: 38em) {
   /* 38em Header/Nav */
-  .logo-small {
-    display: none; }
-
-  .logo-med {
-    display: block; }
+  .logo {
+    margin-top: 20px; }
 
   .store-button-small, .menu {
     display: none; }
@@ -599,28 +567,28 @@ footer {
   .store {
     float: right; }
     .store input {
+      font-family: "freight-micro-pro" "rockwell" "serif";
+      padding: 10px;
+      font-size: 1.6em;
+      line-height: 1;
+      font-weight: 400;
       outline: none;
       border-radius: 5px;
-      width: 150px;
-      height: 40px;
-      font-family: "freight-micro-pro" "rockwell" "serif";
-      line-height: 1.6;
-      font-size: 1.9em;
-      font-weight: 400;
-      font-style: normal;
-      max-width: 550px;
-      color: #999999; }
+      color: #999999;
+      border: none;
+      width: 113px;
+      height: 45px; }
 
   .store-button-large {
     font-family: "freight-micro-pro" "rockwell" "serif";
-    padding: 10px;
-    font-size: 1.7em;
-    line-height: 1.5;
+    padding: 14px;
+    font-size: 1.6em;
+    line-height: 1;
     font-weight: 400;
     font-style: normal;
     color: #462D23;
     border-radius: 5px;
-    background-color: #FAF82A;
+    background-color: #fbf943;
     display: block;
     outline: none;
     text-decoration: none;
@@ -630,8 +598,8 @@ footer {
     float: right;
     display: inline-block; }
     .store-button-large:hover {
-      text-decoration: underline;
-      text-decoration-color: #462D23; }
+      color: #462D23;
+      background-color: #faf711; }
 
   nav li {
     display: inline-block;
@@ -643,9 +611,10 @@ footer {
     margin-left: 0; }
 
   /* 38em Index */
-  .mural {
+  .fullwidth-photo {
     background-image: url(../assets/mural_medium.jpg);
-    min-height: 450px; }
+    min-height: 450px;
+    border-bottom: 20px solid #008d9a; }
 
   .intro {
     top: -100px;
@@ -653,6 +622,10 @@ footer {
     max-width: 570px;
     padding: 30px 10px 50px 10px; }
 
+  .index-box h4 {
+    margin: 0 auto 100px auto; }
+
+  /* 60em Boxes */
   .box-wrapper {
     width: 46%;
     float: left;
@@ -666,18 +639,17 @@ footer {
 
   /* 38em Story */
   .story .highlight {
-    max-width: 550px;
-    margin: 50px auto; }
+    max-width: none;
+    margin: 50px 0; }
   .story .highlight-photo {
-    max-width: 480px;
-    margin: 0 auto; }
-  .story .highlight-copy p {
-    margin: 0 auto; }
-
-  .story-value {
-    max-width: 600px;
-    border-radius: 10px;
-    margin: 0 auto; }
+    width: 48%;
+    float: left; }
+  .story .highlight-copy {
+    width: 48%;
+    margin-left: 4%;
+    float: left; }
+  .story .highlight-photo {
+    max-width: 300px; }
 
   .timeline-buttons {
     display: none; }
@@ -696,11 +668,6 @@ footer {
   /* 38em Culture */
   .culture-wrapper {
     overflow: hidden; }
-    .culture-wrapper h4 {
-      margin: 30px 0;
-      max-width: none; }
-    .culture-wrapper .box {
-      margin: 0; }
 
   .culture-box {
     display: block;
@@ -715,6 +682,8 @@ footer {
     width: 50%;
     float: left;
     margin: 0; }
+    .culture-copy h4 {
+      margin-top: 0; }
 
   /* 38em Food */
   .newfood .highlight {
@@ -726,16 +695,19 @@ footer {
   .newfood .highlight-copy {
     width: 48%;
     margin-left: 4%;
-    float: left;
-    margin-top: 50px; }
+    float: left; }
   .newfood img {
     max-width: 355px; }
 
   .food {
     margin: 0 auto; }
+    .food h4 {
+      margin-top: 50px; }
+    .food h3 {
+      margin-top: 70px; }
 
   .food-boxes h4 {
-    margin: 50px auto; }
+    margin: 100px auto; }
 
   /* 38em Recipes */
   .recipe-feature .highlight {
@@ -747,8 +719,7 @@ footer {
   .recipe-feature .highlight-copy {
     width: 48%;
     margin-left: 4%;
-    float: left;
-    margin-top: 50px; }
+    float: left; }
   .recipe-feature img {
     max-width: 500px; }
 
@@ -781,7 +752,7 @@ footer {
     margin-left: 60px; }
 
   /* 60em full width photos */
-  .mural {
+  .fullwidth-photo {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
 
@@ -807,8 +778,7 @@ footer {
   .story .highlight-copy {
     width: 48%;
     margin-left: 4%;
-    float: left;
-    margin-top: 50px; }
+    float: left; }
 
   .story-value {
     max-width: 850px; }
@@ -837,8 +807,6 @@ footer {
     width: 48%;
     float: left;
     margin-left: 4%; }
-    .food h4 {
-      margin: 0; }
 
   .food:first-of-type {
     margin-left: 0; }
