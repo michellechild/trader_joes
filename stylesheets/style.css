@@ -64,7 +64,7 @@ html {
 h1 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
   line-height: 1.3;
-  font-size: 5em;
+  font-size: 6.5em;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF;
@@ -89,18 +89,12 @@ h3 {
   font-style: normal;
   color: #FFFFFF; }
 
-nav li a {
+h4 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
-  font-size: 30px;
-  line-height: 1;
-  font-weight: 300;
-  font-style: normal;
-  color: #FFFFFF;
-  text-decoration: none;
-  display: block; }
-  nav li a:hover {
-    color: #008d9a;
-    text-decoration: none; }
+  line-height: 1.6;
+  font-size: 5.5em;
+  font-weight: 600;
+  font-style: normal; }
 
 p, ul {
   font-family: "freight-micro-pro" "rockwell" "serif";
@@ -114,18 +108,18 @@ p, ul {
 a {
   color: #FFFFFF;
   text-decoration: none;
-  overflow: hidden; }
+  transition: 200ms color ease; }
   a:hover {
-    color: #005e67; }
+    color: #00bccd; }
 
 .highlight {
   margin: 50px 0; }
   .highlight .highlight-header {
     background-color: #008d9a;
+    max-width: 180px;
     padding: 10px;
     border-radius: 10px;
     margin: 0 auto;
-    max-width: 180px;
     top: -50px;
     z-index: 1;
     margin: 0 auto; }
@@ -145,43 +139,55 @@ header {
 
 .menu {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 14px;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center;
+  padding: 14px;
   color: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #462D23;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center; }
+  outline: none; }
   .menu:hover {
-    color: #FFFFFF;
     background-color: #241712; }
 
-.store-button-small, .store-button-large {
+.store-button-small {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 14px;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center;
+  padding: 14px;
   color: #462D23;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #fbf943;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center; }
-  .store-button-small:hover, .store-button-large:hover {
-    color: #462D23;
+  outline: none; }
+  .store-button-small:hover {
     background-color: #faf711; }
+
+.store-button-large {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-weight: 300;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 10px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  border: #FFFFFF solid 2px;
+  outline: none;
+  transition: 200ms ease color, 200ms ease border; }
+  .store-button-large:hover {
+    color: #faf711;
+    border: #faf711 solid 2px; }
 
 .menu, .store-button-small {
   width: 100%;
@@ -199,16 +205,10 @@ nav {
 nav li {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
   font-size: 30px;
-  line-height: 1;
+  line-height: 1.5;
   font-weight: 300;
   font-style: normal;
-  color: #FFFFFF;
-  text-decoration: none;
-  display: block;
   display: none; }
-  nav li:hover {
-    color: #D60D34;
-    text-decoration: none; }
 
 footer {
   clear: both;
@@ -218,24 +218,22 @@ footer {
   padding-bottom: 100px; }
   footer button {
     font-family: "freight-micro-pro" "rockwell" "serif";
-    padding: 14px;
-    font-size: 1.6em;
-    line-height: 1;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: 400;
-    font-style: normal;
-    color: #462D23;
-    border-radius: 16px;
-    background-color: #fbf943;
-    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    border: #FFFFFF solid 2px;
     outline: none;
-    text-decoration: none;
-    text-align: center;
+    transition: 200ms ease color, 200ms ease border;
     margin-top: 20px; }
     footer button:hover {
-      color: #462D23;
-      background-color: #faf711; }
+      color: #faf711;
+      border: #faf711 solid 2px; }
 
 .footer-copy {
   margin-top: 40px;
@@ -246,12 +244,12 @@ footer {
 
 .newsletter input.email {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.6em;
-  line-height: 1;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 1.4em;
   font-weight: 400;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #999999;
   border: none;
   width: 180px;
@@ -260,18 +258,17 @@ footer {
 
 .newsletter input.zip {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 10px;
-  font-size: 1.6em;
-  line-height: 1;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 1.4em;
   font-weight: 400;
   outline: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #999999;
   border: none;
   width: 100px;
   height: 40px;
   margin-top: 20px;
-  margin-right: 20px;
   display: block; }
 
 .newsletter button {
@@ -281,103 +278,96 @@ footer {
 .fullwidth-photo {
   background-image: url(../assets/mural_small.jpg);
   background-size: cover;
-  min-height: 300px; }
+  min-height: 280px; }
 
 .intro {
   background-color: #a60a28;
   padding: 50px 20px;
   margin: 0 auto; }
   .intro p {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    line-height: 1.6;
-    font-size: 1.9em;
-    font-weight: 400;
-    font-style: normal;
-    max-width: 550px;
     color: #FFFFFF;
     font-size: 21px;
     margin-top: 50px; }
 
-.index-box h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
-  color: #462D23;
+.index-box {
   margin: 0 auto;
-  max-width: 400px;
-  margin: 50px auto; }
+  max-width: 380px; }
+  .index-box h4 {
+    color: #462D23;
+    margin: 0 auto;
+    max-width: 434px;
+    margin: 50px auto; }
 
 .box-wrapper:first-of-type {
   margin-top: 50px; }
 
 .announcements, .flyer, .whatsnew, .events, .recipes, .holidays, .productstories, .guides, .lists {
   display: block;
-  margin: 0 auto;
   width: 100%;
   max-width: 300px;
+  min-height: 460px;
+  border-radius: 10px;
+  background-repeat: no-repeat; }
+
+.overlay {
+  width: 100%;
   height: 300px;
-  border-radius: 15px;
-  background-repeat: no-repeat;
-  transition: all 1s ease; }
+  max-width: 300px;
+  background: transparent;
+  border-radius: 10px;
+  border: 3px solid #999;
+  transition: background 200ms ease; }
 
 .announcements {
-  background: linear-gradient(rgba(0, 141, 154, 0), rgba(0, 141, 154, 0)), url(../assets/dec-fearless-flyer.jpg); }
-  .announcements:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/dec-fearless-flyer.jpg); }
+  background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
 
 .whatsnew {
-  background: url(../assets/newproduct.png) no-repeat; }
-  .whatsnew:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/newproduct.png) no-repeat; }
+  background: url(../assets/whatsnew.jpg) no-repeat; }
 
 .flyer {
-  background: url(../assets/dec-fearless-flyer.jpg); }
-  .flyer:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/dec-fearless-flyer.jpg); }
+  background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
 
 .events {
-  background: url(../assets/eventsandcontests.jpg); }
-  .events:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/eventsandcontests.jpg); }
+  background: url(../assets/eventsandcontests2.jpg) no-repeat; }
 
 .recipes {
-  background: url(../assets/recipes.jpg); }
-  .recipes:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/recipes.jpg); }
+  background: url(../assets/recipes.jpg) no-repeat; }
 
 .holidays {
-  background: url(../assets/crostini-rootini-bar.jpg); }
-  .holidays:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/crostini-rootini-bar.jpg); }
+  background: url(../assets/crostini-rootini-bar.jpg) no-repeat; }
 
 .productstories {
-  background: url(../assets/productstories.jpg); }
-  .productstories:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/productstories.jpg); }
+  background: url(../assets/productstories.jpg) no-repeat; }
 
 .guides {
-  background: url(../assets/build-a-better-snack.jpg); }
-  .guides:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/build-a-better-snack.jpg); }
+  background: url(../assets/build-a-better-snack.jpg) no-repeat; }
 
 .lists {
-  background: url(../assets/guide-to-fruits-and-veggies.jpg); }
-  .lists:hover {
-    background: linear-gradient(rgba(0, 141, 154, 0.5), rgba(0, 141, 154, 0.9)), url(../assets/guide-to-fruits-and-veggies.jpg); }
+  background: url(../assets/guide-to-fruits-and-veggies.jpg) no-repeat; }
 
 .h2-wrapper {
   background-color: #D60D34;
+  max-width: 200px;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  max-width: 250px;
   background-color: #a60a28;
-  top: -50px; }
+  top: -50px;
+  transition: border 200ms ease, background 200ms ease; }
+  .h2-wrapper h2 {
+    font-size: 37px;
+    transition: color 400ms ease; }
 
 .h2-wrapper.double {
   top: -100px; }
+
+.box-wrapper:hover .h2-wrapper {
+  background-color: #FFFFFF;
+  border: 3px solid #D60D34; }
+.box-wrapper:hover h2 {
+  color: #D60D34; }
+.box-wrapper:hover .overlay {
+  background: rgba(166, 10, 40, 0.4); }
 
 .story img {
   border-radius: 15px; }
@@ -385,11 +375,6 @@ footer {
   margin-top: 30px; }
 
 .timeline h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
   color: #462D23;
   margin: 0 auto;
   max-width: 200px;
@@ -397,62 +382,53 @@ footer {
 
 .y1960s, .y1990s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 14px;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center;
+  padding: 14px;
   color: #462D23;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #fbf943;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center; }
+  outline: none; }
   .y1960s:hover, .y1990s:hover {
-    color: #462D23;
     background-color: #faf711; }
 
 .y1970s, .y2000s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 14px;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center;
+  padding: 14px;
   color: #FFFFFF;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #D60D34;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center; }
+  outline: none; }
   .y1970s:hover, .y2000s:hover {
-    color: #FFFFFF;
     background-color: #a60a28; }
 
 .y1980s, .y2010s {
   font-family: "freight-micro-pro" "rockwell" "serif";
-  padding: 14px;
-  font-size: 1.6em;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 400;
-  font-style: normal;
+  text-align: center;
+  padding: 14px;
   color: #462D23;
-  border-radius: 16px;
+  border-radius: 10px;
   background-color: #008d9a;
-  display: block;
-  outline: none;
-  text-decoration: none;
-  text-align: center; }
+  outline: none; }
   .y1980s:hover, .y2010s:hover {
-    color: #462D23;
     background-color: #005e67; }
 
 .y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
@@ -467,11 +443,6 @@ footer {
 .content-1960s {
   display: none; }
   .content-1960s h4 {
-    font-family: "hooligan" "candara" "calibri" "sans-serif";
-    line-height: 1.6;
-    font-size: 4.5em;
-    font-weight: 600;
-    font-style: normal;
     color: #008d9a;
     margin: 0 auto;
     max-width: 400px;
@@ -485,11 +456,6 @@ footer {
   .content-1960s img:first-of-type {
     margin-left: 0; }
   .content-1960s h3 {
-    font-family: "hooligan" "candara" "calibri" "sans-serif";
-    line-height: 1.6;
-    font-size: 2.5em;
-    font-weight: 400;
-    font-style: normal;
     color: #462D23;
     margin-top: 30px;
     clear: left; }
@@ -498,31 +464,19 @@ footer {
 
 .culture-h1 {
   background-color: #008d9a;
+  max-width: 200px;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  max-width: 200px;
   top: -50px; }
 
 .culture-intro p {
-  font-family: "freight-micro-pro" "rockwell" "serif";
-  line-height: 1.6;
-  font-size: 1.9em;
-  font-weight: 400;
-  font-style: normal;
-  max-width: 550px;
-  color: #462D23;
   margin: 0 auto 30px auto; }
 
 .culture-wrapper {
   margin-top: 50px; }
 
 .culture-copy h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
   color: #462D23;
   margin: 0 auto;
   max-width: none;
@@ -535,33 +489,22 @@ footer {
 .newfood .highlight-header {
   max-width: 250px;
   top: -20px; }
-  .newfood .highlight-header h1 {
-    font-size: 30px; }
+.newfood h1 {
+  font-size: 30px; }
 .newfood h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
   color: #D60D34;
   margin: 0 auto;
   max-width: 200px;
   margin: 0; }
 .newfood a {
-  color: #462D23;
-  text-decoration: none; }
+  color: #462D23; }
   .newfood a:hover {
-    color: #a60a28; }
+    color: #D60D34; }
 
 .food {
   margin: 50px 0;
   max-width: 550px; }
   .food h4 {
-    font-family: "hooligan" "candara" "calibri" "sans-serif";
-    line-height: 1.6;
-    font-size: 4.5em;
-    font-weight: 600;
-    font-style: normal;
     color: #462D23;
     margin: 0 auto;
     max-width: 200px;
@@ -570,10 +513,9 @@ footer {
     color: #D60D34;
     margin: 20px 0; }
   .food a {
-    color: #462D23;
-    text-decoration: none; }
+    color: #462D23; }
     .food a:hover {
-      color: #a60a28; }
+      color: #D60D34; }
 
 .tj-label {
   display: block;
@@ -588,22 +530,12 @@ footer {
   margin-left: 0; }
 
 .food-boxes h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
   color: #462D23;
   margin: 0 auto;
   max-width: 200px;
   margin: 50px 0; }
 
 .recipe-feature h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.6;
-  font-size: 4.5em;
-  font-weight: 600;
-  font-style: normal;
   color: #462D23;
   margin: 0 auto;
   max-width: 200px;
@@ -623,60 +555,44 @@ footer {
 
   .store {
     float: right; }
-    .store input {
-      font-family: "freight-micro-pro" "rockwell" "serif";
-      padding: 10px;
-      font-size: 1.6em;
-      line-height: 1;
-      font-weight: 400;
-      outline: none;
-      border-radius: 10px;
-      color: #999999;
-      border: none;
-      width: 113px;
-      height: 45px; }
 
   .store-button-large {
     font-family: "freight-micro-pro" "rockwell" "serif";
-    padding: 14px;
-    font-size: 1.6em;
-    line-height: 1;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: .1em;
-    font-weight: 400;
-    font-style: normal;
-    color: #462D23;
-    border-radius: 16px;
-    background-color: #fbf943;
-    display: block;
+    padding: 10px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    background-color: transparent;
+    border: #FFFFFF solid 2px;
     outline: none;
-    text-decoration: none;
-    text-align: center;
+    transition: 200ms ease color, 200ms ease border;
     margin-top: 10px;
     margin-bottom: 10px;
-    float: right;
     display: inline-block; }
     .store-button-large:hover {
-      color: #462D23;
-      background-color: #faf711; }
-    .store-button-large span {
-      font-size: .8em;
-      display: block;
-      letter-spacing: 0.2em; }
+      color: #faf711;
+      border: #faf711 solid 2px; }
+
+  nav ul {
+    max-width: 600px; }
 
   nav li {
     display: inline-block;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     margin-left: 40px; }
 
   nav li:first-of-type {
     margin-left: 0; }
 
-  /* 38em Index */
+  /* 38em full width photos */
   .fullwidth-photo {
     background-image: url(../assets/mural_medium.jpg);
-    min-height: 450px;
+    min-height: 360px;
     border-bottom: 20px solid #008d9a; }
 
   .intro {
@@ -685,8 +601,10 @@ footer {
     max-width: 570px;
     padding: 30px 10px 50px 10px; }
 
-  .index-box h4 {
-    margin: 0 auto 100px auto; }
+  .index-box {
+    max-width: 750px; }
+    .index-box h4 {
+      margin: 0 auto 100px auto; }
 
   /* 38em Boxes */
   .box-wrapper {
@@ -796,7 +714,10 @@ footer {
     margin-left: 0; }
 
   .newsletter input.zip {
-    display: inline-block; } }
+    display: inline-block; }
+
+  .newsletter button {
+    margin-left: 10px; } }
 @media screen and (min-width: 60em) {
   /* 60em Header/Nav */
   .logo-small {
@@ -804,12 +725,19 @@ footer {
 
   .store-zip {
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 20px; }
-
-  nav ul {
-    max-width: 700px; }
+    margin: 0 10px 10px 10px; }
+    .store-zip input {
+      font-family: "freight-micro-pro" "rockwell" "serif";
+      padding: 5px;
+      padding-left: 10px;
+      font-size: 1.4em;
+      font-weight: 400;
+      outline: none;
+      border-radius: 5px;
+      color: #999999;
+      border: none;
+      width: 100px;
+      height: 38px; }
 
   nav li {
     margin-left: 60px; }
@@ -818,6 +746,9 @@ footer {
   .fullwidth-photo {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
+
+  .index-box {
+    max-width: 1200px; }
 
   /* 60em Boxes */
   .box-wrapper {
@@ -830,6 +761,16 @@ footer {
 
   .box-wrapper:nth-of-type(3n+1) {
     margin-left: 0; }
+
+  .h2-wrapper {
+    background-color: #D60D34;
+    max-width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background-color: #a60a28; }
+    .h2-wrapper h2 {
+      font-size: 40px; }
 
   /* 60em Story */
   .story .highlight {

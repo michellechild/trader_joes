@@ -11,11 +11,15 @@ display: block;
 }
 
 .menu {
-@include button-style($color-light, $color-dark);
+@include global-button-style($color-light, $color-dark);
 }
 
-.store-button-small, .store-button-large{
-@include button-style($color-dark, $primary-color-2);
+.store-button-small {
+@include global-button-style($color-dark, $primary-color-2);
+}
+
+.store-button-large {
+@include button-style($color-light, $primary-color-2);
 }
 
 .menu, .store-button-small {
@@ -36,26 +40,31 @@ background-color: $color-dark;
 }
 
 nav li {
-@include nav-link-style($color-light, $primary-color-1);
+font-family: "hooligan" "candara" "calibri" "sans-serif";
+font-size: 30px;
+line-height: 1.5;
+font-weight: 300;
+font-style: normal;
 display: none;
 }
+
 footer {
-	clear: both; 
-	@include div-bg($color-dark);
-	padding-top: 100px;
-	padding-bottom: 100px;
+clear: both; 
+@include div-bg($color-dark);
+padding-top: 100px;
+padding-bottom: 100px;
 	
 	button {
-		@include button-style ($color-dark, $primary-color-2);
-		margin-top: 20px;
+	@include button-style($color-light, $primary-color-2);
+	margin-top: 20px;
 	}
 
 }
 
 .footer-copy {
-	margin-top: 40px;
-	margin-bottom: 40px;
-	
+margin-top: 40px;
+margin-bottom: 40px;
+
 	li {
 	font-size: 18px;
 	list-style-type: none;
@@ -64,17 +73,16 @@ footer {
 }
 
 .newsletter input.email {
-	@include input-style(180px, 40px);
-	margin-top: 20px;
+@include input-style(180px, 40px);
+margin-top: 20px;
 }
 
 .newsletter input.zip {
-	@include input-style(100px, 40px);
-	margin-top: 20px; 
-	margin-right: 20px; 
-	display: block;
+@include input-style(100px, 40px);
+margin-top: 20px; 
+display: block;
 }
 
 .newsletter button {
-	display: inline-block;
+display: inline-block;
 }

@@ -1,20 +1,24 @@
 
 .newfood {
 	.highlight-header {
-		max-width: 250px;
-		top: -20px;
-		h1{
-		font-size: 30px;
-		}
+	max-width: 250px;
+	top: -20px;
+	}
+	
+	h1{
+	font-size: 30px;
 	}
 
 	h4 {
-		@include h4-font($primary-color-1, 200px);
-		margin: 0;
+	@include h4-font($primary-color-1, 200px);
+	margin: 0;
 	}
 
 	a {
-	@include link-style ($color-dark, $primary-color-1);
+	color: $color-dark;
+		&:hover{
+		color: $primary-color-1;
+		}
 	}
 }
 
@@ -32,29 +36,31 @@
 	margin: 20px 0;
 	}
 	
-	a{
-	@include link-style ($color-dark, $primary-color-1);
+	a {
+	color: $color-dark;
+		&:hover{
+		color: $primary-color-1;
+		}
 	}
 }
 
 .tj-label {
-	display: block;
-	margin-bottom: 20px;
-	background-color: $color-dark;
-	width: 30%;
-	height: 72px;
-	margin-left: 3.3333%;
-	float: left;
-
+display: block;
+margin-bottom: 20px;
+background-color: $color-dark;
+width: 30%;
+height: 72px;
+margin-left: 3.3333%;
+float: left;
 }
 
 .tj-label:nth-of-type(3n+1){
-	margin-left: 0;
+margin-left: 0;
 }
 
 .food-boxes {
 	h4 {
-		@include h4-font($color-dark, 200px);
-		margin: 50px 0;
+	@include h4-font($color-dark, 200px);
+	margin: 50px 0;
 	}
 }

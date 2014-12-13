@@ -13,43 +13,34 @@ display: none;
 	
 .store {
 float: right;
-	input {
-	@include input-style(113px, 45px);
-	}
 }
 
 .store-button-large {
-@include button-style($color-dark, $primary-color-2);
+@include button-style($color-light, $primary-color-2);
 margin-top: 10px;
 margin-bottom: 10px;
-float: right;
 display: inline-block;
-	
-	span {
-		font-size: .8em;
-		display: block;
-		letter-spacing: 0.2em;
-	}
+}
 
-	}
+nav ul{
+	max-width: 600px;
+}
+nav li {
+display: inline-block;
+padding-top: 15px;
+padding-bottom: 20px;
+margin-left: 40px;
+}
 
+nav li:first-of-type {
+margin-left: 0;
+}
 
-	nav li {
-	display: inline-block;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	margin-left: 40px;
-	}
-	
-	nav li:first-of-type {
-	margin-left: 0;
-	}
-
-/* 38em Index */
+/* 38em full width photos */
 
 .fullwidth-photo {
 background-image:url(../assets/mural_medium.jpg);
-min-height: 450px;
+min-height: 360px;
 border-bottom: 20px solid $primary-color-3;
 }
 
@@ -61,24 +52,29 @@ max-width: 570px;
 padding: 30px 10px 50px 10px;
 }
 
-.index-box h4 {
-margin: 0 auto 100px auto;	
+.index-box {
+max-width: 750px;
+	
+	h4 {
+	margin: 0 auto 100px auto;	
+	}
 }
+
 
 /* 38em Boxes */
 
 .box-wrapper {
-	width: 46%;
-	float: left;
-	margin-left: 6%;
+width: 46%;
+float: left;
+margin-left: 6%;
 }
 
 .box-wrapper:first-of-type {
-	margin-top: 0;
+margin-top: 0;
 }
 
 .box-wrapper:nth-of-type(odd)  {
-	margin-left: 0;
+margin-left: 0;
 }
 
 /* 38em Story */
@@ -194,5 +190,8 @@ h4 {
 	display: inline-block;
 }
 
+.newsletter button {
+	margin-left: 10px;
+}
 } 
 

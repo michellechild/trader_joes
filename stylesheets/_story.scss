@@ -48,15 +48,15 @@ margin: 50px 0;
 }
 
 .y1960s, .y1990s {
-	@include button-style($color-dark, $primary-color-2);
+	@include global-button-style($color-dark, $primary-color-2);
 }
 
 .y1970s, .y2000s {
-	@include button-style($color-light, $primary-color-1);
+	@include global-button-style($color-light, $primary-color-1);
 }
 
 .y1980s, .y2010s {
-	@include button-style($color-dark, $primary-color-3);
+	@include global-button-style($color-dark, $primary-color-3);
 }
 
 .y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
@@ -90,7 +90,7 @@ display: none;
 	}
 
 	h3 {
-	@include h3-font($color-dark);
+	color: $color-dark;
 	margin-top: 30px;
 	clear: left;
 	}
