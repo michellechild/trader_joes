@@ -23,7 +23,7 @@ margin: 0 auto;
  margin: 0 auto;
  max-width: 380px;
 	h4 {
-	@include h4-font ($color-dark, 434px);
+	max-width: 434px;
 	margin: 50px auto;	
 	}
 }

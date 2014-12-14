@@ -9,11 +9,6 @@ background-color: $bg-color;
 width: 100%;
 }
 
-@mixin h4-font($color, $width){
-color: $color;
-margin: 0 auto;
-max-width: $width;
-}
 @mixin global-button-style ($color, $background-color){
 font-family: "freight-micro-pro" "rockwell" "serif";
 font-size: 1.4em;
@@ -78,52 +73,7 @@ border-radius: 10px;
 margin: 0 auto;
 }
 
-@mixin highlight {
-margin: 50px 0;
 
-	.highlight-header {
-	@include header-wrapper ($primary-color-3, 180px);
-	top: -50px;
-	z-index: 1;
-	margin: 0 auto;
-	}
-	
-	.highlight-photo img {	
-	width: 100%;
-	}
-}
-
-@mixin highlight-38em($photo-width) {
-	.highlight {
-	max-width: 550px;
-	margin: 50px auto;
-	}
-	.highlight-photo{
-	max-width: $photo-width;
-	margin: 0 auto;
-	}
-	.highlight-copy p {
-	margin: 0 auto;
-	}
-}
-
-@mixin highlight-60em {
-	.highlight {
-	max-width: none;
-	margin: 50px 0;
-	}
-
-	.highlight-photo {
-	width: 48%;
-	float: left;
-	}
-
-	.highlight-copy { 
-	width: 48%;
-	margin-left: 4%;
-	float: left;
-	}
-}
 
 
 

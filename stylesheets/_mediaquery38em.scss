@@ -1,6 +1,7 @@
 
 @media screen and (min-width: 38em) {
 
+
 /* 38em Header/Nav */
 	
 .logo {
@@ -44,7 +45,6 @@ min-height: 360px;
 border-bottom: 20px solid $primary-color-3;
 }
 
-
 .intro {
 top: -100px;
 border-radius: 10px;
@@ -59,7 +59,6 @@ max-width: 750px;
 	margin: 0 auto 100px auto;	
 	}
 }
-
 
 /* 38em Boxes */
 
@@ -78,24 +77,63 @@ margin-left: 0;
 }
 
 /* 38em Story */
+
 .story {
-@include highlight-60em;
-	.highlight-photo {
-	max-width: 300px;
+overflow: hidden;
+margin: 60px auto;
+
+	.highlight-photo{
+	max-width: 360px;
+	margin: 0 auto;
+
+		img {
+			border-radius: 15px;
+
+			&:nth-of-type(1){ 
+			display: none;
+			}
+
+			&:nth-of-type(2){ 
+			display: inline-block;
+			}
+		}	
+	}
+
+	.highlight-header {
+	max-width:250px;
+	}
+	
+	h1 {
+	font-size: 65px;
+	}
+
+	p {
+	margin: 0 auto;
+	}
+
+
+}
+
+
+.story-value {
+	blockquote {
+	max-width: 650px;
+	margin: 30px auto;
+	text-align: center;
+	}
+
+	p, ul {
+	margin-bottom: 30px;
+	margin: 0 auto;
 	}
 }
 
-// .story-value {
-// max-width: 600px;
-// border-radius: 10px;
-// margin: 0 auto;
-// }
 
-.timeline-buttons {
+.tl-btn {
 display: none;
 }
 
-.timeline {
+.tl-content{
 float: right;
 width: 70%;
 margin-left: 5%;
@@ -114,7 +152,6 @@ padding: 50px 0;
 
 .culture-wrapper {
 overflow: hidden;
-
 }
 .culture-box {
 display: block;
@@ -135,14 +172,13 @@ margin: 0;
 
 h4 {
 	margin-top: 0;
-}
+	}
 } 
 
 
 /* 38em Food */
 
 .newfood {
-@include highlight-60em;
 	img {
 	max-width: 355px;
 	}
@@ -168,7 +204,6 @@ h4 {
 /* 38em Recipes */
 
 .recipe-feature{
-@include highlight-60em;
 	img {
 	max-width: 500px;
 	}

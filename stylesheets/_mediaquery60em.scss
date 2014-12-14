@@ -58,22 +58,52 @@ background-color: darken($primary-color-1, 10%);
 /* 60em Story */
 
 .story {
-	@include highlight-60em;
+	margin-bottom: 0;
+
+	.split:nth-of-type(1){
+	width: 40%;
+	float: left;
+	margin-left: 5%
+	}
+
+	.split:nth-of-type(2){
+	width: 40%;
+	float: left;
+	margin-right: 5%;
+	margin-left: 2.5%;
+	}
+
+	.container { 
+		display: inline-block;
+	width: 100%;
+  	margin: 0;
+  	overflow: hidden;
+	}
 }
 
+
 .story-value {
-max-width: 850px;
+	margin: 0;
 
-	// p{
-	// width: 45%;
-	// float: left;
-	// }
+	h4 {
+		margin-top: 50px;
+	}
+	p, ul {
+		margin:  0 0 30px 0;
+	}
 
-	// ul {
-	// width: 50%;
-	// float: left;
-	// margin-left: 5%; 
-	// }
+	blockquote {
+		max-width: none;	
+	}
+
+	.split {
+		float: left; 
+		width: 48%;
+
+		&:nth-of-type(2){
+ 		margin-left: 2%;
+ 		}
+	}
 
 }
 /* 60em Culture */

@@ -1,7 +1,7 @@
 	
 .recipe-feature{
 	h4 {
-		@include h4-font($color-dark, 200px);
+		max-width: 200px;
 		margin: 0 0 50px 0;
 	}
 
