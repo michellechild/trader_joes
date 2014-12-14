@@ -308,7 +308,7 @@ footer {
   background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
 
 .whatsnew {
-  background: url(../assets/whatsnew.jpg) no-repeat; }
+  background: url(../assets/cheese.jpg) no-repeat; }
 
 .flyer {
   background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
@@ -498,18 +498,21 @@ footer {
 .culture-intro p {
   margin: 0 auto 30px auto; }
 
-.culture-wrapper {
-  margin-top: 50px; }
+.events, .holidays, .guides {
+  min-height: 350px; }
 
-.culture-copy h4 {
-  margin-top: -50px;
-  margin-bottom: 30px; }
-.culture-copy p {
-  margin-bottom: 50px; }
+.culture-copy {
+  max-height: 350px;
+  overflow: hidden; }
+  .culture-copy h4 {
+    margin-bottom: 30px; }
+  .culture-copy:last-of-type {
+    margin-bottom: 50px; }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
 .newfood {
-  margin-bottom: 50px; }
+  margin: 0 auto;
+  margin-bottom: 100px; }
   .newfood .highlight-photo {
     overflow: hidden;
     max-width: 300px;
@@ -518,9 +521,16 @@ footer {
       width: 100%;
       max-width: 300px; }
   .newfood h1 {
+    color: #462D23;
+    margin: 30px auto 0 auto;
+    font-size: 40px;
+    text-align: left; }
+  .newfood h3 {
+    font-family: "freight-micro-pro" "rockwell" "serif";
     color: #D60D34;
-    margin-top: 30px;
-    font-size: 50px; }
+    margin: 30px auto;
+    text-align: center;
+    font-size: 60px; }
   .newfood h4 {
     max-width: 400px;
     font-size: 35px;
@@ -577,8 +587,8 @@ footer {
   margin: 0 auto;
   max-width: 380px; }
   .food-box h4 {
-    max-width: 400px;
-    margin: 50px auto; }
+    max-width: 344px;
+    margin: 100px auto; }
 
 .recipe-feature h4 {
   max-width: 200px;
@@ -704,25 +714,37 @@ footer {
   .content-1960s {
     display: block; }
 
-  /* 38em Culture */
-  .culture-wrapper {
-    overflow: hidden; }
+  /* 38em Food */
+  .newfood {
+    max-width: 700px; }
+    .newfood h3 {
+      margin: 0 0 50px 0; }
+    .newfood .highlight-photo {
+      width: 48%;
+      float: left;
+      margin-left: 2%; }
+    .newfood .highlight-photo:nth-of-type(odd) {
+      margin-left: 0; }
 
+  /* 38em Culture */
   .culture-box {
-    display: block;
-    width: 45%;
-    margin-right: 5%;
-    margin-bottom: 0;
-    float: left; }
-    .culture-box h2 {
-      max-width: 300px; }
+    overflow: hidden;
+    display: block; }
+    .culture-box .box-wrapper {
+      display: block;
+      width: 45%;
+      margin-right: 5%;
+      margin-bottom: 0;
+      float: left; }
+      .culture-box .box-wrapper h2 {
+        max-width: 300px; }
 
   .culture-copy {
     width: 50%;
     float: left;
     margin: 0; }
     .culture-copy h4 {
-      margin-top: 0; }
+      margin: 0; }
 
   /* 38em Recipes */
   .recipe-feature img {
@@ -836,27 +858,20 @@ footer {
     margin-top: 30px;
     margin-left: 7.5%; }
 
-  .culture-box {
+  .culture-box .box-wrapper {
     width: 30%; }
-
-  .culture-copy {
+  .culture-box .culture-copy {
     width: 65%; }
 
   /* 60em Food */
-  .newfood h1 {
-    text-align: left; }
-  .newfood .highlight-photo {
-    width: 30%;
-    margin: 0;
-    float: left; }
-  .newfood h4 {
-    margin: 30px 0; }
-  .newfood p {
-    margin: 0; }
-  .newfood .highlight-copy {
-    width: 65%;
-    margin-left: 5%;
-    float: left; }
+  .newfood {
+    max-width: 1200px; }
+    .newfood .highlight-photo {
+      width: 23.5%;
+      float: left;
+      margin-left: 2%; }
+    .newfood .highlight-photo:nth-of-type(3) {
+      margin-left: 0; }
 
   .food-intro {
     width: 48%;

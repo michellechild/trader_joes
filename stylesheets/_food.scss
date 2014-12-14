@@ -1,6 +1,7 @@
 .newfood {
-	margin-bottom: 50px;
-	
+	margin: 0 auto;
+		margin-bottom: 100px;
+
 	.highlight-photo{
 		overflow: hidden;
 		max-width: 300px;
@@ -13,9 +14,18 @@
 	}
 
 	h1{
-	color: $primary-color-1;
-	margin-top: 30px;
-	font-size: 50px;
+	color: $color-dark;
+	margin: 30px auto 0 auto;
+	font-size: 40px;
+	text-align: left;
+	}
+
+	h3 {
+	font-family: "freight-micro-pro" "rockwell" "serif";
+	color:	$primary-color-1;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 60px;
 	}
 
 	h4 {
@@ -89,7 +99,7 @@ margin-left: 0;
 	 max-width: 380px;
 
  h4 {
-	max-width: 400px;
-	margin: 50px auto;
+	max-width: 344px;
+	margin: 100px auto;
 	}
 }

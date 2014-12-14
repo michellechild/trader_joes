@@ -150,21 +150,40 @@ padding: 50px 0;
 .content-1960s {
 	display: block;
 }
+/* 38em Food */
 
+.newfood {
+	max-width: 700px;
+
+	h3 {
+		margin: 0 0 50px 0;
+	}
+	.highlight-photo {
+	width: 48%;
+	float: left;
+	margin-left: 2%;
+	}
+
+	.highlight-photo:nth-of-type(odd) {
+	margin-left: 0;
+	}
+}
 /* 38em Culture */
 
-.culture-wrapper {
-overflow: hidden;
-}
-.culture-box {
-display: block;
-width: 45%;
-margin-right: 5%;
-margin-bottom: 0;
-float: left;
+.culture-box{
+	overflow: hidden;
+	display: block;
 
-	h2{
-	max-width: 300px;
+	.box-wrapper {
+	display: block;
+	width: 45%;
+	margin-right: 5%;
+	margin-bottom: 0;
+	float: left;
+
+		h2{
+		max-width: 300px;
+		}
 	}
 }
 
@@ -173,8 +192,8 @@ width: 50%;
 float: left;
 margin: 0;
 
-h4 {
-	margin-top: 0;
+	h4 {
+	margin: 0;
 	}
 } 
 

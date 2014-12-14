@@ -7,19 +7,21 @@ top: -50px;
 margin: 0 auto 30px auto;
 }
 
-
-.culture-wrapper{
-margin-top: 50px;
+.events, .holidays, .guides{
+	min-height: 350px;
 }
+
+
 .culture-copy {
+	max-height: 350px;
+	overflow: hidden;	
+	h4 {
+	margin-bottom: 30px;
+	} 
 
-h4 {
-margin-top: -50px;
-margin-bottom: 30px;
-}
-p {
-	margin-bottom: 50px;
-}
+	&:last-of-type{
+		margin-bottom: 50px;
+	}
 }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
