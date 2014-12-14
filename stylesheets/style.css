@@ -84,7 +84,7 @@ h2 {
 h3 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
   line-height: 1.6;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 400;
   font-style: normal;
   color: #FFFFFF; }
@@ -508,49 +508,77 @@ footer {
   margin-bottom: 50px; }
 
 /* Box, h2-wrapper, and double are styled in index.scss page */
-.newfood .highlight-header {
-  max-width: 250px;
-  top: -20px; }
-.newfood h1 {
-  font-size: 30px; }
-.newfood h4 {
-  color: #D60D34;
-  max-width: 200px;
-  margin: 0; }
-.newfood a {
-  color: #462D23; }
-  .newfood a:hover {
-    color: #D60D34; }
+.newfood {
+  margin-bottom: 50px; }
+  .newfood .highlight-photo {
+    overflow: hidden;
+    max-width: 300px;
+    margin: 0 auto; }
+    .newfood .highlight-photo img {
+      width: 100%;
+      max-width: 300px; }
+  .newfood h1 {
+    color: #D60D34;
+    margin-top: 30px;
+    font-size: 50px; }
+  .newfood h4 {
+    max-width: 400px;
+    font-size: 35px;
+    margin-bottom: 30px; }
+  .newfood p {
+    margin: 0 auto; }
+  .newfood a {
+    color: #462D23; }
+    .newfood a:hover {
+      color: #D60D34; }
 
 .food {
-  margin: 50px 0;
-  max-width: 550px; }
+  border-top: dotted #462D23 3px;
+  border-bottom: dotted #462D23 3px;
+  background-color: #fdfca7;
+  padding: 50px 0;
+  margin: 0 auto;
+  overflow: hidden; }
   .food h4 {
     max-width: 200px;
-    margin: 50px 0 0 0; }
-  .food h3 {
-    color: #D60D34;
-    margin: 20px 0; }
+    margin-bottom: 30px;
+    color: #008d9a; }
+  .food p {
+    color: #462D23;
+    margin: 0 auto; }
   .food a {
-    color: #462D23; }
+    color: #462D23;
+    text-decoration: underline; }
     .food a:hover {
       color: #D60D34; }
+
+.labels {
+  margin-top: 50px; }
 
 .tj-label {
   display: block;
   margin-bottom: 20px;
-  background-color: #462D23;
   width: 30%;
-  height: 72px;
   margin-left: 3.3333%;
-  float: left; }
+  float: left;
+  text-align: center;
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  line-height: 1.6;
+  font-size: 1.9em;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 550px;
+  color: #462D23; }
 
 .tj-label:nth-of-type(3n+1) {
   margin-left: 0; }
 
-.food-boxes h4 {
-  max-width: 200px;
-  margin: 50px 0; }
+.food-box {
+  margin: 0 auto;
+  max-width: 380px; }
+  .food-box h4 {
+    max-width: 400px;
+    margin: 50px auto; }
 
 .recipe-feature h4 {
   max-width: 200px;
@@ -616,12 +644,13 @@ footer {
     max-width: 570px;
     padding: 30px 10px 50px 10px; }
 
-  .index-box {
-    max-width: 750px; }
-    .index-box h4 {
-      margin: 0 auto 100px auto; }
+  .index-box h4 {
+    margin: 0 auto 100px auto; }
 
   /* 38em Boxes */
+  .index-box, .food-box {
+    max-width: 750px; }
+
   .box-wrapper {
     width: 46%;
     float: left;
@@ -695,20 +724,6 @@ footer {
     .culture-copy h4 {
       margin-top: 0; }
 
-  /* 38em Food */
-  .newfood img {
-    max-width: 355px; }
-
-  .food {
-    margin: 0 auto; }
-    .food h4 {
-      margin-top: 50px; }
-    .food h3 {
-      margin-top: 70px; }
-
-  .food-boxes h4 {
-    margin: 100px auto; }
-
   /* 38em Recipes */
   .recipe-feature img {
     max-width: 500px; }
@@ -756,10 +771,10 @@ footer {
     background-image: url(../assets/mural_large.jpg);
     min-height: 550px; }
 
-  .index-box {
+  /* 60em Boxes */
+  .index-box, .food-box {
     max-width: 1200px; }
 
-  /* 60em Boxes */
   .box-wrapper {
     width: 32%;
     float: left;
@@ -828,18 +843,31 @@ footer {
     width: 65%; }
 
   /* 60em Food */
+  .newfood h1 {
+    text-align: left; }
   .newfood .highlight-photo {
-    width: 30%; }
+    width: 30%;
+    margin: 0;
+    float: left; }
+  .newfood h4 {
+    margin: 30px 0; }
+  .newfood p {
+    margin: 0; }
   .newfood .highlight-copy {
-    width: 65%; }
+    width: 65%;
+    margin-left: 5%;
+    float: left; }
 
-  .food {
+  .food-intro {
+    width: 48%;
+    float: left; }
+    .food-intro h4 {
+      margin: 0 0 30px 0; }
+
+  .labels {
     width: 48%;
     float: left;
     margin-left: 4%; }
-
-  .food:first-of-type {
-    margin-left: 0; }
 
   /* 60em Footer */
   .footer-copy {

@@ -26,12 +26,12 @@ background-image:url(../assets/mural_large.jpg);
 min-height: 550px;
 }
 
-.index-box {
-	max-width: 1200px;
-
-}
 
 /* 60em Boxes */
+
+.index-box, .food-box {
+max-width: 1200px;
+}
 
 .box-wrapper {
 width: 32%;
@@ -127,25 +127,46 @@ width: 65%;
 
 /* 60em Food */
 .newfood {
+	h1 {
+	text-align: left;	
+	}
 
 	.highlight-photo {
 	width: 30%;
+	margin: 0;
+	float: left;
+	}
+
+	h4 {
+		margin: 30px 0;
+	}
+
+	p {
+		margin: 0;
 	}
 
 	.highlight-copy{
 	width: 65%;
+	margin-left: 5%;
+	float: left;
 	} 
 }
 
-.food {
+.food-intro {
+width: 48%;
+float: left;
+	h4 {
+		margin: 0 0 30px 0;
+	}
+
+}
+.labels {
 width: 48%;
 float: left;
 margin-left: 4%;
 }
 
-.food:first-of-type {
-	margin-left: 0;
-}
+
 /* 60em Footer */
 
 .footer-copy {

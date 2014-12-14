@@ -1,3 +1,90 @@
+$primary-color-1: #D60D34;
+$primary-color-2: #fbf943;
+$primary-color-3: #008d9a;
+$color-dark: #462D23;
+$color-light: #FFFFFF;
+
+@mixin div-bg($bg-color) {
+background-color: $bg-color;
+width: 100%;
+}
+
+
+@mixin p-font {
+font-family: "freight-micro-pro" "rockwell" "serif";
+line-height: 1.6;
+font-size: 1.9em;
+font-weight:400;
+font-style: normal;
+max-width: 550px;
+color: $color-dark;
+}
+
+@mixin global-button-style ($color, $background-color){
+font-family: "freight-micro-pro" "rockwell" "serif";
+font-size: 1.4em;
+font-weight: 400;
+font-style: normal;
+line-height: 1;
+text-transform: uppercase;
+letter-spacing: .1em;
+text-align: center;
+padding: 14px;
+color: $color;
+border-radius: 10px;
+background-color: $background-color;
+outline: none;
+
+  &:hover{
+  background-color: darken($background-color, 10%);
+  }
+}
+
+
+@mixin button-style ($color, $color-hover){
+font-family: "freight-micro-pro" "rockwell" "serif";
+font-weight: 300;
+font-size: 1.4em;
+text-align: center;
+text-transform: uppercase;
+letter-spacing: .1em;
+padding: 10px;
+color: $color;
+border-radius: 5px;
+background-color: transparent;
+border: $color solid 2px;
+outline: none;
+transition: 200ms ease color, 200ms ease border;
+
+  &:hover{
+  color: darken($color-hover, 10%);
+  border: darken($color-hover, 10%) solid 2px;
+  }
+}
+
+@mixin input-style ($width, $height){
+font-family: "freight-micro-pro" "rockwell" "serif";
+padding: 5px;
+padding-left:10px;
+font-size: 1.4em;
+font-weight: 400;
+outline: none;
+border-radius: 5px;
+color: #999999;
+border: none;
+width: $width;
+height: $height;
+}
+
+@mixin header-wrapper($color, $max-width) {
+background-color: $color;
+max-width: $max-width;
+padding: 10px;
+border-radius: 10px;
+margin: 0 auto;
+}
+
+
 div, header, nav, section, article, aside, footer, figure, button, img, hr, a, li{
   position: relative;
 }
@@ -44,7 +131,7 @@ h2 {
 h3 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
   line-height: 1.6;
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: 400;
   font-style: normal;
   color: $color-light;
@@ -61,16 +148,9 @@ h4 {
 
 }
 
-p, ul {
-font-family: "freight-micro-pro" "rockwell" "serif";
-line-height: 1.6;
-font-size: 1.9em;
-font-weight:400;
-font-style: normal;
-max-width: 550px;
-color: $color-dark;
-}
-
+ p, ul {
+  @include p-font;
+ }
 
 a {
 color: $color-light;
