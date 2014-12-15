@@ -144,24 +144,35 @@ margin: 60px auto 0 auto;
 }
 
 
-.tl-btn {
-display: none;
+.timeline{
+margin-bottom: 100px;
 }
 
+
+.tl-btn{
+display: block;
+width: 25%;
+border-radius: 10px;
+margin: 10px;
+font-family: "freight-micro-pro" "rockwell" "serif";
+font-weight: 600;
+font-size: 30px;
+outline: none;
+transition: 200ms ease color, 200ms ease border;
+}
+
+
+
 .tl-content{
-float: right;
 width: 70%;
 margin-left: 5%;
-padding: 0 0 50px 0;
+float: left;
 
 	h4 {
 	margin: 0 0 30px 0;
 	}
 }
 
-.content-1960s {
-display: block;
-}
 
 /* 38em Food */
 

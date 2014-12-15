@@ -437,9 +437,6 @@ footer {
   max-width: 200px;
   margin: 0 0 50px 0; }
 
-.tl-btn {
-  text-transform: none; }
-
 .y1960s, .y1990s {
   font-family: "freight-micro-pro" "rockwell" "serif";
   font-size: 1.4em;
@@ -494,7 +491,7 @@ footer {
   letter-spacing: .1em;
   text-align: center;
   padding: 14px;
-  color: #462D23;
+  color: #FFFFFF;
   border-radius: 10px;
   background-color: #008d9a;
   outline: none;
@@ -506,7 +503,8 @@ footer {
   .y1980s:hover, .y2010s:hover {
     background-color: #005e67; }
 
-.y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
+.tl-btn {
+  text-transform: none;
   width: 100%;
   text-align: left;
   padding-top: 25px;
@@ -515,26 +513,24 @@ footer {
   border-radius: 0;
   font-size: 3em; }
 
-.content-1960s {
-  display: none; }
-  .content-1960s h4 {
-    color: #008d9a;
-    max-width: 400px;
-    margin-bottom: 30px; }
-  .content-1960s img {
-    border: #008d9a solid 1px;
-    float: left;
-    margin-right: 2%;
-    margin-bottom: 20px;
-    display: inline-block; }
-  .content-1960s img:first-of-type {
-    margin-left: 0; }
-  .content-1960s h3 {
-    color: #462D23;
-    margin-top: 30px;
-    clear: left; }
-  .content-1960s p {
-    margin-bottom: 30px; }
+.tl-content h4 {
+  color: #008d9a;
+  max-width: 400px;
+  margin-bottom: 30px; }
+.tl-content img {
+  border: #008d9a solid 1px;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 20px;
+  display: inline-block; }
+.tl-content img:first-of-type {
+  margin-left: 0; }
+.tl-content h3 {
+  color: #462D23;
+  margin-top: 30px;
+  clear: left; }
+.tl-content p {
+  margin-bottom: 30px; }
 
 .chalkboard {
   background: url(../assets/culturesmall.gif) center no-repeat;
@@ -865,19 +861,26 @@ footer {
   .story-value ul {
     margin: 0 auto 30px auto; }
 
+  .timeline {
+    margin-bottom: 100px; }
+
   .tl-btn {
-    display: none; }
+    display: block;
+    width: 25%;
+    border-radius: 10px;
+    margin: 10px;
+    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-weight: 600;
+    font-size: 30px;
+    outline: none;
+    transition: 200ms ease color, 200ms ease border; }
 
   .tl-content {
-    float: right;
     width: 70%;
     margin-left: 5%;
-    padding: 0 0 50px 0; }
+    float: left; }
     .tl-content h4 {
       margin: 0 0 30px 0; }
-
-  .content-1960s {
-    display: block; }
 
   /* 38em Food */
   .newfood {

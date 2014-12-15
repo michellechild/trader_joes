@@ -31,12 +31,12 @@
 }	
 
 .story-value {
-	margin: 50px 0;
-	padding: 20px 0;
-	border-top: dotted 5px $primary-color-3;
-	border-bottom: dotted 5px $primary-color-3;
-	background-color: #63EBF8;
-	background-clip: padding-box;
+margin: 50px 0;
+padding: 20px 0;
+border-top: dotted 5px $primary-color-3;
+border-bottom: dotted 5px $primary-color-3;
+background-color: #63EBF8;
+background-clip: padding-box;
 
 	blockquote {
 	@include blockquote-style;
@@ -53,17 +53,11 @@
 
 }
 
-.timeline {
-
-	h4 {
-	max-width: 200px;
-	margin: 0 0 50px 0;
-	}
+.timeline h4 {
+max-width: 200px;
+margin: 0 0 50px 0;
 }
 
-.tl-btn {
-text-transform: none;
-}
 
 .y1960s, .y1990s {
 @include global-button-style($color-dark, $primary-color-2);
@@ -74,10 +68,11 @@ text-transform: none;
 }
 
 .y1980s, .y2010s {
-@include global-button-style($color-dark, $primary-color-3);
+@include global-button-style($color-light, $primary-color-3);
 }
 
-.y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
+.tl-btn {
+text-transform: none;
 width: 100%;
 text-align: left;
 padding-top: 25px;
@@ -87,8 +82,7 @@ border-radius: 0;
 font-size: 3em;
 }
 
-.content-1960s {
-display: none;
+.tl-content{
 
 	h4 {
 	color: $primary-color-3;
