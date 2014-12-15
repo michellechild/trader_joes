@@ -512,25 +512,46 @@ footer {
   .content-1960s p {
     margin-bottom: 30px; }
 
+.chalkboard {
+  background: url(../assets/culturesmall.gif) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 228px; }
+
 .culture-h1 {
   background-color: #008d9a;
-  max-width: 200px;
+  max-width: 300px;
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  top: -50px; }
+  top: -25px; }
 
 .culture-intro p {
-  margin: 0 auto 30px auto; }
+  margin: 30px auto;
+  font-size: 21px; }
+.culture-intro blockquote {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.6;
+  font-style: italic;
+  color: #008d9a;
+  margin: 30px auto 100px auto;
+  max-width: 580px; }
 
 .events, .holidays, .guides {
   min-height: 350px; }
+
+.culture-box h4 {
+  color: #D60D34;
+  margin: 50px auto 100px auto; }
 
 .culture-copy {
   max-height: 350px;
   overflow: hidden; }
   .culture-copy h4 {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    color: #462D23; }
   .culture-copy:last-of-type {
     margin-bottom: 50px; }
 
@@ -831,6 +852,25 @@ footer {
       margin-left: 0; }
 
   /* 38em Culture */
+  .chalkboard {
+    background: url(../assets/culture.gif) center no-repeat;
+    width: 100%;
+    background-size: cover;
+    max-width: 800px;
+    min-height: 400px;
+    margin: 30px auto;
+    border-radius: 10px; }
+
+  .culture-h1 {
+    top: -75px;
+    background-color: #008d9a;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 auto; }
+    .culture-h1 h1 {
+      font-size: 65px; }
+
   .culture-box {
     overflow: hidden;
     display: block; }
@@ -981,11 +1021,13 @@ footer {
 
   /* 60em Culture */
   .culture-intro p {
-    margin: 0 0 30px 0; }
-
-  .culture-h1 {
-    margin-top: 30px;
-    margin-left: 7.5%; }
+    width: 45%;
+    float: left; }
+  .culture-intro blockquote {
+    width: 45%;
+    float: left;
+    margin-left: 10%;
+    margin-top: 70px; }
 
   .culture-box .box-wrapper {
     width: 30%; }

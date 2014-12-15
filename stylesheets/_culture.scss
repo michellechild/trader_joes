@@ -1,14 +1,42 @@
-.culture-h1 {
-@include header-wrapper ($primary-color-3, 200px);
-top: -50px;
+
+.chalkboard {
+background:url(../assets/culturesmall.gif) center no-repeat;
+background-size: cover;
+width: 100%;
+min-height: 228px;
 }
 
-.culture-intro p { 
-margin: 0 auto 30px auto;
+.culture-h1 {
+@include header-wrapper ($primary-color-3, 300px);
+top: -25px;
+}
+
+.culture-intro {
+
+	p { 
+	margin: 30px auto;
+	font-size: 21px;
+	}
+
+	blockquote {
+	font-family: "freight-micro-pro" "rockwell" "serif";
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 1.6;
+	font-style: italic;
+	color: $primary-color-3;	
+	margin: 30px auto 100px auto;
+	max-width: 580px;
+	}
 }
 
 .events, .holidays, .guides{
 	min-height: 350px;
+}
+
+.culture-box h4 {
+	color: $primary-color-1;
+	margin: 50px auto 100px auto;
 }
 
 
@@ -17,6 +45,7 @@ margin: 0 auto 30px auto;
 	overflow: hidden;	
 	h4 {
 	margin-bottom: 30px;
+	color: $color-dark;
 	} 
 
 	&:last-of-type{
