@@ -200,10 +200,44 @@ margin: 0;
 
 /* 38em Recipes */
 
-.recipe-feature{
-	img {
-	max-width: 500px;
+
+.featuredrecipe-photo {
+	min-height: 450px;
+}
+
+.recipe-intro ul {
+		text-align: left;
 	}
+
+.recipe-btn {
+	display: none;
+}
+.recipe-nav {
+	display: block;
+	width: 28%;
+	overflow: hidden;
+	float: left;
+}
+.recipe-feature {
+	width: 70%;
+	float: left;
+	margin-left: 2%
+}
+
+.app2, .bev2, .bfast2, .lunch2, .dinner2, .dessert2 {
+	display: block;
+	}
+
+.recipe-box {
+	max-width: 510px;
+	.box-wrapper:nth-of-type(odd)  {
+	margin-left: 6%;
+	}
+	
+	.box-wrapper:nth-of-type(3n+1)  {
+	margin-left: 0;
+	}
+
 }
 
 /* 38em Footer */

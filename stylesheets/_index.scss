@@ -107,11 +107,12 @@ transition: border 200ms ease, background 200ms ease;
 .box-wrapper:hover {
 	
 	.h2-wrapper {	
-		background-color: $color-light;
-		border: 3px solid $primary-color-1;
+	background-color: $color-light;
+	border: 3px solid $primary-color-1;
 	}	
+
 	h2{
-		color: $primary-color-1;
+	color: $primary-color-1;
 	}
 	.overlay {
 	background: rgba(166, 10, 40, 0.4);
