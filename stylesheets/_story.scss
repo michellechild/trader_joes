@@ -7,7 +7,7 @@
 	}
 	
 	h1 {
-		font-size: 50px;
+	font-size: 50px;
 	}
 
 	.highlight-photo img {	
@@ -20,11 +20,10 @@
 	}
 
 	span {
-		font-size: 45px;
-		font-weight: 100;
-		margin-bottom: 30px;
-		color: $primary-color-3;
-
+	font-size: 45px;
+	font-weight: 100;
+	margin-bottom: 30px;
+	color: $primary-color-3;
 	}
 
 	p:nth-of-type(2) {
@@ -70,29 +69,29 @@ border-top: 3px dotted $color-dark;
 }
 
 .tl-btn {
-	text-transform: none;
+text-transform: none;
 }
 
 .y1960s, .y1990s {
-	@include global-button-style($color-dark, $primary-color-2);
+@include global-button-style($color-dark, $primary-color-2);
 }
 
 .y1970s, .y2000s {
-	@include global-button-style($color-light, $primary-color-1);
+@include global-button-style($color-light, $primary-color-1);
 }
 
 .y1980s, .y2010s {
-	@include global-button-style($color-dark, $primary-color-3);
+@include global-button-style($color-dark, $primary-color-3);
 }
 
 .y1960s, .y1970s, .y1980s, .y1990s, .y2000s, .y2010s {
-	width: 100%;
-	text-align: left;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	padding-left: 7.5%;
-	border-radius: 0;
-	font-size: 3em;
+width: 100%;
+text-align: left;
+padding-top: 25px;
+padding-bottom: 25px;
+padding-left: 7.5%;
+border-radius: 0;
+font-size: 3em;
 }
 
 .content-1960s {

@@ -73,7 +73,7 @@ h1 {
 
 h2 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
-  line-height: 1.3;
+  line-height: 1.2;
   letter-spacing: 2;
   font-size: 4em;
   font-weight: 400;
@@ -98,6 +98,14 @@ h4 {
   margin: 0 auto;
   color: #462D23; }
 
+h5 {
+  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.6;
+  font-style: normal;
+  color: #FFFFFF; }
+
 p, ul {
   font-family: "freight-micro-pro" "rockwell" "serif";
   line-height: 1.6;
@@ -115,7 +123,7 @@ a {
     color: #00bccd; }
 
 header {
-  background-color: #D60D34;
+  background: url(../assets/header_pattern2.png), #D60D34;
   width: 100%;
   padding: 10px 0; }
 
@@ -191,7 +199,7 @@ header {
   display: none; }
 
 nav {
-  background-color: #462D23; }
+  background: #462D23; }
 
 nav li {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
@@ -203,8 +211,7 @@ nav li {
 
 footer {
   clear: both;
-  background-color: #462D23;
-  width: 100%;
+  background: url(../assets/footer_pattern.png), #462D23;
   padding-top: 100px;
   padding-bottom: 100px; }
   footer button {
@@ -284,7 +291,7 @@ footer {
   margin: 0 auto;
   max-width: 380px; }
   .index-box h4 {
-    max-width: 434px;
+    max-width: 450px;
     margin: 50px auto; }
 
 .box-wrapper:first-of-type {
@@ -294,7 +301,7 @@ footer {
   display: block;
   width: 100%;
   max-width: 300px;
-  min-height: 460px;
+  min-height: 400px;
   border-radius: 10px;
   background-repeat: no-repeat; }
 
@@ -311,7 +318,7 @@ footer {
   background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
 
 .whatsnew {
-  background: url(../assets/cheese.jpg) no-repeat; }
+  background: url(../assets/whatsnew.jpg) no-repeat; }
 
 .flyer {
   background: url(../assets/dec-fearless-flyer.jpg) no-repeat; }
@@ -353,7 +360,7 @@ footer {
 .box-wrapper:hover .h2-wrapper {
   background-color: #FFFFFF;
   border: 3px solid #D60D34; }
-.box-wrapper:hover h2 {
+.box-wrapper:hover h2, .box-wrapper:hover h5 {
   color: #D60D34; }
 .box-wrapper:hover .overlay {
   background: rgba(166, 10, 40, 0.4); }
@@ -539,21 +546,11 @@ footer {
       width: 100%;
       max-width: 300px; }
   .newfood h1 {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    color: #462D23;
-    margin: 30px 0;
-    font-size: 30px;
-    text-align: left; }
-  .newfood h3 {
     color: #D60D34;
-    margin: 30px auto;
+    margin: 50px auto;
     text-align: center;
     line-height: 1.3;
     font-size: 60px; }
-  .newfood h4 {
-    max-width: 400px;
-    font-size: 35px;
-    margin-bottom: 30px; }
   .newfood p {
     margin: 0 auto; }
   .newfood a {
@@ -612,13 +609,11 @@ footer {
 .recipe-intro {
   overflow: hidden; }
   .recipe-intro h1 {
-    color: #462D23;
+    color: #D60D34;
     margin: 50px 0; }
   .recipe-intro .h2-wrapper {
     max-width: 300px; }
-  .recipe-intro h3 {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    font-size: 20px;
+  .recipe-intro h5 {
     color: #008d9a; }
   .recipe-intro ul {
     margin-top: -25px;
@@ -678,10 +673,8 @@ footer {
 .recipe-box {
   margin: 0 auto;
   max-width: 220px; }
-  .recipe-box h3 {
-    color: #462D23;
+  .recipe-box h4 {
     margin: 30px 0;
-    font-size: 40px;
     text-align: center; }
   .recipe-box .box-wrapper:first-of-type {
     margin-top: 0; }
@@ -695,10 +688,8 @@ footer {
     border-radius: 10px;
     margin: 0 auto;
     top: -25px; }
-    .recipe-box .h2-wrapper h2 {
-      font-size: 16px;
-      font-weight: 300;
-      font-family: "freight-micro-pro" "rockwell" "serif"; }
+    .recipe-box .h2-wrapper h5 {
+      text-align: center; }
 
 .app1, .bev1, .bfast1, .lunch1, .dinner1, .dessert1, .app2, .app3, .bev2, .bev3, .bfast2, .bfast3, .lunch2, .lunch3, .dinner2, .dinner3, .dessert2, .dessert3 {
   display: block;
@@ -935,7 +926,7 @@ footer {
 
   /* 60em Boxes */
   .index-box, .food-box {
-    max-width: 1000px; }
+    max-width: 1200px; }
 
   .box-wrapper {
     width: 32%;
@@ -972,9 +963,7 @@ footer {
       margin-left: 2.5%; }
     .story .container {
       display: inline-block;
-      width: 100%;
-      margin: 0;
-      overflow: hidden; }
+      width: 100%; }
 
   .story-value {
     margin: 0; }

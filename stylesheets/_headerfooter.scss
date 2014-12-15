@@ -1,5 +1,6 @@
 header {
-@include div-bg($primary-color-1);	
+background: url(../assets/header_pattern2.png), $primary-color-1;
+width: 100%;
 padding: 10px 0;
 }
 
@@ -29,7 +30,7 @@ display: none;
 }
 
 nav {
-background-color: $color-dark;
+background: $color-dark;
 }
 
 nav li {
@@ -43,7 +44,7 @@ display: none;
 
 footer {
 clear: both; 
-@include div-bg($color-dark);
+background: url(../assets/footer_pattern.png),  $color-dark;
 padding-top: 100px;
 padding-bottom: 100px;
 	

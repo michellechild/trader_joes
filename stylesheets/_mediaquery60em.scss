@@ -7,16 +7,16 @@ display: none;
 }
 
 .store-zip {
+display: inline-block;
+margin: 0 10px 10px 10px;
+
 	input {
 	@include input-style(100px, 38px);
 	}
-display: inline-block;
-margin: 0 10px 10px 10px;
 }
 
 nav li {
 margin-left: 60px;
-
 }
 
 /* 60em full width photos */
@@ -30,7 +30,7 @@ min-height: 550px;
 /* 60em Boxes */
 
 .index-box, .food-box {
-max-width: 1000px;
+max-width: 1200px;
 }
 
 .box-wrapper {
@@ -50,6 +50,7 @@ margin-left: 0;
 .h2-wrapper {
 @include header-wrapper ($primary-color-1, 250px);
 background-color: darken($primary-color-1, 10%);
+	
 	h2 {
 	font-size: 40px;
 	}
@@ -58,7 +59,7 @@ background-color: darken($primary-color-1, 10%);
 /* 60em Story */
 
 .story {
-	margin-bottom: 0;
+margin-bottom: 0;
 
 	.split:nth-of-type(1){
 	width: 40%;
@@ -74,22 +75,20 @@ background-color: darken($primary-color-1, 10%);
 	}
 
 	.container { 
-		display: inline-block;
+	display: inline-block;
 	width: 100%;
-  	margin: 0;
-  	overflow: hidden;
 	}
 }
 
-
 .story-value {
-	margin: 0;
+margin: 0;
 
 	h4 {
-		margin-top: 50px;
+	margin-top: 50px;
 	}
+	
 	p, ul {
-		margin:  0 0 30px 0;
+	margin:  0 0 30px 0;
 	}
 
 	blockquote {
@@ -97,14 +96,13 @@ background-color: darken($primary-color-1, 10%);
 	}
 
 	.split {
-		float: left; 
-		width: 48%;
+	float: left; 
+	width: 48%;
 
 		&:nth-of-type(2){
  		margin-left: 2%;
  		}
 	}
-
 }
 
 
@@ -131,8 +129,7 @@ margin-left: 7.5%;
 
 /* 60em Food */
 .newfood {
-	max-width: 1200px;
-
+max-width: 1200px;
 
 	.highlight-photo {
 	width: 23.5%;
@@ -149,11 +146,13 @@ margin-left: 7.5%;
 .food-intro {
 width: 48%;
 float: left;
+	
 	h4 {
-		margin: 0 0 30px 0;
+	margin: 0 0 30px 0;
 	}
 
 }
+
 .labels {
 width: 48%;
 float: left;

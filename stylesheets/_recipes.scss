@@ -3,7 +3,7 @@
 	overflow:hidden;
 	
 	h1{
-	color: $color-dark;
+	color: $primary-color-1;
 	margin: 50px 0;
 	}
 
@@ -11,36 +11,34 @@
 		max-width: 300px;
 	}
 	
-	h3 {
-		font-family: "freight-micro-pro" "rockwell" "serif";
-		font-size: 20px;
-		color: $primary-color-3;
+	h5 {
+	color: $primary-color-3;
 	}
 
 	ul {
-		margin-top: -25px;
-		text-align: center;
+	margin-top: -25px;
+	text-align: center;
 	}
 	
 	li {
-		margin-top: 10px;
+	margin-top: 10px;
 	}
-	input {
-		@include input-style(120px, 35px);
-		font-size: 16px;
-		padding: 10px;
-		border: 1px solid #999;
 
+	input {
+	@include input-style(120px, 35px);
+	font-size: 16px;
+	padding: 10px;
+	border: 1px solid #999;
 	}
 }
 
 
 .featuredrecipe-photo {
-	background-image:url(../assets/featuredrecipe.jpg);
-	background-repeat: no-repeat;
-	min-height: 300px;
-	width: 100%;
-	border-radius: 10px;
+background-image:url(../assets/featuredrecipe.jpg);
+background-repeat: no-repeat;
+min-height: 300px;
+width: 100%;
+border-radius: 10px;
 }
 
 .recipe-btn {
@@ -50,7 +48,7 @@ padding-bottom: 20px;
 }
 	
 .recipe-nav {
-	display: none;
+display: none;
 }
 
 
@@ -58,15 +56,13 @@ padding-bottom: 20px;
 	margin: 0 auto;
 	max-width: 220px;
 
-	h3 {
-	color: $color-dark;
+	h4 {
 	margin: 30px 0;
-	font-size: 40px;
 	text-align: center;
 	}
 
 	.box-wrapper:first-of-type {
-		margin-top: 0;
+	margin-top: 0;
 	}
 
 	.overlay {
@@ -78,10 +74,8 @@ padding-bottom: 20px;
 	@include header-wrapper ($primary-color-1, 150px);
 	top: -25px;
 
-		h2 {
-		font-size: 16px;
-		font-weight: 300;
-		font-family: "freight-micro-pro" "rockwell" "serif";
+		h5 {
+			text-align: center;
 		}
 	}
 }
