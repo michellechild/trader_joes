@@ -15,8 +15,8 @@ margin: 0 10px 10px 10px;
 	}
 }
 
-nav li {
-margin-left: 60px;
+nav li:last-of-type {
+	margin-right: 50px;
 }
 
 /* 60em full width photos */
@@ -206,6 +206,4 @@ margin-left: 2%;
 .footer-copy:nth-of-type(1) {
 	margin-left:0;
 }
-
 }
-

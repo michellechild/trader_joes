@@ -34,6 +34,7 @@ margin-top: 50px;
 .announcements, .flyer, .whatsnew, .events, .recipes, .holidays, .productstories, .guides, .lists {
 display: block;
 width: 100%;
+background-size: cover;
 max-width: 300px;
 min-height: 400px;
 border-radius: 10px;
@@ -47,11 +48,19 @@ max-width: 300px;
 background: transparent;
 border-radius: 10px;
 border: 3px solid #999;
-transition: background 200ms ease;		
+transition: background 200ms ease;	
+
+	blockquote {
+	@include blockquote-style;
+	color: $color-dark;
+	margin: 10px;
+	padding: 5px 5px 15px 5px;
+	border-bottom: 1px solid $color-dark;
+	}
 }
 
 .announcements {
-background: url(../assets/dec-fearless-flyer.jpg) no-repeat;
+background: url(../assets/announcements.gif) no-repeat;
 }
 
 .whatsnew {

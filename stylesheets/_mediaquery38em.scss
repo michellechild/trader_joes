@@ -23,20 +23,37 @@ margin-bottom: 10px;
 display: inline-block;
 }
 
-nav ul{
-max-width: 600px;
-}
 
-nav li {
-display: inline-block;
+nav {
 padding-top: 15px;
 padding-bottom: 20px;
-margin-left: 40px;
+
+	ul{
+	max-width: 550px;
+	display: inline-block;
+	}
+
+	li {
+	display: inline-block;
+	margin-left: 40px;
+	}
+
+	li:first-of-type {
+	margin-left: 0;
+	}
+}
+.sub-nav {
+max-width: 458px;
 }
 
-nav li:first-of-type {
+.sub-nav li {
+margin-left: 15px;
+}
+
+.sub-nav li:first-of-type{
 margin-left: 0;
 }
+
 
 /* 38em full width photos */
 
