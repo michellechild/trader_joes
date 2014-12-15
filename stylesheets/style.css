@@ -92,7 +92,7 @@ h3 {
 h4 {
   font-family: "hooligan" "candara" "calibri" "sans-serif";
   line-height: 1.3;
-  font-size: 5.5em;
+  font-size: 5.3em;
   font-weight: 600;
   font-style: normal;
   margin: 0 auto;
@@ -545,13 +545,13 @@ footer {
 
 .culture-box h4 {
   color: #D60D34;
-  margin: 50px auto 100px auto; }
+  margin: 0 auto 50px auto; }
 
 .culture-copy {
-  max-height: 350px;
+  max-height: 400px;
   overflow: hidden; }
   .culture-copy h4 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: #462D23; }
   .culture-copy:last-of-type {
     margin-bottom: 50px; }
