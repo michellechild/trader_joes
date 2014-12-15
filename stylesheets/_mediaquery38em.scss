@@ -166,8 +166,9 @@ transition: 200ms ease color, 200ms ease border;
 .tl-content{
 width: 70%;
 margin-left: 5%;
-float: left;
-
+position: absolute;
+top: 0;
+right: 0;
 	h4 {
 	margin: 0 0 30px 0;
 	}

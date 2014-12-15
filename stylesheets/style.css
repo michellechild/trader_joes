@@ -878,7 +878,9 @@ footer {
   .tl-content {
     width: 70%;
     margin-left: 5%;
-    float: left; }
+    position: absolute;
+    top: 0;
+    right: 0; }
     .tl-content h4 {
       margin: 0 0 30px 0; }
 
