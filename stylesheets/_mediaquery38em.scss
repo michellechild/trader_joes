@@ -174,15 +174,12 @@ max-width: 700px;
 background:url(../assets/culture.gif) center no-repeat;
 width: 100%;
 background-size: cover;
-max-width: 800px;
+max-width: 1200px;
 min-height: 400px;
-margin: 30px auto;
-border-radius: 10px;
-// border: 20px solid lighten($color-dark, 30%);
+
 }
 
 .culture-h1 {
-top: -75px;
 @include header-wrapper ($primary-color-3, 300px);
 	
 	h1 {

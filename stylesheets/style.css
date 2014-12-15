@@ -513,10 +513,11 @@ footer {
     margin-bottom: 30px; }
 
 .chalkboard {
-  background: url(../assets/culturesmall.gif) center no-repeat;
+  background: url(../assets/culturesmall.gif) bottom no-repeat;
   background-size: cover;
   width: 100%;
-  min-height: 228px; }
+  min-height: 228px;
+  border-bottom: 20px solid #008d9a; }
 
 .culture-h1 {
   background-color: #008d9a;
@@ -524,7 +525,7 @@ footer {
   padding: 10px;
   border-radius: 10px;
   margin: 0 auto;
-  top: -25px; }
+  top: -20px; }
 
 .culture-intro p {
   margin: 30px auto;
@@ -856,13 +857,10 @@ footer {
     background: url(../assets/culture.gif) center no-repeat;
     width: 100%;
     background-size: cover;
-    max-width: 800px;
-    min-height: 400px;
-    margin: 30px auto;
-    border-radius: 10px; }
+    max-width: 1200px;
+    min-height: 400px; }
 
   .culture-h1 {
-    top: -75px;
     background-color: #008d9a;
     max-width: 300px;
     padding: 10px;
@@ -1020,6 +1018,9 @@ footer {
         margin-left: 2%; }
 
   /* 60em Culture */
+  .chalkboard {
+    min-height: 500px; }
+
   .culture-intro p {
     width: 45%;
     float: left; }
