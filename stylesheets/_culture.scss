@@ -1,11 +1,18 @@
 
 .chalkboard {
-background:url(../assets/culturesmall.gif) bottom no-repeat;
+background:url(../assets/culturesmall.gif) center no-repeat;
 background-size: cover;
 width: 100%;
 min-height: 228px;
-border-bottom: 20px solid $primary-color-3;
+border-bottom: 10px solid $primary-color-3;
 
+}
+
+.culture {
+	background-color: lighten($primary-color-2, 20%);
+	padding-bottom: 50px;
+border-bottom: 5px dotted $primary-color-3;
+	background-clip: padding-box;
 }
 
 .culture-h1 {
@@ -14,7 +21,6 @@ top: -20px;
 }
 
 .culture-intro {
-
 	p { 
 	margin: 30px auto;
 	font-size: 21px;
@@ -25,7 +31,7 @@ top: -20px;
 	font-size: 35px;
 	font-style: italic;
 	color: $primary-color-3;	
-	margin-bottom: 100px;
+	margin: 0 auto 30px auto;
 	max-width: 580px;
 	}
 }
@@ -36,7 +42,7 @@ top: -20px;
 
 .culture-box h4 {
 	color: $primary-color-1;
-	margin: 0 auto 50px auto;
+	margin: 50px auto;
 }
 
 

@@ -406,13 +406,17 @@ footer {
 .story span {
   font-size: 45px;
   font-weight: 100;
-  margin-bottom: 30px;
   color: #008d9a; }
 .story p:nth-of-type(2) {
   margin-top: 30px; }
 
 .story-value {
-  margin: 30px 0; }
+  margin: 50px 0;
+  padding: 20px 0;
+  border-top: dotted 5px #008d9a;
+  border-bottom: dotted 5px #008d9a;
+  background-color: #63EBF8;
+  background-clip: padding-box; }
   .story-value blockquote {
     font-family: "freight-micro-pro" "rockwell" "serif";
     font-size: 27px;
@@ -421,21 +425,17 @@ footer {
     color: #008d9a;
     margin: 30px 0;
     display: block;
+    color: #462D23;
     clear: both; }
-  .story-value p {
-    margin-top: 30px; }
   .story-value li {
     list-style-type: disc;
     list-style-position: outside;
     margin-left: 20px;
     margin-top: 15px; }
 
-.timeline {
-  margin-top: 50px;
-  border-top: 3px dotted #462D23; }
-  .timeline h4 {
-    max-width: 200px;
-    margin: 50px 0; }
+.timeline h4 {
+  max-width: 200px;
+  margin: 0 0 50px 0; }
 
 .tl-btn {
   text-transform: none; }
@@ -537,11 +537,17 @@ footer {
     margin-bottom: 30px; }
 
 .chalkboard {
-  background: url(../assets/culturesmall.gif) bottom no-repeat;
+  background: url(../assets/culturesmall.gif) center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 228px;
-  border-bottom: 20px solid #008d9a; }
+  border-bottom: 10px solid #008d9a; }
+
+.culture {
+  background-color: #fdfca7;
+  padding-bottom: 50px;
+  border-bottom: 5px dotted #008d9a;
+  background-clip: padding-box; }
 
 .culture-h1 {
   background-color: #008d9a;
@@ -559,7 +565,7 @@ footer {
   font-size: 35px;
   font-style: italic;
   color: #008d9a;
-  margin-bottom: 100px;
+  margin: 0 auto 30px auto;
   max-width: 580px; }
 
 .events, .holidays, .guides {
@@ -567,7 +573,7 @@ footer {
 
 .culture-box h4 {
   color: #D60D34;
-  margin: 0 auto 50px auto; }
+  margin: 50px auto; }
 
 .culture-copy {
   max-height: 400px;
@@ -603,9 +609,10 @@ footer {
       color: #D60D34; }
 
 .food {
-  border-top: dotted #462D23 3px;
-  border-bottom: dotted #462D23 3px;
+  border-top: dotted #462D23 5px;
+  border-bottom: dotted #462D23 5px;
   background-color: #fdfca7;
+  background-clip: padding-box;
   padding: 50px 0;
   margin: 0 auto;
   overflow: hidden; }
@@ -651,7 +658,10 @@ footer {
     margin: 100px auto; }
 
 .recipe-intro {
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #fdfca7;
+  border-bottom: 5px dotted #462D23;
+  background-clip: padding-box; }
   .recipe-intro h1 {
     color: #D60D34;
     margin: 50px 0; }
@@ -832,7 +842,7 @@ footer {
   /* 38em Story */
   .story {
     overflow: hidden;
-    margin: 60px auto; }
+    margin: 60px auto 0 auto; }
     .story .highlight-photo {
       max-width: 360px;
       margin: 0 auto; }
@@ -851,11 +861,9 @@ footer {
 
   .story-value blockquote {
     max-width: 650px;
-    margin: 30px auto;
-    text-align: center; }
-  .story-value p, .story-value ul {
-    margin-bottom: 30px;
-    margin: 0 auto; }
+    margin: 30px auto; }
+  .story-value ul {
+    margin: 0 auto 30px auto; }
 
   .tl-btn {
     display: none; }
@@ -864,7 +872,7 @@ footer {
     float: right;
     width: 70%;
     margin-left: 5%;
-    padding: 50px 0; }
+    padding: 0 0 50px 0; }
     .tl-content h4 {
       margin: 0 0 30px 0; }
 
@@ -888,7 +896,7 @@ footer {
     background: url(../assets/culture.gif) center no-repeat;
     width: 100%;
     background-size: cover;
-    max-width: 1200px;
+    max-width: none;
     min-height: 400px; }
 
   .culture-h1 {
@@ -896,7 +904,8 @@ footer {
     max-width: 300px;
     padding: 10px;
     border-radius: 10px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    top: -50px; }
     .culture-h1 h1 {
       font-size: 65px; }
 
@@ -1034,23 +1043,19 @@ footer {
       display: inline-block;
       width: 100%; }
 
-  .story-value {
-    margin: 0; }
-    .story-value h4 {
-      margin-top: 50px; }
-    .story-value p, .story-value ul {
-      margin: 0 0 30px 0; }
-    .story-value blockquote {
-      max-width: none; }
-    .story-value .split {
-      float: left;
-      width: 48%; }
-      .story-value .split:nth-of-type(2) {
-        margin-left: 2%; }
+  .story-value h4 {
+    margin-top: 50px; }
+  .story-value blockquote {
+    max-width: none; }
+  .story-value .split {
+    float: left;
+    width: 48%; }
+    .story-value .split:nth-of-type(2) {
+      margin-left: 2%; }
 
   /* 60em Culture */
   .chalkboard {
-    min-height: 500px; }
+    min-height: 550px; }
 
   .culture-intro p {
     width: 45%;

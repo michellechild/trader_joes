@@ -35,9 +35,10 @@ margin-bottom: 100px;
 }
 
 .food {
-border-top: dotted $color-dark 3px;
-border-bottom: dotted $color-dark 3px;
+border-top: dotted $color-dark 5px;
+border-bottom: dotted $color-dark 5px;
 background-color: lighten($primary-color-2, 20%);
+background-clip: padding-box;
 padding: 50px 0;
 margin: 0 auto;
 overflow: hidden;

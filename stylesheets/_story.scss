@@ -22,7 +22,6 @@
 	span {
 	font-size: 45px;
 	font-weight: 100;
-	margin-bottom: 30px;
 	color: $primary-color-3;
 	}
 
@@ -32,15 +31,17 @@
 }	
 
 .story-value {
-	margin: 30px 0;
+	margin: 50px 0;
+	padding: 20px 0;
+	border-top: dotted 5px $primary-color-3;
+	border-bottom: dotted 5px $primary-color-3;
+	background-color: #63EBF8;
+	background-clip: padding-box;
 
 	blockquote {
 	@include blockquote-style;
+	color: $color-dark;
 	clear: both;
-	}
-
-	p {
-	margin-top: 30px;
 	}
 
 	li {
@@ -53,12 +54,10 @@
 }
 
 .timeline {
-margin-top: 50px;
-border-top: 3px dotted $color-dark;
 
 	h4 {
 	max-width: 200px;
-	margin: 50px 0;
+	margin: 0 0 50px 0;
 	}
 }
 

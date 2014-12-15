@@ -99,7 +99,7 @@ margin-left: 0;
 
 .story {
 overflow: hidden;
-margin: 60px auto;
+margin: 60px auto 0 auto;
 
 	.highlight-photo{
 	max-width: 360px;
@@ -136,12 +136,10 @@ margin: 60px auto;
 	blockquote {
 	max-width: 650px;
 	margin: 30px auto;
-	text-align: center;
 	}
 
-	p, ul {
-	margin-bottom: 30px;
-	margin: 0 auto;
+	ul {
+	margin: 0 auto 30px auto;
 	}
 }
 
@@ -154,7 +152,7 @@ display: none;
 float: right;
 width: 70%;
 margin-left: 5%;
-padding: 50px 0;
+padding: 0 0 50px 0;
 
 	h4 {
 	margin: 0 0 30px 0;
@@ -191,18 +189,20 @@ max-width: 700px;
 background:url(../assets/culture.gif) center no-repeat;
 width: 100%;
 background-size: cover;
-max-width: 1200px;
+max-width: none;
 min-height: 400px;
 
 }
 
 .culture-h1 {
 @include header-wrapper ($primary-color-3, 300px);
-	
+top: -50px;
+
 	h1 {
 	font-size: 65px;
 	}
 }
+
 
 .culture-box{
 	overflow: hidden;

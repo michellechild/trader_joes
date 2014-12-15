@@ -1,7 +1,11 @@
 
 .recipe-intro {
-	overflow:hidden;
-	
+overflow:hidden;
+background-color: lighten($primary-color-2, 20%);
+border-bottom: 5px dotted $color-dark;
+background-clip: padding-box;
+
+
 	h1{
 	color: $primary-color-1;
 	margin: 50px 0;
