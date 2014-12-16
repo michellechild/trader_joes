@@ -73,6 +73,7 @@ margin: 0 0 50px 0;
 
 .tl-btn {
 text-transform: none;
+letter-spacing: 0;
 width: 100%;
 text-align: left;
 padding-top: 25px;
@@ -83,27 +84,31 @@ font-size: 3em;
 }
 
 .tl-content{
+	width: 87%;
+	max-width: 380px;
+	margin: 0 auto;
 
 	h4 {
 	color: $primary-color-3;
 	max-width: 400px;
 	margin-bottom: 30px;
+	display: none;
 	}
 
 	img { 
-	border: $primary-color-3 solid 1px;
+	border: $primary-color-3 solid 3px;
 	float: left;
-	margin-right: 2%;
-	margin-bottom: 20px;
+	border-radius: 5px;
+	margin: 20px 3% 20px 0;
 	display: inline-block;
 	}
 
-	img:first-of-type {
+	img:nth-of-type(odd){
 	margin-left: 0;
 	}
 
 	h3 {
-	color: $color-dark;
+	color: $primary-color-3;
 	margin-top: 30px;
 	clear: left;
 	}
@@ -111,4 +116,12 @@ font-size: 3em;
 	p {
 	margin-bottom: 30px;
 	}	
+
+	p:last-of-type {
+	margin-bottom: 100px;
+	}	
+}
+
+.content-1970s {
+	height: 900px;
 }

@@ -505,6 +505,7 @@ footer {
 
 .tl-btn {
   text-transform: none;
+  letter-spacing: 0;
   width: 100%;
   text-align: left;
   padding-top: 25px;
@@ -513,24 +514,34 @@ footer {
   border-radius: 0;
   font-size: 3em; }
 
-.tl-content h4 {
-  color: #008d9a;
-  max-width: 400px;
-  margin-bottom: 30px; }
-.tl-content img {
-  border: #008d9a solid 1px;
-  float: left;
-  margin-right: 2%;
-  margin-bottom: 20px;
-  display: inline-block; }
-.tl-content img:first-of-type {
-  margin-left: 0; }
-.tl-content h3 {
-  color: #462D23;
-  margin-top: 30px;
-  clear: left; }
-.tl-content p {
-  margin-bottom: 30px; }
+.tl-content {
+  width: 87%;
+  max-width: 380px;
+  margin: 0 auto; }
+  .tl-content h4 {
+    color: #008d9a;
+    max-width: 400px;
+    margin-bottom: 30px;
+    display: none; }
+  .tl-content img {
+    border: #008d9a solid 3px;
+    float: left;
+    border-radius: 5px;
+    margin: 20px 3% 20px 0;
+    display: inline-block; }
+  .tl-content img:nth-of-type(odd) {
+    margin-left: 0; }
+  .tl-content h3 {
+    color: #008d9a;
+    margin-top: 30px;
+    clear: left; }
+  .tl-content p {
+    margin-bottom: 30px; }
+  .tl-content p:last-of-type {
+    margin-bottom: 100px; }
+
+.content-1970s {
+  height: 900px; }
 
 .chalkboard {
   background: url(../assets/culturesmall.gif) center no-repeat;
@@ -920,15 +931,21 @@ footer {
     margin-bottom: 100px; }
 
   .tl-btn {
-    display: block;
-    width: 25%;
-    border-radius: 10px;
-    margin: 10px;
     font-family: "freight-micro-pro" "rockwell" "serif";
     font-weight: 600;
     font-size: 30px;
     outline: none;
+    width: 25%;
+    text-align: center;
+    padding: 30px 0;
+    background-color: transparent;
+    color: #008d9a;
+    outline: none;
+    display: block;
     transition: 200ms ease color, 200ms ease border; }
+    .tl-btn:hover {
+      background-color: transparent;
+      color: #D60D34; }
 
   .tl-content {
     width: 70%;
@@ -937,7 +954,8 @@ footer {
     top: 0;
     right: 0; }
     .tl-content h4 {
-      margin: 0 0 30px 0; }
+      margin: 0 0 30px 0;
+      display: block; }
 
   /* 38em Food */
   .newfood {

@@ -164,14 +164,14 @@ h4 {
 
 }
 
-  h5 {
-    font-family: "freight-micro-pro" "rockwell" "serif";
-    font-size: 1.6em;
-    font-weight: 300;
-    line-height: 1.6;
-    font-style: normal;
-    color: $color-light;
-    }
+h5 {
+font-family: "freight-micro-pro" "rockwell" "serif";
+font-size: 1.6em;
+font-weight: 300;
+line-height: 1.6;
+font-style: normal;
+color: $color-light;
+}
 
  p, ul {
   @include p-font;

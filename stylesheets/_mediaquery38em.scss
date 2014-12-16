@@ -147,15 +147,23 @@ margin-bottom: 100px;
 }
 
 .tl-btn{
-display: block;
-width: 25%;
-border-radius: 10px;
-margin: 10px;
 font-family: "freight-micro-pro" "rockwell" "serif";
 font-weight: 600;
 font-size: 30px;
 outline: none;
+width: 25%;
+text-align: center;
+padding: 30px 0;
+background-color: transparent;
+color: $primary-color-3;
+outline: none;
+display: block;
 transition: 200ms ease color, 200ms ease border;
+
+	&:hover {
+		background-color: transparent;
+		color: $primary-color-1;
+	}
 }
 
 .tl-content{
@@ -166,6 +174,7 @@ top: 0;
 right: 0;
 	h4 {
 	margin: 0 0 30px 0;
+	display: block;
 	}
 }
 
