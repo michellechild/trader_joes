@@ -103,7 +103,7 @@ margin-bottom: 0;
 
 /* 60em Culture */
 .chalkboard {
-	min-height: 550px;
+min-height: 550px;
 
 }
 .culture-intro {
@@ -167,25 +167,31 @@ margin-left: 4%;
 /* 60em Recipes */
 
 .app3, .bev3, .bfast3, .lunch3, .dinner3, .dessert3 {
-	display: block;
-	}
+display: block;
+}
 
 .recipe-box {
-
-max-width: 751px;
-.box-wrapper:nth-of-type(odd) {
-margin-left: 2%;
+max-width: 800px;
 }
 
-.box-wrapper:nth-of-type(3n+1)  {
-	margin-left: 0;
-	}
-
-.box-wrapper:nth-of-type(3n) {
-	margin-right: 2%;
+.recipe-box-wrapper {
+width: 30%;
+float: left;
+margin-left: 5%;
 }
 
-}	
+.recipe-box-wrapper:nth-of-type(odd) {
+margin-left: 5%;
+}
+
+.recipe-box-wrapper:nth-of-type(3n+1)  {
+margin-left: 0;
+}
+
+// .recipe-box-wrapper:nth-of-type(3n) {
+// margin-right: 3.333333%;
+// }
+
 /* 60em Footer */
 
 .footer-copy {

@@ -131,7 +131,6 @@ margin: 60px auto 0 auto;
 	}
 }
 
-
 .story-value {
 	blockquote {
 	max-width: 650px;
@@ -143,11 +142,9 @@ margin: 60px auto 0 auto;
 	}
 }
 
-
 .timeline{
 margin-bottom: 100px;
 }
-
 
 .tl-btn{
 display: block;
@@ -160,8 +157,6 @@ font-size: 30px;
 outline: none;
 transition: 200ms ease color, 200ms ease border;
 }
-
-
 
 .tl-content{
 width: 70%;
@@ -203,7 +198,6 @@ width: 100%;
 background-size: cover;
 max-width: none;
 min-height: 400px;
-
 }
 
 .culture-h1 {
@@ -248,62 +242,67 @@ margin: 0;
 
 
 .featuredrecipe-photo {
-	min-height: 450px;
+min-height: 450px;
 }
 
 .recipe-intro ul {
-		text-align: left;
-	}
+text-align: left;
+}
 
 .recipe-btn {
 	display: none;
 }
 .recipe-nav {
-	display: block;
-	width: 28%;
-	overflow: hidden;
-	float: left;
+display: block;
+width: 28%;
+overflow: hidden;
+float: left;
 }
 .recipe-feature {
-	width: 70%;
-	float: left;
-	margin-left: 2%
+width: 70%;
+float: left;
+margin-left: 2%
 }
 
 .app2, .bev2, .bfast2, .lunch2, .dinner2, .dessert2 {
-	display: block;
-	}
+display: block;
+}
 
 .recipe-box {
-	max-width: 510px;
-	.box-wrapper:nth-of-type(odd)  {
-	margin-left: 6%;
-	}
-	
-	.box-wrapper:nth-of-type(3n+1)  {
-	margin-left: 0;
-	}
+max-width: 510px;
+}
 
+.recipe-box-wrapper {
+width: 47%;
+float: left;
+}	
+.recipe-box-wrapper:nth-of-type(odd)  {
+margin-left: 6%;
+}
+	
+.recipe-box-wrapper:nth-of-type(3n+1)  {
+margin-left: 0;
 }
 
 /* 38em Footer */
 
 .footer-copy {
-	width: 48%;
-	float: left;
-	margin-left: 4%;
+width: 48%;
+float: left;
+margin-left: 4%;
 }
 
 .footer-copy:nth-of-type(odd) {
-	margin-left: 0;
+margin-left: 0;
 }
 
 .newsletter input.zip {
-	display: inline-block;
+display: inline-block;
 }
 
 .newsletter button {
-	margin-left: 10px;
+margin-left: 10px;
 }
+
 } 
 
