@@ -421,7 +421,7 @@ footer {
   padding: 20px 0;
   border-top: dotted 5px #008d9a;
   border-bottom: dotted 5px #008d9a;
-  background-color: #63EBF8;
+  background-color: #67f2ff;
   background-clip: padding-box; }
   .story-value blockquote {
     font-family: "freight-micro-pro" "rockwell" "serif";
@@ -439,7 +439,7 @@ footer {
     margin-left: 20px;
     margin-top: 15px; }
 
-.timeline h4 {
+h4 {
   max-width: 200px;
   margin: 0 0 50px 0; }
 
@@ -521,10 +521,9 @@ footer {
   font-size: 3em; }
 
 .tl-content {
-  width: 87%;
-  max-width: 380px;
-  margin: 0 auto;
-  display: none; }
+  display: none;
+  padding-left: 7.5%;
+  padding-right: 7.5%; }
   .tl-content h4 {
     color: #008d9a;
     max-width: 400px;
@@ -533,8 +532,9 @@ footer {
   .tl-content img {
     border: #008d9a solid 3px;
     float: left;
+    width: 40%;
     border-radius: 5px;
-    margin: 20px 3% 20px 0;
+    margin: 20px 5% 20px 0;
     display: inline-block; }
   .tl-content img:nth-of-type(odd) {
     margin-left: 0; }
@@ -546,6 +546,15 @@ footer {
     margin-bottom: 30px; }
   .tl-content p:last-of-type {
     margin-bottom: 100px; }
+
+.show-hidden {
+  display: inline-block; }
+
+.tester {
+  float: left; }
+
+.clear-float {
+  clear: both; }
 
 .chalkboard {
   background: url(../assets/culturesmall.gif) center no-repeat;
@@ -967,6 +976,7 @@ footer {
       color: #D60D34; }
 
   .tl-content {
+    display: none;
     max-width: none;
     width: 70%;
     margin-left: 5%;
@@ -977,8 +987,11 @@ footer {
       margin: 0 0 30px 0;
       display: block; }
 
-  .content-1960s {
-    display: block; }
+  .show-hidden {
+    display: inline-block; }
+
+  .tester {
+    float: none; }
 
   /* 38em Food */
   .newfood {

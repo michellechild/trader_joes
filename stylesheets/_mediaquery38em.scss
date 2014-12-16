@@ -187,6 +187,7 @@ transition: 200ms ease color, 200ms ease border;
 }
 
 .tl-content{
+display: none;
 max-width: none;
 width: 70%;
 margin-left: 5%;
@@ -199,12 +200,13 @@ right: 0;
 	}
 }
 
-
-.content-1960s {
-	display: block;
+.show-hidden {
+	display: inline-block;
 }
 
-
+.tester {
+	float: none;
+}
 /* 38em Food */
 
 .newfood {
