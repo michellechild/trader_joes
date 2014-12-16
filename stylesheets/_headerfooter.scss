@@ -32,21 +32,18 @@ background: $color-dark;
 }
 
 nav li {
-font-family: "hooligan" "candara" "calibri" "sans-serif";
-font-size: 30px;
-line-height: 1.3;
-font-weight: 300;
-font-style: normal;
 display: none;
-}
-
-.sub-nav li a {
 font-family: "freight-micro-pro" "candara" "calibri" "sans-serif";
 font-size: 18px;
 color: lighten($primary-color-3, 40%);
 line-height: 1.3;
 font-weight: 100;
 font-style: normal;
+transition: 200ms ease color;
+
+	&:hover {
+		color: $color-light;
+	}
 }
 
 
@@ -55,12 +52,6 @@ clear: both;
 background: url(../assets/footer_pattern.png),  $color-dark;
 padding-top: 100px;
 padding-bottom: 100px;
-	
-	button {
-	@include button-style($color-light, $primary-color-2);
-	margin-top: 20px;
-	}
-
 }
 
 .transparency {
@@ -79,7 +70,7 @@ margin-bottom: 40px;
 }
 
 .newsletter input.email {
-@include input-style(180px, 40px);
+@include input-style(150px, 40px);
 margin-top: 20px;
 }
 
@@ -89,6 +80,8 @@ margin-top: 20px;
 display: block;
 }
 
-.newsletter button {
+.newsletter a{
+@include button-style($color-light, $primary-color-2);
+margin-top: 20px;
 display: inline-block;
 }

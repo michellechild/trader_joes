@@ -87,6 +87,7 @@ font-size: 3em;
 	width: 87%;
 	max-width: 380px;
 	margin: 0 auto;
+	display: none;
 
 	h4 {
 	color: $primary-color-3;
@@ -120,8 +121,4 @@ font-size: 3em;
 	p:last-of-type {
 	margin-bottom: 100px;
 	}	
-}
-
-.content-1970s {
-	height: 900px;
 }

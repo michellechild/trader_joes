@@ -1,4 +1,12 @@
+
+$('.menu').click(function(){
+  $('nav li').toggle();
+})
+
+
+
 $('.y1960s').click(function(){
+  var contentHeight = $('.content-1960s').height();
   $('.content-1960s').toggle();
   $('.content-1970s').hide();
   $('.content-1980s').hide();
