@@ -33,7 +33,7 @@ background: darken($color-dark, 5%);
 
 nav li {
 display: none;
-font-family: "freight-micro-pro" "candara" "calibri" "sans-serif";
+font-family: "freight-micro-pro", candara, calibri, sans-serif;
 font-size: 18px;
 padding-bottom: 20px;
 padding-left: 10px;
@@ -48,7 +48,7 @@ transition: 200ms ease color;
 }
 
 .sub-nav li {
-font-size: 16px;
+font-size: 15px;
 padding-bottom: 10px;
 
 	&:last-of-type {

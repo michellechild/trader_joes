@@ -26,10 +26,10 @@ top: -20px;
 	}
 
 	blockquote {
-	font-family: "freight-micro-pro" "rockwell" "serif";
+	@include blockquote-style;
+	font-family: "freight-micro-pro", rockwell, serif;
 	font-size: 35px;
 	font-style: italic;
-	color: $primary-color-3;	
 	margin: 0 auto 30px auto;
 	max-width: 580px;
 	}

@@ -62,7 +62,7 @@ html {
   overflow: hidden; }
 
 h1 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
+  font-family: "hooligan", candara, calibri, sans-serif;
   line-height: 1.3;
   font-size: 6.5em;
   font-weight: 400;
@@ -72,9 +72,8 @@ h1 {
   display: block; }
 
 h2 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
+  font-family: "hooligan", candara, calibri, sans-serif;
   line-height: 1.2;
-  letter-spacing: 2;
   font-size: 4em;
   font-weight: 400;
   font-style: normal;
@@ -82,7 +81,7 @@ h2 {
   text-align: center; }
 
 h3 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
+  font-family: "hooligan", candara, calibri, sans-serif;
   line-height: 1.6;
   font-size: 3em;
   font-weight: 400;
@@ -90,7 +89,7 @@ h3 {
   color: #FFFFFF; }
 
 h4 {
-  font-family: "hooligan" "candara" "calibri" "sans-serif";
+  font-family: "hooligan", candara, calibri, sans-serif;
   line-height: 1.3;
   font-size: 5.3em;
   font-weight: 600;
@@ -99,7 +98,7 @@ h4 {
   color: #462D23; }
 
 h5 {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.6em;
   font-weight: 300;
   line-height: 1.6;
@@ -107,7 +106,7 @@ h5 {
   color: #FFFFFF; }
 
 p, ul {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   line-height: 1.6;
   font-size: 1.9em;
   font-weight: 400;
@@ -134,7 +133,7 @@ header {
   display: block; }
 
 .menu {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -156,7 +155,7 @@ header {
     background-color: #241712; }
 
 .store-button-small {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -178,7 +177,7 @@ header {
     background-color: #faf711; }
 
 .store-button-large {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-weight: 300;
   font-size: 1.4em;
   text-align: center;
@@ -203,7 +202,7 @@ nav {
 
 nav li {
   display: none;
-  font-family: "freight-micro-pro" "candara" "calibri" "sans-serif";
+  font-family: "freight-micro-pro", candara, calibri, sans-serif;
   font-size: 18px;
   padding-bottom: 20px;
   padding-left: 10px;
@@ -215,7 +214,7 @@ nav li {
     padding-top: 20px; }
 
 .sub-nav li {
-  font-size: 16px;
+  font-size: 15px;
   padding-bottom: 10px; }
   .sub-nav li:last-of-type {
     padding-bottom: 20px; }
@@ -241,7 +240,7 @@ footer {
     list-style-type: none; }
 
 .newsletter input.email {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   padding: 5px;
   padding-left: 10px;
   font-size: 1.4em;
@@ -255,7 +254,7 @@ footer {
   margin-top: 20px; }
 
 .newsletter input.zip {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   padding: 5px;
   padding-left: 10px;
   font-size: 1.4em;
@@ -270,7 +269,7 @@ footer {
   display: block; }
 
 .newsletter a {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-weight: 300;
   font-size: 1.4em;
   text-align: center;
@@ -332,7 +331,7 @@ footer {
   border: 3px solid #999;
   transition: background 200ms ease; }
   .overlay blockquote {
-    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-family: "freight-micro-pro", rockwell, serif;
     font-size: 27px;
     font-weight: 400;
     line-height: 1.6;
@@ -419,12 +418,12 @@ footer {
 .story-value {
   margin: 50px 0;
   padding: 20px 0;
-  border-top: dotted 5px #008d9a;
-  border-bottom: dotted 5px #008d9a;
-  background-color: #67f2ff;
+  border-top: dotted 5px #9af6ff;
+  border-bottom: dotted 5px #9af6ff;
+  background-color: #9af6ff;
   background-clip: padding-box; }
   .story-value blockquote {
-    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-family: "freight-micro-pro", rockwell, serif;
     font-size: 27px;
     font-weight: 400;
     line-height: 1.6;
@@ -444,7 +443,7 @@ h4 {
   margin: 0 0 50px 0; }
 
 .y1960s, .y1990s {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -466,7 +465,7 @@ h4 {
     background-color: #faf711; }
 
 .y1970s, .y2000s {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -488,7 +487,7 @@ h4 {
     background-color: #a60a28; }
 
 .y1980s, .y2010s {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -553,9 +552,6 @@ h4 {
 .tester {
   float: left; }
 
-.clear-float {
-  clear: both; }
-
 .chalkboard {
   background: url(../assets/culturesmall.gif) center no-repeat;
   background-size: cover;
@@ -581,10 +577,16 @@ h4 {
   margin: 30px auto;
   font-size: 21px; }
 .culture-intro blockquote {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #008d9a;
+  margin: 30px 0;
+  display: block;
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 35px;
   font-style: italic;
-  color: #008d9a;
   margin: 0 auto 30px auto;
   max-width: 580px; }
 
@@ -649,7 +651,7 @@ h4 {
     .food a:hover {
       color: #D60D34; }
 
-.labels {
+.label {
   margin-top: 50px; }
 
 .tj-label {
@@ -659,7 +661,7 @@ h4 {
   margin-left: 3.3333%;
   float: left;
   text-align: center;
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   line-height: 1.6;
   font-size: 1.9em;
   font-weight: 400;
@@ -695,7 +697,7 @@ h4 {
   .recipe-intro li {
     margin-top: 10px; }
   .recipe-intro input {
-    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-family: "freight-micro-pro", rockwell, serif;
     padding: 5px;
     padding-left: 10px;
     font-size: 1.4em;
@@ -718,7 +720,7 @@ h4 {
   border-radius: 10px; }
 
 .recipe-btn {
-  font-family: "freight-micro-pro" "rockwell" "serif";
+  font-family: "freight-micro-pro", rockwell, serif;
   font-size: 1.4em;
   font-weight: 400;
   font-style: normal;
@@ -843,7 +845,7 @@ h4 {
     float: right; }
 
   .store-button-large {
-    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-family: "freight-micro-pro", rockwell, serif;
     font-weight: 300;
     font-size: 1.4em;
     text-align: center;
@@ -872,8 +874,8 @@ h4 {
       display: inline-block; }
     nav li {
       display: inline-block;
-      margin-left: 40px;
-      font-family: "hooligan" "candara" "calibri" "sans-serif";
+      margin-left: 30px;
+      font-family: "hooligan", candara, calibri, sans-serif;
       font-size: 30px;
       padding: 0;
       font-style: normal;
@@ -890,9 +892,9 @@ h4 {
 
   .sub-nav li {
     margin-top: 20px;
-    margin-left: 15px;
-    font-family: "freight-micro-pro" "candara" "calibri" "sans-serif";
-    font-size: 18px;
+    margin-left: 10px;
+    font-family: "freight-micro-pro", candara, calibri, sans-serif;
+    font-size: 17px;
     padding: 0; }
     .sub-nav li:last-of-type {
       padding-bottom: 0; }
@@ -959,7 +961,7 @@ h4 {
     margin-bottom: 100px; }
 
   .tl-btn {
-    font-family: "freight-micro-pro" "rockwell" "serif";
+    font-family: "freight-micro-pro", rockwell, serif;
     font-weight: 600;
     font-size: 30px;
     outline: none;
@@ -967,13 +969,15 @@ h4 {
     text-align: center;
     padding: 30px 0;
     background-color: transparent;
-    color: #008d9a;
+    color: #D60D34;
     outline: none;
     display: block;
-    transition: 200ms ease color, 200ms ease border; }
+    left: 0;
+    transition: 500ms ease color, 1s ease left; }
     .tl-btn:hover {
       background-color: transparent;
-      color: #D60D34; }
+      color: #008d9a;
+      left: 20px; }
 
   .tl-content {
     display: none;
@@ -986,6 +990,8 @@ h4 {
     .tl-content h4 {
       margin: 0 0 30px 0;
       display: block; }
+    .tl-content img {
+      width: 150px; }
 
   .show-hidden {
     display: inline-block; }
@@ -1100,7 +1106,7 @@ h4 {
     display: inline-block;
     margin: 0 10px 10px 10px; }
     .store-zip input {
-      font-family: "freight-micro-pro" "rockwell" "serif";
+      font-family: "freight-micro-pro", rockwell, serif;
       padding: 5px;
       padding-left: 10px;
       font-size: 1.4em;

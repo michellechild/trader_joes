@@ -35,8 +35,8 @@ background: $color-dark;
 
 	li {
 	display: inline-block;
-	margin-left: 40px;
-	font-family: "hooligan" "candara" "calibri" "sans-serif";
+	margin-left: 30px;
+	font-family: "hooligan", candara, calibri, sans-serif;
 	font-size: 30px;
 	padding: 0;
 	font-style: normal;
@@ -60,9 +60,9 @@ max-width: 458px;
 
 .sub-nav li{
 margin-top: 20px;
-margin-left: 15px;
-font-family: "freight-micro-pro" "candara" "calibri" "sans-serif";
-font-size: 18px;
+margin-left: 10px;
+font-family: "freight-micro-pro", candara, calibri, sans-serif;
+font-size: 17px;
 padding: 0;
 
 	&:last-of-type {
@@ -167,7 +167,7 @@ margin-bottom: 100px;
 }
 
 .tl-btn{
-font-family: "freight-micro-pro" "rockwell" "serif";
+font-family: "freight-micro-pro", rockwell, serif;
 font-weight: 600;
 font-size: 30px;
 outline: none;
@@ -175,14 +175,16 @@ width: 25%;
 text-align: center;
 padding: 30px 0;
 background-color: transparent;
-color: $primary-color-3;
+color: $primary-color-1;
 outline: none;
 display: block;
-transition: 200ms ease color, 200ms ease border;
+left: 0;
+transition: 500ms ease color, 1s ease left;
 
 	&:hover {
 		background-color: transparent;
-		color: $primary-color-1;
+		color: $primary-color-3;
+		left: 20px;
 	}
 }
 
@@ -197,6 +199,10 @@ right: 0;
 	h4 {
 	margin: 0 0 30px 0;
 	display: block;
+	}
+
+	img { 
+	width: 150px;
 	}
 }
 
@@ -273,7 +279,6 @@ margin: 0;
 	margin: 0;
 	}
 } 
-
 
 /* 38em Recipes */
 
