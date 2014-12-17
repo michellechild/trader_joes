@@ -13,15 +13,29 @@ display: block;
 
 .menu {
 @include global-button-style($color-light, $color-dark);
+
 }
 
 .store-button-small {
 @include global-button-style($color-dark, $primary-color-2);
+
+	img {
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+	}
+
 }
 
 .store-button-large {
-@include button-style($color-light, $primary-color-2);
+@include button-style($color-light, $primary-color-2);	
+	img {
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+	}
 }
+
 
 .store-button-large, .store-zip { 
 display: none;

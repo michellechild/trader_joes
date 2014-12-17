@@ -140,8 +140,6 @@ header {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #FFFFFF;
   border-radius: 10px;
   background-color: #462D23;
@@ -162,8 +160,6 @@ header {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #462D23;
   border-radius: 10px;
   background-color: #fbf943;
@@ -175,6 +171,10 @@ header {
   border-radius: 0; }
   .store-button-small:hover {
     background-color: #faf711; }
+  .store-button-small img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px; }
 
 .store-button-large {
   font-family: "freight-micro-pro", rockwell, serif;
@@ -193,6 +193,10 @@ header {
   .store-button-large:hover {
     color: #faf711;
     border: #faf711 solid 2px; }
+  .store-button-large img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px; }
 
 .store-button-large, .store-zip {
   display: none; }
@@ -450,8 +454,6 @@ h4 {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #462D23;
   border-radius: 10px;
   background-color: #fbf943;
@@ -472,8 +474,6 @@ h4 {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #FFFFFF;
   border-radius: 10px;
   background-color: #D60D34;
@@ -494,8 +494,6 @@ h4 {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #FFFFFF;
   border-radius: 10px;
   background-color: #008d9a;
@@ -727,8 +725,6 @@ h4 {
   line-height: 1;
   text-transform: uppercase;
   letter-spacing: .1em;
-  text-align: center;
-  padding: 14px;
   color: #FFFFFF;
   border-radius: 10px;
   background-color: #008d9a;
@@ -1210,7 +1206,7 @@ h4 {
     .food-intro h4 {
       margin: 0 0 30px 0; }
 
-  .labels {
+  .label {
     width: 48%;
     float: left;
     margin-left: 4%; }
