@@ -56,7 +56,7 @@ padding-bottom: 10px;
 	}
 
 	a {
-	color: lighten($primary-color-3, 40%);
+	color: lighten($primary-color-3, 50%);
 
 	&:hover {
 	color: $color-light;
@@ -67,7 +67,7 @@ padding-bottom: 10px;
 
 footer {
 clear: both; 
-background: url(../assets/footer_pattern.png),  $color-dark;
+background: url(../assets/footer_pattern.png), $color-dark;
 padding-top: 100px;
 padding-bottom: 100px;
 }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trader Joe's</title>
+	<link href="stylesheets/styleguide.css" type="text/css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="//use.typekit.net/fxv0szo.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	<header>
+		<div class="logo">
+		<a href="index.html">
+		<img src="assets/logo/tj_logo.svg" alt="Logo">
+		</a>
+		</div>
+		<h1>Style Guide</h1>
+		<p class="intro">Please adhere to the following visual interface guidelines when working with Trader Joe’s online brand in order to establish and preserve brand integrity of Trader Joe’s online appearance.</p>
+	</header>
+	<section>
+		<h2>Colors</h2>
+		<div class="color-dark">
+			<div class="darken-1"></div>
+			<div class="darken-2"></div>
+			<div class="color"></div>
+		</div>
+		<div class="color-p">
+			<h3>Dark Brown: $color-dark</h3>
+			<p>Hex Code: #462D23<p>
+			<p>darken($color-dark, 10%), darken($color-dark, 5%), $color-dark</p>
+		</div>
+		<div class="primary-color-1">
+			<div class="darken-1"></div>
+			<div class="color"></div>
+		</div>
+		<div class="color-p">
+			<h3>Bright Red: $primary-color-1</h3>
+			<p>Hex Code: #D60D34<p>
+			<p>darken($primary-color-1, 10%), $primary-color-1</p>
+		</div>
+		<div class="primary-color-2">
+			<div class="darken-1"></div>
+			<div class="color"></div>
+			<div class="lighten-1"></div>
+		</div>
+		<div class="color-p">
+			<h3>Yellow: $primary-color-2</h3>
+			<p>Hex Code: #FBF943<p>
+			<p>darken($primary-color-2, 10%), $primary-color-2, lighten($primary-color-2, 20%)</p>
+		</div>
+		<div class="primary-color-3">
+			<div class="darken-1"></div>
+			<div class="color"></div>
+			<div class="lighten-1"></div>
+			<div class="lighten-2"></div>
+		</div>
+		<div class="color-p">
+			<h3>Bright Light Blue: $primary-color-3</h3>
+			<p>Hex Code: #008D9A<p>
+			<p>darken($primary-color-3, 10%), $primary-color-3, lighten($primary-color-3, 10%), lighten($primary-color-3, 50%)</p>
+		</div>
+	</section>
+	<section>
+		<h2>Typography</h2>
+		<p>The typefaces used on this site are Hooligan and Freight Micro Pro. Please use the sizes, styles and weights accordingly.Any color except for $primary-color-2 (yellow) may be used. Note: font-size is set to 62.5% on the site, resulting in 1em = 10px.</p>
+		<div class="type">
+		<h1>h1: Hooligan 6.5ems (65px), 1.3 line-height.</h1> 
+		<h4>h4: Hooligan. 5.3ems (53px), 1.6 line-height.</h4> 
+		<h2>h2: Hooligan. 4ems (40px), 1.2 line-height.</h2> 
+		<h3>h3: Hooligan. 3ems (30px), 1.6 line-height.</h3> 
+		<h5>h5: Freight Micro Pro Book, 1.6ems (16px), 1.6 line-height.</h5>
+		<p>Paragraphs in Freight Micro Pro Book, 1.9ems (19px), line-height 1.6. <span class="light">Freight Micro Pro Light may be used as well.</span></p>
+		<blockquote>Blockquotes in Freight Micro Pro Book, 27px-35px. Blockquotes may be <span class="bold">semi-bold</span> or <span class="italic">italic</span>.</blockquote>
+	</div>
+	</section>
+	<section>
+		<h2>Website Elements</h2>
+		<h3 class="button">Buttons</h3>
+		<div class="global">
+		<p class="button-p">Buttons in the global version of the site are full-width colored bars with padding top and bottom of at least 25 pixels.The text uses paragraph font styled with to text-transform: uppercase and letter-spacing 0.1em.</p>
+		<a class="global-button" href="#">Find a Store</a>
+		</div>
+		<div class="large">
+		<p class="button-p">Buttons in larger versions of the site uses the same font settings but with a transparent background and 3px border, with a border radius of 5px. Padding between 10-20px for all sides should be used to set the width and height.</p>
+		<a class="large-button" href="#">Find a Store</a>
+		</div>
+		<p class="clear">The hover state of buttons are 10% darker than it original color using a 200ms ease transition.</p>
+		<h3 class="divider">Dividers</h3>
+		<p>Dividers in the site are top (or bottom) borders of the element below (or above). They are 3px, dotted, and any color may be used. </p>
+	</section>
+	<section>
+	<h2>Iconography</h2>
+	<p>A set of 10 icons are used on Trader Joe’s site, nine representing the private labels of Trader Joe’s, and one icon used in the store locator section.</p>
+		<figure class="tj-label">
+			<img src="assets/icons/store_locator.png" alt="Store Locator">
+			<figcaption>Store Locator</figcaption>
+		</figure>
+		<figure class="tj-label">
+			<img src="assets/icons/jacque.png" alt="Trader Jacque">
+			<figcaption>Trader Jacque</figcaption>
+		</figure>
+		<figure class="tj-label">
+			<img src="assets/icons/josephbrau.png" alt="Josephbrau">
+			<figcaption>Joseph-brau</figcaption>
+		</figure>
+		<figure class="tj-label">								
+			<img src="assets/icons/handler.png" alt="Trader Handler">
+			<figcaption>Trader Händler</figcaption>
+		</figure>
+		<figure class="tj-label">	
+			<img src="assets/icons/jose.png" alt="Trader José">
+			<figcaption>Trader José</figcaption>
+		</figure>	
+		<figure class="tj-label">	
+			<img src="assets/icons/baker.png" alt="Baker Josef">
+			<figcaption>Baker Josef</figcaption>
+		</figure>
+		<figure class="tj-label">	
+			<img src="assets/icons/darwin.png" alt="Trader Darwin">
+			<figcaption>Trader Darwin</figcaption>
+		</figure>
+		<figure class="tj-label">	
+			<img src="assets/icons/ming.png" alt="Trader Ming">
+			<figcaption>Trader Ming</figcaption>
+		</figure>
+		<figure class="tj-label">	
+			<img src="assets/icons/joesan.png" alt="Joe San">
+			<figcaption>Joe San</figcaption>
+		</figure>
+		<figure class="tj-label">	
+			<img src="assets/icons/giotto.png" alt="Trader Giotto">
+			<figcaption>Trader Giotto</figcaption>
+		</figure>
+	</section>
+	<section>
+		<h2>Photos and Textures</h2>
+		<div class="texture">
+		<img src="assets/texture1.png" alt="Texture 1">
+		<img src="assets/texture2.png" alt="Texture 2">
+		<img src="assets/texture3.png" alt="Texture 3">
+		<p>All photos are copyrighted to Trader Joe’s. The textures are created in Adobe Photoshop using a Flower Brush set that can be found <a href="http://www.brusheezy.com/brushes/1380-flowersn-ornaments">here.</a> The flower texture is used on dark backgrounds, using the same color as the background with a 30% or lower opacity.</p>
+		</div>
+	</section>
+	</div>
+</body>
+</html>

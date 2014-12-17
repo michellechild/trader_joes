@@ -1,0 +1,390 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, button, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+h1 {
+  font-family: "Franklin Gothic Medium", Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #462D23;
+  text-align: center; }
+
+h2 {
+  font-family: "Franklin Gothic Medium", Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #D60D34; }
+
+h3 {
+  font-family: "Franklin Gothic Medium", Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  line-height: 1.6;
+  margin: 30px 0;
+  color: #008d9a; }
+
+p, figcaption {
+  font-family: "Franklin Gothic Medium", Optima, Segoe, 'Segoe UI', Candara, Calibri, Arial, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 23px;
+  max-width: 500px;
+  color: #462D23; }
+
+/*
+  ========================================
+  Layout
+  ========================================
+*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.container {
+  max-width: 1000px;
+  width: 85%;
+  margin: 0 auto; }
+
+section {
+  padding: 50px 0;
+  border-bottom: 3px solid #999;
+  overflow: hidden; }
+  section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 100px; }
+
+.logo {
+  max-width: 400px;
+  margin: 100px auto 20px auto; }
+
+.intro {
+  margin: 0 auto; }
+
+/*
+  ========================================
+  Colors
+  ========================================
+*/
+.color-dark {
+  overflow: hidden; }
+  .color-dark .darken-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #241712;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+  .color-dark .darken-2 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #35221b;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px; }
+  .color-dark .color {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #462D23;
+    float: left; }
+
+.primary-color-1 {
+  overflow: hidden; }
+  .primary-color-1 .darken-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #a60a28;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+  .primary-color-1 .color {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #D60D34;
+    float: left; }
+
+.primary-color-2 {
+  overflow: hidden; }
+  .primary-color-2 .darken-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #faf711;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+  .primary-color-2 .color {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #fbf943;
+    float: left;
+    margin-right: 10px; }
+  .primary-color-2 .lighten-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #fdfca7;
+    float: left;
+    margin-top: 10px; }
+
+.primary-color-3 {
+  overflow: hidden; }
+  .primary-color-3 .darken-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #005e67;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px; }
+  .primary-color-3 .color {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+    background-color: #008d9a;
+    float: left;
+    margin-right: 10px; }
+  .primary-color-3 .lighten-1 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #00bccd;
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px; }
+  .primary-color-3 .lighten-2 {
+    width: 65px;
+    height: 65px;
+    border-radius: 75px;
+    background-color: #9af6ff;
+    float: left;
+    margin-top: 10px; }
+
+.color-p {
+  clear: both;
+  margin: 40px 0 60px 0; }
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+.type h1 {
+  font-family: "hooligan", candara, calibri, sans-serif;
+  line-height: 1;
+  font-size: 6.5em;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left; }
+.type h2 {
+  font-family: "hooligan", candara, calibri, sans-serif;
+  line-height: 1.6;
+  font-size: 4em;
+  font-weight: 400;
+  font-style: normal; }
+.type h3 {
+  font-family: "hooligan", candara, calibri, sans-serif;
+  line-height: 1.6;
+  font-size: 3em;
+  font-weight: 400;
+  font-style: normal; }
+.type h4 {
+  font-family: "hooligan", candara, calibri, sans-serif;
+  line-height: 1.6;
+  font-size: 5.3em;
+  font-weight: 600;
+  font-style: normal; }
+.type h5 {
+  font-family: "freight-micro-pro", rockwell, serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  line-height: 1.6;
+  font-style: normal; }
+.type p {
+  margin-top: 30px;
+  font-family: "freight-micro-pro", rockwell, serif;
+  line-height: 1.6;
+  font-size: 1.9em;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 550px; }
+.type blockquote {
+  margin-top: 30px;
+  font-family: "freight-micro-pro", rockwell, serif;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 700px; }
+.type .light {
+  font-weight: 300; }
+.type .bold {
+  font-weight: 600; }
+.type .italic {
+  font-style: italic; }
+
+/*
+  ========================================
+  Elements
+  ========================================
+*/
+.global, .large {
+  overflow: hidden;
+  margin: 0 0 30px 0; }
+
+h3.button {
+  margin-bottom: 0; }
+
+a.global-button {
+  float: left;
+  font-family: "freight-micro-pro", rockwell, serif;
+  font-size: 1.4em;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin: 30px 0;
+  color: #462D23;
+  border-radius: 10px;
+  background-color: #fbf943;
+  outline: none;
+  width: 40%;
+  text-align: left;
+  padding: 15px;
+  border-radius: 0;
+  text-decoration: none; }
+  a.global-button:hover {
+    background-color: #faf711; }
+
+a.large-button {
+  float: left;
+  margin: 30px 29% 30px 0;
+  font-family: "freight-micro-pro", rockwell, serif;
+  font-weight: 300;
+  font-size: 1.4em;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  padding: 14px;
+  color: #D60D34;
+  border-radius: 5px;
+  background-color: transparent;
+  text-decoration: none;
+  border: #D60D34 solid 2px;
+  outline: none;
+  transition: 200ms ease color, 200ms ease border; }
+  a.large-button:hover {
+    color: #005e67;
+    border: #005e67 solid 2px; }
+
+.button-p {
+  float: left;
+  width: 40%;
+  margin-right: 5%;
+  max-width: none;
+  margin-top: 30px; }
+
+.clear {
+  clear: both; }
+
+.divider {
+  padding-bottom: 30px;
+  border-bottom: 3px dotted #008d9a; }
+
+/*
+  ========================================
+  Icons
+  ========================================
+*/
+.tj-label {
+  float: left;
+  width: 5%;
+  display: block;
+  margin-top: 30px;
+  margin-left: 5%; }
+  .tj-label:nth-of-type(1) {
+    margin-left: 0; }
+
+/*
+  ========================================
+  Textures
+  ========================================
+*/
+.texture img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 30px; }
+
+.texture p {
+  clear: both; }
+
+/*# sourceMappingURL=styleguide.css.map */

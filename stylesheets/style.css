@@ -219,7 +219,7 @@ nav li {
   .sub-nav li:last-of-type {
     padding-bottom: 20px; }
   .sub-nav li a {
-    color: #67f2ff; }
+    color: #9af6ff; }
     .sub-nav li a:hover {
       color: #FFFFFF; }
 
@@ -1146,8 +1146,7 @@ h4 {
     max-width: 250px;
     padding: 10px;
     border-radius: 10px;
-    margin: 0 auto;
-    background-color: #a60a28; }
+    margin: 0 auto; }
     .h2-wrapper h2 {
       font-size: 40px; }
 
