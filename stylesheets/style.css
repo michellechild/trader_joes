@@ -442,7 +442,7 @@ footer {
     margin-left: 20px;
     margin-top: 15px; }
 
-h4 {
+.timeline h4 {
   max-width: 200px;
   margin: 0 0 50px 0; }
 
@@ -593,14 +593,16 @@ h4 {
 
 .culture-box h4 {
   color: #D60D34;
-  margin: 50px auto; }
+  margin: 50px auto;
+  text-align: center; }
 
 .culture-copy {
   max-height: 400px;
   overflow: hidden; }
   .culture-copy h4 {
     margin-bottom: 20px;
-    color: #462D23; }
+    color: #462D23;
+    text-align: left; }
   .culture-copy:last-of-type {
     margin-bottom: 50px; }
 
